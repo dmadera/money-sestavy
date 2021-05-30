@@ -6,15 +6,15 @@
 ///   <Version>19.1</Version>
 ///   <Resources>
 ///     <Resource Name="XtraReportSerialization.xtraReport1">
-/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAADAAAAAAAAAFBBRFBBRFBIXnLBzDDfSKe1gG4AAAAAKwAAAGAAAABjAQAAJiQAdABoAGkAcwAuAFMAYwByAGkAcAB0AHMAUwBvAHUAcgBjAGUAAAAAADBEAG8AcAByAGEAdgBhAFAAbABhAHQAYgBhAC4ARQB4AHAAcgBlAHMAcwBpAG8AbgB0CQAAMlMAbABlAHYAYQBOAGEARABvAGsAbABhAGQAdQAuAEUAeABwAHIAZQBzAHMAaQBvAG4AigoAAAHxEnVzaW5nIENTVy5DU1dTeXN0
-/// ZW0uUmVwb3J0czsNCnVzaW5nIFN5c3RlbS5EYXRhOw0KdXNpbmcgU3lzdGVtLlRleHQuUmVndWxhckV4cHJlc3Npb25zOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCnByaXZhdGUgdm9pZCB2cmF0a2FMYWJlbF9CZWZvcmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJaWYgKCFDb252ZXJ0LlRvQm9vbGVhbihHZXRDdXJyZW50Q29sdW1uVmFsdWUoIlphcG9ybnlQb2h5YiIpKSkgZS5DYW5jZWwgPSB0cnVlOw0KfQ0KDQpwcml2YXRlIHZvaWQgYmFsZW5pTW5venN0dmlfQmVmb3JlUHJpbnQob2JqZWN0IHNlbmRlciwgU3lzdGVtLkRyYXdpbmcuUHJpbnRpbmcuUHJp
-/// bnRFdmVudEFyZ3MgZSkgew0KCVhSTGFiZWwgbGJsID0gc2VuZGVyIGFzIFhSTGFiZWw7DQoJaW50IG1ub3pzdHZpID0gKGludCkgQ29udmVydC5Ub0RvdWJsZShsYmwuUmVwb3J0LkdldEN1cnJlbnRDb2x1bW5WYWx1ZSgiTW5venN0dmkiKS5Ub1N0cmluZygpKTsNCglzdHJpbmcgamVkbm90a2EgPSBsYmwuUmVwb3J0LkdldEN1cnJlbnRDb2x1bW5WYWx1ZSgiSmVkbm90a2EiKS5Ub1N0cmluZygpOw0KCVhSTGFiZWxbXSBsYWJlbE1ub3pzdHZpID0ge2xhYmVsTW5venN0dmkwLCBsYWJlbE1ub3pzdHZpMSwgbGFiZWxNbm96c3R2aTJ9Ow0KCVhSTGFiZWxbXSBsYWJlbEplZG5vdGt5ID0ge2xhYmVsSmVkbm90a2EwLCBsYWJlbEplZG5vdGthMSwgbGFiZWxKZWRu
-/// b3RrYTJ9Ow0KCQ0KCWZvcmVhY2goWFJMYWJlbCBsIGluIGxhYmVsTW5venN0dmkpIGwuVGV4dCA9ICIiOw0KCWZvcmVhY2goWFJMYWJlbCBsIGluIGxhYmVsSmVkbm90a3kpIGwuVGV4dCA9ICIiOw0KCQ0KCXRyeSB7DQoJCURhdGFSb3cgciA9IChsYmwuUmVwb3J0LkdldEN1cnJlbnRSb3coKSBhcyBEYXRhUm93VmlldykuUm93IGFzIERhdGFSb3c7DQoJCURhdGFSb3dbXSBycyA9IHIuR2V0Q2hpbGRSb3dzKCJQb2xvemt5LVBvbG96a3lfT2JzYWhQb2xvemt5Iik7DQoJCURhdGFSb3dbXSByczEgPSByc1swXS5HZXRDaGlsZFJvd3MoIlBvbG96a3lfT2JzYWhQb2xvemt5LVBvbG96a3lfT2JzYWhQb2xvemt5X0FydGlrbCIpOw0KCQlzdHJpbmcgYmFsZW5pTW5v
-/// enN0dmkgPSByczFbMF1bIkJhbGVuaU1ub3pzdHZpX1VzZXJEYXRhIl0uVG9TdHJpbmcoKSArICIvIiArICIxIjsNCgkJc3RyaW5nIGJhbGVuaUplZG5vdGt5ID0gcnMxWzBdWyJCYWxlbmlKZWRub3RreV9Vc2VyRGF0YSJdLlRvU3RyaW5nKCkgKyAiLyIgKyBqZWRub3RrYTsNCgkNCgkJc3RyaW5nW10gYmFsZW5pU3RyTSA9IGJhbGVuaU1ub3pzdHZpLlNwbGl0KCcvJyk7DQoJCXN0cmluZ1tdIGJhbGVuaUogPSBiYWxlbmlKZWRub3RreS5TcGxpdCgnLycpOw0KCQkNCgkJaW50W10gYmFsZW5pTSA9IEFycmF5LkNvbnZlcnRBbGwoYmFsZW5pU3RyTSwgaW50LlBhcnNlKTsNCgkJTGlzdDxUdXBsZTxzdHJpbmcsIGludD4+IGJhbGVuaSA9IG5ldyBMaXN0PFR1cGxl
-/// PHN0cmluZywgaW50Pj4oKTsJDQoJDQoJCWludCB6Ynl2YSA9IG1ub3pzdHZpLCB0bXA7DQoJCWZvcihpbnQgaSA9IDA7IGkgPCBiYWxlbmlNLkxlbmd0aDsgaSsrKSB7DQoJCQl0bXAgPSAoaW50KSBNYXRoLkZsb29yKChmbG9hdCkgemJ5dmEvYmFsZW5pTVtpXSk7DQoJCQliYWxlbmkuQWRkKFR1cGxlLkNyZWF0ZShiYWxlbmlKW2ldLCB0bXApKTsNCgkJCXpieXZhIC09IHRtcCAqIGJhbGVuaU1baV07DQoJCX0NCgkJDQoJCWJhbGVuaS5SZXZlcnNlKCk7DQoJCWludCBqID0gMjsNCgkJZm9yZWFjaChUdXBsZTxzdHJpbmcsIGludD4gdCBpbiBiYWxlbmkpIHsNCgkJCWlmKHQuSXRlbTIgIT0gMCkgew0KCQkJCWxhYmVsTW5venN0dmlbal0uVGV4dCA9IHQuSXRl
-/// bTIuVG9TdHJpbmcoIiMiKTsNCgkJCQlsYWJlbEplZG5vdGt5W2pdLlRleHQgPSB0Lkl0ZW0xOw0KCQkJfQ0KCQkJai0tOw0KCQl9DQoJCQkNCgl9IGNhdGNoKEV4Y2VwdGlvbiBleGNlcHRpb24pIHt9DQp9DQoNCnByaXZhdGUgdm9pZCBQcml6bmFrX0dldFZhbHVlKG9iamVjdCBzZW5kZXIsIERldkV4cHJlc3MuWHRyYVJlcG9ydHMuVUkuR2V0VmFsdWVFdmVudEFyZ3MgZSkgew0KCXN0cmluZyBjb2x1bW5WYWx1ZSA9IChzdHJpbmcpIGUuR2V0Q29sdW1uVmFsdWUoIlByaXpuYWt5X1VzZXJEYXRhIik7DQoJZS5WYWx1ZSA9IFJlZ2V4Lk1hdGNoKGNvbHVtblZhbHVlLCBAIlthLXpBLVpdIikuVmFsdWU7DQp9DQoNCnByaXZhdGUgdm9pZCB4cmxuYXpldl9CZWZv
-/// cmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJWFJMYWJlbCBsYmwgPSBzZW5kZXIgYXMgWFJMYWJlbDsNCglsYmwuVGV4dEZpdE1vZGUgPSBUZXh0Rml0TW9kZS5TaHJpbmtPbmx5Ow0KfQ0KAZMCSWlmKFtQcm9kZWprYVZ5ZGFuYS1acHVzb2JQbGF0YnldLltLb2RdID09ICdIJyAmJgpTdGFydHNXaXRoKFtQcm9kZWprYVZ5ZGFuYS1acHVzb2JEb3ByYXZ5XS5bS29kXSwgJ1InKSwKRm9ybWF0U3RyaW5nKCd7MH0gKyAhIXsxfSEhJywgVXBwZXIoW1Byb2RlamthVnlkYW5hLVpwdXNvYkRvcHJhdnldLltOYXpldl0pLCBVcHBlcihbUHJvZGVqa2FWeWRhbmEtWnB1c29iUGxhdGJ5XS5bTmF6
-/// ZXZdKSksClVwcGVyKFtQcm9kZWprYVZ5ZGFuYS1acHVzb2JEb3ByYXZ5XS5bTmF6ZXZdKSkBsgJJaWYoW1Byb2RlamthVnlkYW5hLUFkcmVzYV9GaXJtYV0uW1NsZXZhVXZhZGVuYV9Vc2VyRGF0YV0gIT0gMCwKCVtQcm9kZWprYVZ5ZGFuYS1BZHJlc2FfRmlybWFdLltTbGV2YVV2YWRlbmFfVXNlckRhdGFdLAoJSWlmKFtQcm9kZWprYVZ5ZGFuYS1BZHJlc2FfRmlybWFdLltWbGFzdG5pU2xldmFdID09IHRydWUsIAoJCUlpZihbUHJvZGVqa2FWeWRhbmEtQWRyZXNhX0Zpcm1hXS5bSG9kbm90YVNsZXZ5XSA+IDAsIAoJCQlbUHJvZGVqa2FWeWRhbmEtQWRyZXNhX0Zpcm1hXS5bSG9kbm90YVNsZXZ5XSwgCgkJCW51bGwpLCAKCW51bGwpCik=</Resource>
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAACAAAAAAAAAFBBRFBBRFBIXnLBp7WAbgAAAAArAAAAJgEAACYkAHQAaABpAHMALgBTAGMAcgBpAHAAdABzAFMAbwB1AHIAYwBlAAAAAAAyUwBsAGUAdgBhAE4AYQBEAG8AawBsAGEAZAB1AC4ARQB4AHAAcgBlAHMAcwBpAG8AbgB0CQAAAfESdXNpbmcgQ1NXLkNTV1N5c3RlbS5SZXBvcnRzOw0KdXNpbmcgU3lzdGVtLkRhdGE7DQp1c2luZyBTeXN0ZW0uVGV4dC5SZWd1bGFyRXhw
+/// cmVzc2lvbnM7DQp1c2luZyBTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYzsNCg0KcHJpdmF0ZSB2b2lkIHZyYXRrYUxhYmVsX0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdzIGUpIHsNCglpZiAoIUNvbnZlcnQuVG9Cb29sZWFuKEdldEN1cnJlbnRDb2x1bW5WYWx1ZSgiWmFwb3JueVBvaHliIikpKSBlLkNhbmNlbCA9IHRydWU7DQp9DQoNCnByaXZhdGUgdm9pZCBiYWxlbmlNbm96c3R2aV9CZWZvcmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJWFJMYWJlbCBsYmwgPSBzZW5kZXIgYXMgWFJMYWJlbDsNCglpbnQgbW5v
+/// enN0dmkgPSAoaW50KSBDb252ZXJ0LlRvRG91YmxlKGxibC5SZXBvcnQuR2V0Q3VycmVudENvbHVtblZhbHVlKCJNbm96c3R2aSIpLlRvU3RyaW5nKCkpOw0KCXN0cmluZyBqZWRub3RrYSA9IGxibC5SZXBvcnQuR2V0Q3VycmVudENvbHVtblZhbHVlKCJKZWRub3RrYSIpLlRvU3RyaW5nKCk7DQoJWFJMYWJlbFtdIGxhYmVsTW5venN0dmkgPSB7bGFiZWxNbm96c3R2aTAsIGxhYmVsTW5venN0dmkxLCBsYWJlbE1ub3pzdHZpMn07DQoJWFJMYWJlbFtdIGxhYmVsSmVkbm90a3kgPSB7bGFiZWxKZWRub3RrYTAsIGxhYmVsSmVkbm90a2ExLCBsYWJlbEplZG5vdGthMn07DQoJDQoJZm9yZWFjaChYUkxhYmVsIGwgaW4gbGFiZWxNbm96c3R2aSkgbC5UZXh0ID0gIiI7
+/// DQoJZm9yZWFjaChYUkxhYmVsIGwgaW4gbGFiZWxKZWRub3RreSkgbC5UZXh0ID0gIiI7DQoJDQoJdHJ5IHsNCgkJRGF0YVJvdyByID0gKGxibC5SZXBvcnQuR2V0Q3VycmVudFJvdygpIGFzIERhdGFSb3dWaWV3KS5Sb3cgYXMgRGF0YVJvdzsNCgkJRGF0YVJvd1tdIHJzID0gci5HZXRDaGlsZFJvd3MoIlBvbG96a3ktUG9sb3preV9PYnNhaFBvbG96a3kiKTsNCgkJRGF0YVJvd1tdIHJzMSA9IHJzWzBdLkdldENoaWxkUm93cygiUG9sb3preV9PYnNhaFBvbG96a3ktUG9sb3preV9PYnNhaFBvbG96a3lfQXJ0aWtsIik7DQoJCXN0cmluZyBiYWxlbmlNbm96c3R2aSA9IHJzMVswXVsiQmFsZW5pTW5venN0dmlfVXNlckRhdGEiXS5Ub1N0cmluZygpICsgIi8iICsg
+/// IjEiOw0KCQlzdHJpbmcgYmFsZW5pSmVkbm90a3kgPSByczFbMF1bIkJhbGVuaUplZG5vdGt5X1VzZXJEYXRhIl0uVG9TdHJpbmcoKSArICIvIiArIGplZG5vdGthOw0KCQ0KCQlzdHJpbmdbXSBiYWxlbmlTdHJNID0gYmFsZW5pTW5venN0dmkuU3BsaXQoJy8nKTsNCgkJc3RyaW5nW10gYmFsZW5pSiA9IGJhbGVuaUplZG5vdGt5LlNwbGl0KCcvJyk7DQoJCQ0KCQlpbnRbXSBiYWxlbmlNID0gQXJyYXkuQ29udmVydEFsbChiYWxlbmlTdHJNLCBpbnQuUGFyc2UpOw0KCQlMaXN0PFR1cGxlPHN0cmluZywgaW50Pj4gYmFsZW5pID0gbmV3IExpc3Q8VHVwbGU8c3RyaW5nLCBpbnQ+PigpOwkNCgkNCgkJaW50IHpieXZhID0gbW5venN0dmksIHRtcDsNCgkJZm9yKGlu
+/// dCBpID0gMDsgaSA8IGJhbGVuaU0uTGVuZ3RoOyBpKyspIHsNCgkJCXRtcCA9IChpbnQpIE1hdGguRmxvb3IoKGZsb2F0KSB6Ynl2YS9iYWxlbmlNW2ldKTsNCgkJCWJhbGVuaS5BZGQoVHVwbGUuQ3JlYXRlKGJhbGVuaUpbaV0sIHRtcCkpOw0KCQkJemJ5dmEgLT0gdG1wICogYmFsZW5pTVtpXTsNCgkJfQ0KCQkNCgkJYmFsZW5pLlJldmVyc2UoKTsNCgkJaW50IGogPSAyOw0KCQlmb3JlYWNoKFR1cGxlPHN0cmluZywgaW50PiB0IGluIGJhbGVuaSkgew0KCQkJaWYodC5JdGVtMiAhPSAwKSB7DQoJCQkJbGFiZWxNbm96c3R2aVtqXS5UZXh0ID0gdC5JdGVtMi5Ub1N0cmluZygiIyIpOw0KCQkJCWxhYmVsSmVkbm90a3lbal0uVGV4dCA9IHQuSXRlbTE7DQoJCQl9
+/// DQoJCQlqLS07DQoJCX0NCgkJCQ0KCX0gY2F0Y2goRXhjZXB0aW9uIGV4Y2VwdGlvbikge30NCn0NCg0KcHJpdmF0ZSB2b2lkIFByaXpuYWtfR2V0VmFsdWUob2JqZWN0IHNlbmRlciwgRGV2RXhwcmVzcy5YdHJhUmVwb3J0cy5VSS5HZXRWYWx1ZUV2ZW50QXJncyBlKSB7DQoJc3RyaW5nIGNvbHVtblZhbHVlID0gKHN0cmluZykgZS5HZXRDb2x1bW5WYWx1ZSgiUHJpem5ha3lfVXNlckRhdGEiKTsNCgllLlZhbHVlID0gUmVnZXguTWF0Y2goY29sdW1uVmFsdWUsIEAiW2EtekEtWl0iKS5WYWx1ZTsNCn0NCg0KcHJpdmF0ZSB2b2lkIHhybG5hemV2X0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdz
+/// IGUpIHsNCglYUkxhYmVsIGxibCA9IHNlbmRlciBhcyBYUkxhYmVsOw0KCWxibC5UZXh0Rml0TW9kZSA9IFRleHRGaXRNb2RlLlNocmlua09ubHk7DQp9DQoBsgJJaWYoW1Byb2RlamthVnlkYW5hLUFkcmVzYV9GaXJtYV0uW1NsZXZhVXZhZGVuYV9Vc2VyRGF0YV0gIT0gMCwKCVtQcm9kZWprYVZ5ZGFuYS1BZHJlc2FfRmlybWFdLltTbGV2YVV2YWRlbmFfVXNlckRhdGFdLAoJSWlmKFtQcm9kZWprYVZ5ZGFuYS1BZHJlc2FfRmlybWFdLltWbGFzdG5pU2xldmFdID09IHRydWUsIAoJCUlpZihbUHJvZGVqa2FWeWRhbmEtQWRyZXNhX0Zpcm1hXS5bSG9kbm90YVNsZXZ5XSA+IDAsIAoJCQlbUHJvZGVqa2FWeWRhbmEtQWRyZXNhX0Zpcm1hXS5bSG9kbm90YVNsZXZ5
+/// XSwgCgkJCW51bGwpLCAKCW51bGwpCik=</Resource>
 ///   </Resources>
 /// </XRTypeInfo>
 namespace XtraReportSerialization {
@@ -443,10 +443,10 @@ namespace XtraReportSerialization {
             this.label58.Dpi = 254F;
             this.label58.Font = new System.Drawing.Font("Roboto Medium", 10F);
             this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label58.LocationFloat = new DevExpress.Utils.PointFloat(1345.681F, 0F);
+            this.label58.LocationFloat = new DevExpress.Utils.PointFloat(1261.014F, 0F);
             this.label58.Name = "label58";
             this.label58.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label58.SizeF = new System.Drawing.SizeF(500.3193F, 80F);
+            this.label58.SizeF = new System.Drawing.SizeF(584.986F, 80F);
             this.label58.StylePriority.UseBackColor = false;
             this.label58.StylePriority.UseBorderDashStyle = false;
             this.label58.StylePriority.UseBorders = false;
@@ -469,7 +469,7 @@ namespace XtraReportSerialization {
             this.label57.Multiline = true;
             this.label57.Name = "label57";
             this.label57.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 5, 0, 0, 254F);
-            this.label57.SizeF = new System.Drawing.SizeF(1345.681F, 80F);
+            this.label57.SizeF = new System.Drawing.SizeF(1261.014F, 80F);
             this.label57.StylePriority.UseBackColor = false;
             this.label57.StylePriority.UseFont = false;
             this.label57.StylePriority.UseForeColor = false;
@@ -890,7 +890,7 @@ namespace XtraReportSerialization {
             this.label35.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label35.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "ProdejkaVydana.ProdejkaVydana-Adresa_Firma.Adresa_Firma-Adresa_Firma_Osoby_Hlavni" +
-                                "Osoba.Jmeno")});
+                                "Osoba.Nazev")});
             this.label35.Dpi = 254F;
             this.label35.Font = new System.Drawing.Font("Roboto Light", 10F);
             this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -956,7 +956,7 @@ namespace XtraReportSerialization {
             this.label32.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label32.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "ProdejkaVydana.ProdejkaVydana-Adresa_Firma.Adresa_Firma-Adresa_Firma_Osoby_Hlavni" +
-                                "Osoba.Jmeno")});
+                                "Osoba.Nazev")});
             this.label32.Dpi = 254F;
             this.label32.Font = new System.Drawing.Font("Roboto Light", 10F);
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -2248,7 +2248,9 @@ namespace XtraReportSerialization {
             // DopravaPlatba
             // 
             this.DopravaPlatba.DataMember = "ProdejkaVydana";
-            this.DopravaPlatba.Expression = resources.GetString("DopravaPlatba.Expression");
+            this.DopravaPlatba.Expression = "Iif([ProdejkaVydana-ZpusobPlatby].[Kod] != \'ZK\' && [ProdejkaVydana-ZpusobPlatby]." +
+                "[Kod] != \'ZH\', \'NEUHRAZENO, \', \'\') + Upper([ProdejkaVydana-ZpusobDopravy].[Nazev" +
+                "])";
             this.DopravaPlatba.Name = "DopravaPlatba";
             // 
             // SlevaNaDokladu

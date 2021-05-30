@@ -897,7 +897,7 @@ namespace XtraReportSerialization {
             this.label35.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label35.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-Adresar_Firma.Adr" +
-                                "esar_Firma-Adresar_Osoba.Prijmeni")});
+                                "esar_Firma-Adresar_Osoba.Nazev")});
             this.label35.Dpi = 254F;
             this.label35.Font = new System.Drawing.Font("Roboto Light", 10F);
             this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -962,7 +962,7 @@ namespace XtraReportSerialization {
             this.label32.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label32.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-Adresar_Firma.Adr" +
-                                "esar_Firma-Adresar_Osoba.Prijmeni")});
+                                "esar_Firma-Adresar_Osoba.Nazev")});
             this.label32.Dpi = 254F;
             this.label32.Font = new System.Drawing.Font("Roboto Light", 10F);
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -2024,7 +2024,7 @@ namespace XtraReportSerialization {
             this.label103.LocationFloat = new DevExpress.Utils.PointFloat(1365F, 0F);
             this.label103.Name = "label103";
             this.label103.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label103.SizeF = new System.Drawing.SizeF(481.0009F, 52F);
+            this.label103.SizeF = new System.Drawing.SizeF(481.0009F, 45F);
             this.label103.StyleName = "Vychozi";
             this.label103.StylePriority.UseFont = false;
             this.label103.StylePriority.UsePadding = false;
@@ -2039,7 +2039,7 @@ namespace XtraReportSerialization {
             this.label102.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 0F);
             this.label102.Name = "label102";
             this.label102.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label102.SizeF = new System.Drawing.SizeF(270F, 52F);
+            this.label102.SizeF = new System.Drawing.SizeF(270F, 45F);
             this.label102.StyleName = "Vychozi";
             this.label102.StylePriority.UseFont = false;
             this.label102.StylePriority.UsePadding = false;
@@ -2051,10 +2051,10 @@ namespace XtraReportSerialization {
             // 
             this.label101.Dpi = 254F;
             this.label101.Font = new System.Drawing.Font("Roboto Light", 10F);
-            this.label101.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 52.00002F);
+            this.label101.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 45.00003F);
             this.label101.Name = "label101";
             this.label101.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label101.SizeF = new System.Drawing.SizeF(270F, 52F);
+            this.label101.SizeF = new System.Drawing.SizeF(270F, 45F);
             this.label101.StyleName = "Vychozi";
             this.label101.StylePriority.UseFont = false;
             this.label101.StylePriority.UsePadding = false;
@@ -2068,10 +2068,10 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SumaDan")});
             this.label100.Dpi = 254F;
             this.label100.Font = new System.Drawing.Font("Roboto Light", 10F);
-            this.label100.LocationFloat = new DevExpress.Utils.PointFloat(1365F, 52.00002F);
+            this.label100.LocationFloat = new DevExpress.Utils.PointFloat(1365.117F, 45.00003F);
             this.label100.Name = "label100";
             this.label100.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label100.SizeF = new System.Drawing.SizeF(480.8843F, 52F);
+            this.label100.SizeF = new System.Drawing.SizeF(480.8843F, 45F);
             this.label100.StyleName = "Vychozi";
             this.label100.StylePriority.UseFont = false;
             this.label100.StylePriority.UsePadding = false;
@@ -2083,10 +2083,10 @@ namespace XtraReportSerialization {
             // 
             this.label99.Dpi = 254F;
             this.label99.Font = new System.Drawing.Font("Roboto Medium", 10F);
-            this.label99.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 142.7948F);
+            this.label99.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 110.0001F);
             this.label99.Name = "label99";
             this.label99.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label99.SizeF = new System.Drawing.SizeF(270F, 52F);
+            this.label99.SizeF = new System.Drawing.SizeF(270F, 45F);
             this.label99.StyleName = "Vychozi";
             this.label99.StylePriority.UseFont = false;
             this.label99.StylePriority.UsePadding = false;
@@ -2100,10 +2100,10 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SumaCelkem")});
             this.label98.Dpi = 254F;
             this.label98.Font = new System.Drawing.Font("Roboto Medium", 10F);
-            this.label98.LocationFloat = new DevExpress.Utils.PointFloat(1365F, 142.7948F);
+            this.label98.LocationFloat = new DevExpress.Utils.PointFloat(1365F, 110.0001F);
             this.label98.Name = "label98";
             this.label98.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label98.SizeF = new System.Drawing.SizeF(480.657F, 52F);
+            this.label98.SizeF = new System.Drawing.SizeF(480.657F, 45F);
             this.label98.StyleName = "Vychozi";
             this.label98.StylePriority.UseFont = false;
             this.label98.StylePriority.UsePadding = false;
@@ -2130,7 +2130,7 @@ namespace XtraReportSerialization {
             this.line14.Dpi = 254F;
             this.line14.ForeColor = System.Drawing.Color.Black;
             this.line14.LineWidth = 0.5F;
-            this.line14.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 122.7948F);
+            this.line14.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 90.00006F);
             this.line14.Name = "line14";
             this.line14.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
             this.line14.SizeF = new System.Drawing.SizeF(750.98F, 20F);
