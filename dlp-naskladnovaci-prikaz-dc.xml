@@ -110,7 +110,6 @@
         <Tel2Typ Value="0" />
         <WWW Value="0" />
         <PrevzitObchodniUdaje Value="0" />
-        <ADSek_UserData Value="0" />
         <Adresy Value="0">
           <ObchodniAdresa Value="0">
             <Ulice Value="0" />
@@ -210,15 +209,6 @@
         </Adresy>
         <DatovaSchrankaID Value="0" />
         <Aktivity Value="0">
-          <PolozkaKatalogu_ID Value="0" />
-          <MernaJednotka_ID Value="0" />
-          <DokladyPrebirani Value="0">
-            <ObjectNamePolozky Value="0" />
-            <Doklad_ID Value="0" />
-            <Polozka_ID Value="0" />
-            <ObjectNameDokladu Value="0" />
-            <PriVyuctovaniVyriditZdrojovouPolozku Value="0" />
-          </DokladyPrebirani>
           <DokladyVyuctovani Value="0">
             <Vyuctovano Value="0" />
             <ObjectNamePolozky Value="0" />
@@ -238,6 +228,15 @@
             <PlanovanaDobaTrvani Value="0" />
           </PlanovanyCas>
           <Email_ID Value="0" />
+          <PolozkaKatalogu_ID Value="0" />
+          <MernaJednotka_ID Value="0" />
+          <DokladyPrebirani Value="0">
+            <ObjectNamePolozky Value="0" />
+            <Doklad_ID Value="0" />
+            <Polozka_ID Value="0" />
+            <ObjectNameDokladu Value="0" />
+            <PriVyuctovaniVyriditZdrojovouPolozku Value="0" />
+          </DokladyPrebirani>
           <Cinnost Value="0" />
           <Cinnost_ID Value="0" />
           <CiselnaRada Value="0" />
@@ -278,8 +277,8 @@
           <Poznamka Value="0" />
           <Prideleno_ID Value="0" />
           <Prideleno Value="0" />
-          <SkutecnaDobaTrvani Value="0" />
           <DobaTrvani Value="0" />
+          <SkutecnaDobaTrvani Value="0" />
           <SkutecneMnozstvi Value="0" />
           <DatumACasUkonceni Value="0" />
           <DatumACasZahajeni Value="0" />
@@ -302,11 +301,6 @@
         <MojeFirmaBankovniSpojeni Value="0" />
         <Ucty Value="0">
           <SeznamUctu Value="0">
-            <ZahranicniBankaPSCText Value="0" />
-            <ZahranicniBankaPSC_ID Value="0" />
-            <ZahranicniBankaStatText Value="0" />
-            <ZahranicniBankaStat_ID Value="0" />
-            <ZahranicniBankaMisto Value="0" />
             <ZahranicniBankaStatNazevText Value="0" />
             <HistorieOvereniUctuVRegistu Value="0">
               <StavUctuPlatcuDPHVracenyWS_Id Value="0" />
@@ -319,6 +313,11 @@
             </HistorieOvereniUctuVRegistu>
             <PosledniOvereniZHistorie_ID Value="0" />
             <PosledniOvereniZHistorie Value="0" />
+            <ZahranicniBankaPSCText Value="0" />
+            <ZahranicniBankaPSC_ID Value="0" />
+            <ZahranicniBankaStatText Value="0" />
+            <ZahranicniBankaStat_ID Value="0" />
+            <ZahranicniBankaMisto Value="0" />
             <Banka Value="0" />
             <ZahranicniBankaText Value="0" />
             <CisloUctu Value="0" />
@@ -344,11 +343,6 @@
             <ZahranicniUcet Value="0" />
           </SeznamUctu>
           <HlavniUcet Value="0">
-            <ZahranicniBankaPSCText Value="0" />
-            <ZahranicniBankaPSC_ID Value="0" />
-            <ZahranicniBankaStatText Value="0" />
-            <ZahranicniBankaStat_ID Value="0" />
-            <ZahranicniBankaMisto Value="0" />
             <ZahranicniBankaStatNazevText Value="0" />
             <HistorieOvereniUctuVRegistu Value="0">
               <StavUctuPlatcuDPHVracenyWS_Id Value="0" />
@@ -361,6 +355,11 @@
             </HistorieOvereniUctuVRegistu>
             <PosledniOvereniZHistorie_ID Value="0" />
             <PosledniOvereniZHistorie Value="0" />
+            <ZahranicniBankaPSCText Value="0" />
+            <ZahranicniBankaPSC_ID Value="0" />
+            <ZahranicniBankaStatText Value="0" />
+            <ZahranicniBankaStat_ID Value="0" />
+            <ZahranicniBankaMisto Value="0" />
             <Banka Value="0" />
             <ZahranicniBankaText Value="0" />
             <CisloUctu Value="0" />
@@ -436,7 +435,7 @@
           <RegistrPlatcuDPH Value="0" />
           <UnikatniCisloKonzultace Value="0" />
         </HistorieOvereniFirmyVRegistru>
-        <Cinnost_UserData Value="0" />
+        <HlavniCinnost_UserData Value="0" />
         <ISIRChyba Value="0" />
         <ICO Value="0" />
         <ICDPH Value="0" />
@@ -495,6 +494,7 @@
         <Kod Value="1" />
         <KodDanovehoUradu Value="0" />
         <KodOdb_UserData Value="0" />
+        <KodSumFa_UserData Value="0" />
         <Kontakty Value="1">
           <Telefon2 Value="1">
             <Klapka Value="0" />
@@ -564,6 +564,7 @@
           <Kredit Value="0" />
           <VcetnePodrizenych Value="0" />
         </Kredit>
+        <KreditFa_UserData Value="0" />
         <Logo Value="0">
           <FileImage Value="0" />
           <GDPR Value="0" />
@@ -589,9 +590,10 @@
           <PrevzitObchodniUdaje Value="0" />
           <Firma Value="0" />
         </NadrazenaFirma>
+        <NahradniPlneni_UserData Value="0" />
         <ObchNazev Value="1" />
         <DatovaSchrankaNazev Value="0" />
-        <NahradniPlneni_UserData Value="0" />
+        <NazevPomocny_UserData Value="0" />
         <ObchodniPodminky Value="0">
           <SeznamCeniku Value="0">
             <Cenik_ID Value="0" />
@@ -992,6 +994,7 @@
         <StavOvereniISIR Value="0" />
         <StavPlatceDPHComputed Value="0" />
         <StavPlatceDPHVracenyWS_Stav Value="0" />
+        <Sek_UserData Value="0" />
         <Tel1Cislo Value="0" />
         <Tel2Cislo Value="0" />
         <Tel3Cislo Value="0" />
@@ -1246,7 +1249,6 @@
         <Tel2Typ Value="0" />
         <WWW Value="0" />
         <PrevzitObchodniUdaje Value="0" />
-        <ADSek_UserData Value="0" />
         <Adresy Value="0">
           <ObchodniAdresa Value="0">
             <Ulice Value="0" />
@@ -1346,15 +1348,6 @@
         </Adresy>
         <DatovaSchrankaID Value="0" />
         <Aktivity Value="0">
-          <PolozkaKatalogu_ID Value="0" />
-          <MernaJednotka_ID Value="0" />
-          <DokladyPrebirani Value="0">
-            <ObjectNamePolozky Value="0" />
-            <Doklad_ID Value="0" />
-            <Polozka_ID Value="0" />
-            <ObjectNameDokladu Value="0" />
-            <PriVyuctovaniVyriditZdrojovouPolozku Value="0" />
-          </DokladyPrebirani>
           <DokladyVyuctovani Value="0">
             <Vyuctovano Value="0" />
             <ObjectNamePolozky Value="0" />
@@ -1374,6 +1367,15 @@
             <PlanovanaDobaTrvani Value="0" />
           </PlanovanyCas>
           <Email_ID Value="0" />
+          <PolozkaKatalogu_ID Value="0" />
+          <MernaJednotka_ID Value="0" />
+          <DokladyPrebirani Value="0">
+            <ObjectNamePolozky Value="0" />
+            <Doklad_ID Value="0" />
+            <Polozka_ID Value="0" />
+            <ObjectNameDokladu Value="0" />
+            <PriVyuctovaniVyriditZdrojovouPolozku Value="0" />
+          </DokladyPrebirani>
           <Cinnost Value="0" />
           <Cinnost_ID Value="0" />
           <CiselnaRada Value="0" />
@@ -1414,8 +1416,8 @@
           <Poznamka Value="0" />
           <Prideleno_ID Value="0" />
           <Prideleno Value="0" />
-          <SkutecnaDobaTrvani Value="0" />
           <DobaTrvani Value="0" />
+          <SkutecnaDobaTrvani Value="0" />
           <SkutecneMnozstvi Value="0" />
           <DatumACasUkonceni Value="0" />
           <DatumACasZahajeni Value="0" />
@@ -1438,11 +1440,6 @@
         <MojeFirmaBankovniSpojeni Value="0" />
         <Ucty Value="0">
           <SeznamUctu Value="0">
-            <ZahranicniBankaPSCText Value="0" />
-            <ZahranicniBankaPSC_ID Value="0" />
-            <ZahranicniBankaStatText Value="0" />
-            <ZahranicniBankaStat_ID Value="0" />
-            <ZahranicniBankaMisto Value="0" />
             <ZahranicniBankaStatNazevText Value="0" />
             <HistorieOvereniUctuVRegistu Value="0">
               <StavUctuPlatcuDPHVracenyWS_Id Value="0" />
@@ -1455,6 +1452,11 @@
             </HistorieOvereniUctuVRegistu>
             <PosledniOvereniZHistorie_ID Value="0" />
             <PosledniOvereniZHistorie Value="0" />
+            <ZahranicniBankaPSCText Value="0" />
+            <ZahranicniBankaPSC_ID Value="0" />
+            <ZahranicniBankaStatText Value="0" />
+            <ZahranicniBankaStat_ID Value="0" />
+            <ZahranicniBankaMisto Value="0" />
             <Banka Value="0" />
             <ZahranicniBankaText Value="0" />
             <CisloUctu Value="0" />
@@ -1480,11 +1482,6 @@
             <ZahranicniUcet Value="0" />
           </SeznamUctu>
           <HlavniUcet Value="0">
-            <ZahranicniBankaPSCText Value="0" />
-            <ZahranicniBankaPSC_ID Value="0" />
-            <ZahranicniBankaStatText Value="0" />
-            <ZahranicniBankaStat_ID Value="0" />
-            <ZahranicniBankaMisto Value="0" />
             <ZahranicniBankaStatNazevText Value="0" />
             <HistorieOvereniUctuVRegistu Value="0">
               <StavUctuPlatcuDPHVracenyWS_Id Value="0" />
@@ -1497,6 +1494,11 @@
             </HistorieOvereniUctuVRegistu>
             <PosledniOvereniZHistorie_ID Value="0" />
             <PosledniOvereniZHistorie Value="0" />
+            <ZahranicniBankaPSCText Value="0" />
+            <ZahranicniBankaPSC_ID Value="0" />
+            <ZahranicniBankaStatText Value="0" />
+            <ZahranicniBankaStat_ID Value="0" />
+            <ZahranicniBankaMisto Value="0" />
             <Banka Value="0" />
             <ZahranicniBankaText Value="0" />
             <CisloUctu Value="0" />
@@ -1572,7 +1574,7 @@
           <RegistrPlatcuDPH Value="0" />
           <UnikatniCisloKonzultace Value="0" />
         </HistorieOvereniFirmyVRegistru>
-        <Cinnost_UserData Value="0" />
+        <HlavniCinnost_UserData Value="0" />
         <ISIRChyba Value="0" />
         <ICO Value="0" />
         <ICDPH Value="0" />
@@ -1631,6 +1633,7 @@
         <Kod Value="0" />
         <KodDanovehoUradu Value="0" />
         <KodOdb_UserData Value="0" />
+        <KodSumFa_UserData Value="0" />
         <Kontakty Value="1">
           <Telefon2 Value="1">
             <Klapka Value="0" />
@@ -1700,6 +1703,7 @@
           <Kredit Value="0" />
           <VcetnePodrizenych Value="0" />
         </Kredit>
+        <KreditFa_UserData Value="0" />
         <Logo Value="0">
           <FileImage Value="0" />
           <GDPR Value="0" />
@@ -1725,9 +1729,10 @@
           <PrevzitObchodniUdaje Value="0" />
           <Firma Value="0" />
         </NadrazenaFirma>
+        <NahradniPlneni_UserData Value="0" />
         <ObchNazev Value="0" />
         <DatovaSchrankaNazev Value="0" />
-        <NahradniPlneni_UserData Value="0" />
+        <NazevPomocny_UserData Value="0" />
         <ObchodniPodminky Value="0">
           <SeznamCeniku Value="0">
             <Cenik_ID Value="0" />
@@ -2112,6 +2117,7 @@
         <StavOvereniISIR Value="0" />
         <StavPlatceDPHComputed Value="0" />
         <StavPlatceDPHVracenyWS_Stav Value="0" />
+        <Sek_UserData Value="0" />
         <Tel1Cislo Value="0" />
         <Tel2Cislo Value="0" />
         <Tel3Cislo Value="0" />
@@ -2736,6 +2742,7 @@
           <Ekasa Value="0">
             <TypPolozky Value="0" />
           </Ekasa>
+          <Procento_UserData Value="0" />
           <Attachment_ID Value="0" />
           <Baleni Value="0" />
           <BaleniJednotky_UserData Value="1" />
@@ -2748,10 +2755,10 @@
             <Poradi Value="0" />
           </Cinnosti>
           <CiselneRady Value="0">
+            <RadaKod Value="0" />
             <RadaDetail Value="0" />
             <RadaCarovyKod Value="0" />
             <RadaPLU Value="0" />
-            <RadaKod Value="0" />
             <RadaKatalog Value="0" />
           </CiselneRady>
           <PosledniDodavka Value="0" />
@@ -2806,8 +2813,8 @@
           <DruhBaleni Value="0" />
           <DruhDopravyOdeslani_ID Value="0" />
           <DruhDopravyOdeslani Value="0" />
-          <DruhDopravyPrijeti Value="0" />
           <DruhDopravyPrijeti_ID Value="0" />
+          <DruhDopravyPrijeti Value="0" />
           <DruhObalu Value="0" />
           <DruhArtiklu Value="0" />
           <DruhPrislusenstvi Value="0" />
@@ -2948,11 +2955,11 @@
               <Poznamka Value="0" />
             </Doprava>
             <Dostupnost Value="0">
+              <TypProduktu Value="0" />
               <DostupnostProDospele Value="0" />
               <ZobrDostProdJeNaSklade Value="0" />
               <ZobrDostProdNeniNaSklade Value="0" />
               <StavProduktu Value="0" />
-              <TypProduktu Value="0" />
             </Dostupnost>
             <SrovnGoogleKategorie Value="0" />
             <SrovnGoogleNazevProduktu Value="0" />
@@ -3096,6 +3103,7 @@
           <NadrazenyArtikl_ID Value="0" />
           <Vyrobce_Firma_ID Value="0" />
           <Jednotky Value="1">
+            <DoplnkovaJednotka Value="0" />
             <ProdejniJednotka Value="1">
               <KodProTisk_ID Value="0" />
               <Baleni Value="0">
@@ -3136,7 +3144,6 @@
               <VychoziMnozstvi Value="1" />
             </ProdejniJednotka>
             <HlavniJednotka Value="0" />
-            <DoplnkovaJednotka Value="0" />
             <SeznamJednotek Value="0">
               <KodProTisk_ID Value="0" />
               <Baleni Value="0">
@@ -3219,7 +3226,7 @@
           <Katalog Value="0" />
           <Kategorie Value="0" />
           <KategorieEEZ Value="0" />
-          <Kategorie_UserData Value="0" />
+          <KategorieRetezec_UserData Value="0" />
           <Kod Value="1" />
           <Identifikace Value="0">
             <DruhIdentifikace_ID Value="0" />
@@ -3310,6 +3317,10 @@
           <Serie Value="0" />
           <Popis Value="0" />
           <RozsirenePopisy Value="0">
+            <Popis3 Value="0">
+              <Poznamka Value="0" />
+              <Popis Value="0" />
+            </Popis3>
             <Popis1 Value="0">
               <Popis Value="0" />
               <Poznamka Value="0" />
@@ -3318,10 +3329,6 @@
               <Poznamka Value="0" />
               <Popis Value="0" />
             </Popis2>
-            <Popis3 Value="0">
-              <Poznamka Value="0" />
-              <Popis Value="0" />
-            </Popis3>
           </RozsirenePopisy>
           <PosledniCena Value="0" />
           <PosledniCenaCM Value="0" />
@@ -3379,7 +3386,6 @@
           <Priznaky_UserData Value="1" />
           <PuvodemMajetek Value="0" />
           <Rozmery Value="0">
-            <Hmotnost Value="0" />
             <Objem Value="0" />
             <Sirka Value="0" />
             <Delka Value="0" />
@@ -3392,6 +3398,7 @@
             </SeznamRozmeru>
             <Vyska Value="0" />
             <Plocha Value="0" />
+            <Hmotnost Value="0" />
           </Rozmery>
           <Popis1_Poznamka Value="0" />
           <Popis2_Poznamka Value="0" />
@@ -3399,6 +3406,7 @@
           <Popis1_Popis Value="0" />
           <Popis2_Popis Value="0" />
           <Popis3_Popis Value="0" />
+          <SazbaDPH_UserData Value="0" />
           <SazbyDPH Value="0">
             <PovahaSazbyVstup_ID Value="0" />
             <PovahaSazbyVystup_ID Value="0" />
@@ -3481,7 +3489,7 @@
             <Typ Value="0" />
             <Doba Value="0" />
           </Zaruka>
-          <Zkratka12 Value="0" />
+          <Zkratka12 Value="1" />
           <Zkratka20 Value="0" />
           <Znacka Value="0" />
           <ZvlastniPohyb Value="0" />

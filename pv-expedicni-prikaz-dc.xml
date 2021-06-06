@@ -4465,7 +4465,7 @@
             <Typ Value="0" />
             <Doba Value="0" />
           </Zaruka>
-          <Zkratka12 Value="0" />
+          <Zkratka12 Value="1" />
           <Zkratka20 Value="0" />
           <Znacka Value="0" />
           <ZvlastniPohyb Value="0" />
@@ -4791,7 +4791,6 @@
     </Zaokrouhleni>
     <ZaokrouhleniCelkovaCastka_ID Value="0" />
     <ZaokrouhleniDPH_ID Value="0" />
-    <Zaplaceno_UserData Value="0" />
     <ZapornyPohyb Value="1" />
     <MojeFirmaKontaktniOsobaNazev Value="0" />
     <Zauctoval_ID Value="0" />

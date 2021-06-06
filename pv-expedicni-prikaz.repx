@@ -1451,7 +1451,7 @@ namespace XtraReportSerialization {
             this.label79.BorderWidth = 0F;
             this.label79.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "ProdejkaVydana.ProdejkaVydana-Polozky.Polozky-Polozky_ObsahPolozky.Polozky_ObsahP" +
-                                "olozky-Polozky_ObsahPolozky_Artikl.SkladovaPozice_UserData", "{0:### ### ### ### ##0.0000}")});
+                                "olozky-Polozky_ObsahPolozky_Artikl.Zkratka12", "{0:### ### ### ### ##0.0000}")});
             this.label79.Dpi = 254F;
             this.label79.Font = new System.Drawing.Font("Roboto Mono Thin", 10F);
             this.label79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));

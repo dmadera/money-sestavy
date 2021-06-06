@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <DataConfiguration>
-  <DodaciListVydany Value="1">
-    <IDDatum Value="0" />
-    <FakturacniAdresaFirma_ID Value="0" />
-    <DruhDopravy_ID Value="0" />
-    <AdresaPrijemceFakturyKontaktniOsobaNazev Value="0" />
+  <ObjednavkaVydana Value="1">
+    <StatUrceniOdeslani_ID Value="0" />
+    <ZvlastniPohyb_ID Value="0" />
     <AdresaKoncovehoPrijemceEmail Value="0" />
     <AdresaKoncovehoPrijemceEmailSpojeni_ID Value="0" />
+    <AdresaKoncovehoPrijemceKontaktniOsobaNazev Value="0" />
+    <AdresaKoncovehoPrijemceStat_ID Value="0" />
     <AdresaKoncovehoPrijemceTelefon Value="0" />
     <AdresaKoncovehoPrijemceTelefonSpojeni_ID Value="0" />
-    <AdresaKoncovehoPrijemceStat_ID Value="0" />
+    <AdresaPrijemceFakturyKontaktniOsobaNazev Value="0" />
     <AdresaPrijemceFakturyStat_ID Value="0" />
     <DodaciAdresaFirma_ID Value="0" />
-    <StatUrceniOdeslani_ID Value="0" />
-    <PovahaTransakce_ID Value="0" />
-    <IDPovahaTransakce_ID Value="0" />
     <DodaciPodminky_ID Value="0" />
-    <ZvlastniPohyb_ID Value="0" />
-    <AdresaKoncovehoPrijemceKontaktniOsobaNazev Value="0" />
+    <DruhDopravy_ID Value="0" />
+    <FakturacniAdresaFirma_ID Value="0" />
+    <IDDatum Value="0" />
     <IDOvlivnujeIntrastat Value="0" />
+    <IDPovahaTransakce_ID Value="0" />
+    <PovahaTransakce_ID Value="0" />
     <Korekce0CelkemCM Value="0" />
     <Korekce2ZakladCM Value="0" />
     <Korekce0Dan Value="0" />
@@ -57,7 +57,7 @@
       <PSC Value="1" />
       <KontaktniOsoba Value="0" />
       <Nazev Value="1" />
-      <KontaktniOsobaNazev Value="0" />
+      <KontaktniOsobaNazev Value="1" />
       <Misto Value="1" />
       <Firma Value="1">
         <TelefonSpojeni2_ID Value="0" />
@@ -491,7 +491,7 @@
         </InsolvencniSpisyFirmy>
         <FaxKlapka Value="0" />
         <EkoKomKlient Value="0" />
-        <Kod Value="0" />
+        <Kod Value="1" />
         <KodDanovehoUradu Value="0" />
         <KodOdb_UserData Value="0" />
         <KodSumFa_UserData Value="0" />
@@ -814,32 +814,16 @@
             <Kod Value="0" />
             <Kontakty Value="1">
               <Email Value="0" />
-              <Telefon1 Value="0">
+              <Telefon1 Value="1">
                 <PredvolbaStat Value="0" />
                 <Predvolba Value="0" />
                 <Typ Value="0" />
                 <StatID Value="0" />
                 <MistniCislo Value="0" />
                 <Klapka Value="0" />
-                <Cislo Value="0" />
+                <Cislo Value="1" />
               </Telefon1>
-              <TelefonSpojeni1 Value="1">
-                <SpojeniKlapka Value="0" />
-                <SpojeniMistniPredvolba Value="0" />
-                <Kod_UserData Value="0" />
-                <Osoba Value="0" />
-                <Osoba_ID Value="0" />
-                <AutoRow_ID Value="0" />
-                <Popis Value="0" />
-                <Poradi Value="0" />
-                <SpojeniCislo Value="1" />
-                <Stat Value="0" />
-                <Stat_ID Value="0" />
-                <TypSpojeni Value="0" />
-                <TypSpojeni_ID Value="0" />
-                <Vychozi Value="0" />
-                <OsobaVychozi Value="0" />
-              </TelefonSpojeni1>
+              <TelefonSpojeni1 Value="1" />
               <TelefonSpojeni2 Value="0" />
               <Telefon4 Value="0">
                 <Cislo Value="0" />
@@ -882,7 +866,7 @@
                 <PredvolbaStat Value="0" />
               </Telefon2>
             </Kontakty>
-            <KrestniJmeno Value="1" />
+            <KrestniJmeno Value="0" />
             <FaxMistniCislo Value="0" />
             <AdresaMisto Value="0" />
             <AdresaNazev Value="0" />
@@ -984,12 +968,12 @@
           <Vychozi Value="0" />
           <OsobaVychozi Value="0" />
         </SeznamSpojeni>
-        <Sleva Value="1">
-          <VlastniSleva Value="1" />
-          <Sleva Value="1" />
+        <Sleva Value="0">
+          <VlastniSleva Value="0" />
+          <Sleva Value="0" />
         </Sleva>
         <HodnotaSlevy Value="0" />
-        <SlevaUvadena_UserData Value="1" />
+        <SlevaUvadena_UserData Value="0" />
         <SpecifickySymbol Value="0" />
         <StavOvereniISIR Value="0" />
         <StavPlatceDPHComputed Value="0" />
@@ -1136,9 +1120,7 @@
     <SumaCelkemCM Value="0" />
     <CelkovaCastka Value="1" />
     <CelkovaCastkaCM Value="0" />
-    <CelkovaCastkaDual Value="0" />
-    <CelkovaPorizovaciCena Value="0" />
-    <CasSkladovehoPohybu Value="0" />
+    <CelkovaHmotnost Value="0" />
     <Cinnost Value="0" />
     <Cinnost_ID Value="0" />
     <CiselnaRada Value="0" />
@@ -1155,8 +1137,7 @@
     <Dph0DanCM Value="0" />
     <Dph1DanCM Value="0" />
     <DatumSchvaleni Value="0" />
-    <DatumSkladovehoPohybu Value="1" />
-    <DatumUcetnihoPripadu Value="1" />
+    <DatumVyrizeni Value="1" />
     <DatumVystaveni Value="1" />
     <DatumZauctovani Value="0" />
     <DetailniRozpisDPH Value="0">
@@ -1196,16 +1177,8 @@
     <DIC Value="1" />
     <MojeFirmaDIC Value="0" />
     <AdresaKoncovehoPrijemce Value="1">
-      <Nazev Value="1" />
-      <PSC Value="1" />
-      <KontaktniOsobaNazev Value="1" />
-      <Misto Value="1" />
-      <Stat Value="1" />
-      <EmailSpojeni Value="0" />
-      <TelefonSpojeni Value="0" />
-      <Email Value="0" />
-      <Telefon Value="0" />
       <AdresaStat Value="0" />
+      <EmailSpojeni Value="0" />
       <Firma Value="1">
         <TelefonSpojeni2_ID Value="0" />
         <TelefonSpojeni3_ID Value="0" />
@@ -2247,11 +2220,18 @@
         <ZpusobPlatby_ID Value="0" />
         <ZpusobVyberuCeny Value="0" />
       </Firma>
-      <Ulice Value="1" />
       <KontaktniOsoba Value="0" />
+      <TelefonSpojeni Value="0" />
+      <Email Value="0" />
+      <KontaktniOsobaNazev Value="1" />
+      <Misto Value="1" />
+      <Nazev Value="1" />
+      <PSC Value="1" />
+      <Stat Value="1" />
+      <Telefon Value="0" />
+      <Ulice Value="1" />
     </AdresaKoncovehoPrijemce>
     <DodaciPodminkyIncoterms Value="0" />
-    <DodatecnePorizovaciNaklady Value="0" />
     <DomaciMena Value="0" />
     <DomaciMena_ID Value="0" />
     <IDDopravaTuzemsko Value="0" />
@@ -2286,21 +2266,19 @@
     </DPH2>
     <DruhDokladu Value="0" />
     <DruhDokladu_ID Value="0" />
-    <DruhPohybu Value="0" />
     <ZaokrouhleniDruhSazbyDPH Value="0" />
-    <DruhSkladovehoPohybu Value="0" />
     <KorekceEditovatDomaciMenuBezPrepoctu Value="0" />
     <MojeFirmaKontaktyEmail Value="0" />
-    <AdresaPrijemceFaktury Value="1">
-      <KontaktniOsobaNazev Value="0" />
-      <Stat Value="1" />
-      <Nazev Value="1" />
-      <Firma Value="0" />
-      <Ulice Value="1" />
-      <PSC Value="1" />
+    <AdresaPrijemceFaktury Value="0">
       <AdresaStat Value="0" />
-      <Misto Value="1" />
+      <Firma Value="0" />
       <KontaktniOsoba Value="0" />
+      <KontaktniOsobaNazev Value="0" />
+      <Misto Value="0" />
+      <Nazev Value="0" />
+      <PSC Value="0" />
+      <Stat Value="0" />
+      <Ulice Value="0" />
     </AdresaPrijemceFaktury>
     <Faze Value="1" />
     <Firma_ID Value="0" />
@@ -2309,10 +2287,8 @@
     <MojeFirmaIC Value="0" />
     <ICDPH Value="0" />
     <DodaciPodminkyIncoterms_ID Value="0" />
-    <DruhSkladovehoPohybu_ID Value="0" />
     <StatPuvodu_ID Value="0" />
     <MojeFirmaBanka_ID Value="0" />
-    <DruhPohybu_ID Value="0" />
     <AdresaKontaktniOsoba_ID Value="0" />
     <AdresaKoncovehoPrijemceKontaktniOsoba_ID Value="0" />
     <AdresaPrijemceFakturyKontaktniOsoba_ID Value="0" />
@@ -2327,21 +2303,20 @@
       <TypDokladInfo Value="0" />
     </DokladInfo>
     <IntrastatDoklad Value="0">
-      <DopravaZahranici Value="0" />
-      <KrajPuvodu Value="0" />
-      <RozpousteniNakladu Value="0" />
-      <ZvlastniPohyb Value="0" />
       <DodaciPodminky Value="0" />
-      <StatUrceniOdeslani Value="0" />
-      <Datum Value="0" />
-      <StatPuvodu Value="0" />
-      <PovahaTransakce Value="0" />
-      <DopravaTuzemsko Value="0" />
-      <OvlivnujeIntrastat Value="0" />
       <DruhDopravy Value="0" />
+      <KrajPuvodu Value="0" />
+      <PovahaTransakce Value="0" />
+      <StatPuvodu Value="0" />
+      <StatUrceniOdeslani Value="0" />
+      <ZvlastniPohyb Value="0" />
+      <Datum Value="0" />
+      <DopravaTuzemsko Value="0" />
+      <DopravaZahranici Value="0" />
       <DopravniNaklady Value="0" />
+      <OvlivnujeIntrastat Value="0" />
+      <RozpousteniNakladu Value="0" />
     </IntrastatDoklad>
-    <JednotkovaPorizovaciCena Value="0" />
     <MojeFirmaKontaktniOsobaJmeno Value="0" />
     <Jmeno Value="0" />
     <AdresaKontaktniOsobaJmeno Value="0" />
@@ -2459,33 +2434,63 @@
     <Odkaz Value="1" />
     <Osoba Value="0" />
     <Osoba_ID Value="0" />
-    <ParovaciSymbol Value="1" />
+    <PevneCeny Value="0" />
+    <PlatnostDo Value="1" />
+    <PlatnostOd Value="1" />
     <PocetPolozek Value="0" />
     <Polozky Value="1">
-      <ZvlastniPohyb_ID Value="0" />
+      <SazbaDPHZvlastniRezim_ID Value="0" />
+      <PrepocitatHmotnostZPodrizenych Value="0" />
+      <IntrastatPolozka Value="0">
+        <DodaciPodminky Value="0" />
+        <DruhDopravy Value="0" />
+        <KombinovanaNomenklatura Value="0" />
+        <KrajPuvodu Value="0" />
+        <PovahaTransakce Value="0" />
+        <StatistickyZnak Value="0" />
+        <StatPuvodu Value="0" />
+        <StatUrceniOdeslani Value="0" />
+        <ZvlastniPohyb Value="0" />
+        <CisloZasilky Value="0" />
+        <DopravniNaklady Value="0" />
+        <Hmotnost Value="0" />
+        <Mnozstvi Value="0" />
+        <Neslucovat Value="0" />
+        <OvlivnujeIntrastat Value="0" />
+      </IntrastatPolozka>
+      <IPCisloZasilky Value="0" />
+      <IPOvlivnujeIntrastat Value="0" />
       <PovahaTransakce_ID Value="0" />
       <StatUrceniOdeslani_ID Value="0" />
-      <IPCisloZasilky Value="0" />
-      <IntrastatPolozka Value="0">
-        <ZvlastniPohyb Value="0" />
-        <StatUrceniOdeslani Value="0" />
-        <KombinovanaNomenklatura Value="0" />
-        <DruhDopravy Value="0" />
-        <Neslucovat Value="0" />
-        <StatPuvodu Value="0" />
-        <DopravniNaklady Value="0" />
-        <OvlivnujeIntrastat Value="0" />
-        <Hmotnost Value="0" />
-        <KrajPuvodu Value="0" />
-        <Mnozstvi Value="0" />
-        <CisloZasilky Value="0" />
-        <PovahaTransakce Value="0" />
-        <DodaciPodminky Value="0" />
-        <StatistickyZnak Value="0" />
-      </IntrastatPolozka>
-      <IPOvlivnujeIntrastat Value="0" />
-      <SazbaDPHZvlastniRezim_ID Value="0" />
+      <ZvlastniPohyb_ID Value="0" />
       <Zakazka_ID Value="0" />
+      <AdresneBlokace Value="0">
+        <ZdrojovaBlokace_ID Value="0" />
+        <ZdrojovaBlokace Value="0" />
+        <Pozice Value="0" />
+        <DetailPolozky Value="0" />
+        <DetailZasoby Value="0" />
+        <Doklad Value="0" />
+        <DokladObjectName Value="0" />
+        <DruhBlokace Value="0" />
+        <DetailPolozky_ID Value="0" />
+        <DetailZasoby_ID Value="0" />
+        <Doklad_ID Value="0" />
+        <Polozka_ID Value="0" />
+        <Pozice_ID Value="0" />
+        <Rezervace_ID Value="0" />
+        <Serie_ID Value="0" />
+        <Zakazka_ID Value="0" />
+        <Zasoba_ID Value="0" />
+        <Mnozstvi Value="0" />
+        <Serie Value="0" />
+        <Polozka Value="0" />
+        <PolozkaObjectName Value="0" />
+        <Rezervace Value="0" />
+        <Zakazka Value="0" />
+        <JeZaporna Value="0" />
+        <Zasoba Value="0" />
+      </AdresneBlokace>
       <AkcePolozky Value="0" />
       <DphCelkem Value="0" />
       <DphCelkemCM Value="0" />
@@ -2493,11 +2498,10 @@
       <CelkovaCenaBezSlevy Value="1" />
       <CelkovaCenaBezSlevyCM Value="1" />
       <CelkovaCenaCM Value="1" />
-      <CelkovaPorizovaciCena Value="1" />
-      <CelkoveVedlejsiNaklady Value="1" />
+      <CelkovaHmotnost Value="0" />
       <Cinnost Value="0" />
       <Cinnost_ID Value="0" />
-      <CisloPolozky Value="1" />
+      <CisloPolozky Value="0" />
       <IDopravniNaklady Value="0" />
       <DPH Value="1">
         <CelkemCM Value="1" />
@@ -2511,43 +2515,36 @@
       <DphDan Value="0" />
       <DPHEditovanoRucne Value="0" />
       <DphDanCM Value="0" />
-      <DruhPohybu Value="0" />
       <DruhPolozky Value="0" />
       <DruhSazbyDPH Value="0" />
       <DruhSazbyDPHZvlastniRezim Value="0" />
       <FormatPolozky Value="0" />
       <IPHmotnost Value="0" />
       <DphSazbaZvlastniRezim Value="0" />
-      <ICO Value="1" />
       <KombinovanaNomenklatura_ID Value="0" />
       <StatPuvodu_ID Value="0" />
       <ZdrojovaPolozkaKopirovani_ID Value="0" />
       <DodaciPodminky_ID Value="0" />
       <DruhDopravy_ID Value="0" />
-      <DruhPohybu_ID Value="0" />
       <DruhPolozky_ID Value="0" />
       <ParentObject_ID Value="1" />
-      <Obchodnik_ID Value="0" />
       <ObsahPolozky_ID Value="0" />
       <StatistickyZnak_ID Value="0" />
       <JednCena Value="1" />
       <JednCenaCM Value="1" />
       <JednotkovaCenaBezSlevy Value="0" />
       <JednotkovaCenaBezSlevyCM Value="0" />
-      <JednotkovaPorizovaciCena Value="1" />
-      <JednotkoveVedlejsiNaklady Value="0" />
+      <JednotkovaHmotnost Value="0" />
       <DokladObjectName Value="0" />
       <Katalog Value="1" />
       <KrajPuvodu_ID Value="0" />
-      <Marze_UserData Value="0" />
       <Jednotka Value="1" />
-      <MnozstviPozn_UserData Value="0" />
       <IPMnozstvi Value="0" />
-      <NakupniCena_UserData Value="0" />
+      <MnozstviVyrizeno Value="1" />
+      <MnozstviZbyva Value="1" />
       <Nazev Value="1" />
       <NepodlehatSleveDokladu Value="0" />
       <IstatNeslucovat Value="0" />
-      <Obchodnik Value="0" />
       <ObsahPolozky Value="1">
         <ArtiklJednotkaBeznaCena Value="0" />
         <ArtiklJednotkaBeznaCena_ID Value="0" />
@@ -2661,7 +2658,7 @@
             </PrevodyList>
             <TypJednotky Value="0" />
           </Jednotka>
-          <Kod Value="0" />
+          <Kod Value="1" />
           <KodProTisk Value="0" />
           <MaterialObalu Value="0" />
           <Mnozstvi Value="1" />
@@ -2676,8 +2673,8 @@
         <Objednano Value="0" />
         <OdchyleniCeny Value="0" />
         <OvlivnujeObaloveKonto Value="0" />
-        <PartnerskyKod Value="0" />
-        <PartnerskyNazev Value="0" />
+        <PartnerskyKod Value="1" />
+        <PartnerskyNazev Value="1" />
         <PocetJednotek Value="0" />
         <VazbaPocetNadrizene Value="0" />
         <VazbaPocetPodrizene Value="0" />
@@ -2745,8 +2742,8 @@
           <DodaciPodminkyOdeslani_ID Value="0" />
           <DodaciPodminkyPrijeti_ID Value="0" />
           <DodaciPodminkyPrijeti Value="0" />
-          <Dodavatele Value="0">
-            <SeznamDodavatelu Value="0">
+          <Dodavatele Value="1">
+            <SeznamDodavatelu Value="1">
               <CarovyKod Value="0" />
               <PosledniDodavka Value="0" />
               <DodaciLhuta_Doba Value="0" />
@@ -2754,9 +2751,9 @@
                 <Doba Value="0" />
                 <Typ Value="0" />
               </DodaciLhuta>
-              <DodavatelskeOznaceni Value="0">
-                <Nazev Value="0" />
-                <Kod Value="0" />
+              <DodavatelskeOznaceni Value="1">
+                <Nazev Value="1" />
+                <Kod Value="1" />
               </DodavatelskeOznaceni>
               <DodavatelskyKod Value="0" />
               <DodavatelskyNazev Value="0" />
@@ -3124,7 +3121,7 @@
           <Katalog Value="0" />
           <Kategorie Value="0" />
           <KategorieEEZ Value="0" />
-          <KategorieRetezec_UserData Value="1" />
+          <KategorieRetezec_UserData Value="0" />
           <Kod Value="1" />
           <Identifikace Value="0">
             <DruhIdentifikace_ID Value="0" />
@@ -3141,7 +3138,7 @@
           <KrajPuvodu_ID Value="0" />
           <KrajUrceni_ID Value="0" />
           <KrajUrceni Value="0" />
-          <Marze_UserData Value="1" />
+          <Marze_UserData Value="0" />
           <PosledniMena Value="0" />
           <MinimalniObjednavka Value="0" />
           <MnozstviVDoplnkove Value="0" />
@@ -3150,7 +3147,7 @@
             <Artikl Value="0" />
           </NadrazenyArtikl>
           <NakupniCena_UserData Value="0" />
-          <Nazev Value="0" />
+          <Nazev Value="1" />
           <Vyrobce_Nazev Value="0" />
           <NepodlehaDPH Value="0" />
           <NepodlehatSleveDokladu Value="0" />
@@ -3325,7 +3322,7 @@
             <Poradi Value="0" />
             <TypAlternativy Value="0" />
           </SeznamAlternativ>
-          <SkladovaPozice_UserData Value="1" />
+          <SkladovaPozice_UserData Value="0" />
           <Slozeni Value="0">
             <Celek Value="0" />
             <VlastniCenik_ID Value="0" />
@@ -3408,10 +3405,10 @@
         <Vazba Value="1">
           <PricitatCenu Value="0" />
           <ZobrazovatNaVystupu Value="1" />
-          <TypVazby Value="1" />
-          <PocetNadrizene Value="1" />
+          <TypVazby Value="0" />
+          <PocetNadrizene Value="0" />
           <IgnorovatPomer Value="0" />
-          <PocetPodrizene Value="1" />
+          <PocetPodrizene Value="0" />
         </Vazba>
         <VyberDodavek Value="0" />
         <VyberDodavekPrebranim Value="0" />
@@ -3420,14 +3417,12 @@
         <JednotkaZdroj Value="0" />
         <VazbaZobrazovatNaVystupu Value="0" />
       </ObsahPolozky>
-      <ParovaciSymbol Value="1" />
+      <PlatnaDo Value="1" />
+      <PlatnaOd Value="1" />
       <Mnozstvi Value="1" />
       <Poradi Value="1" />
       <Poznamka Value="1" />
-      <Predkontace Value="0" />
-      <Predkontace_ID Value="0" />
-      <PriznakVyrizeno Value="1" />
-      <RPDP_UserData Value="1" />
+      <PriznakVyrizeno Value="0" />
       <DphSazba Value="0" />
       <SazbaDPH Value="0" />
       <SazbaDPH_ID Value="0" />
@@ -3436,80 +3431,21 @@
       <Stredisko Value="0" />
       <Stredisko_ID Value="0" />
       <TypCeny Value="0" />
-      <TypObsahu Value="1" />
-      <TypPolozky Value="1" />
+      <TypObsahu Value="0" />
+      <TypPolozky Value="0" />
       <ZarukaTypZaruky Value="0" />
-      <UcetDal Value="0" />
-      <UcetDal_ID Value="0" />
-      <UcetMD_ID Value="0" />
-      <UcetMD Value="0" />
-      <UcetniPohyby Value="0" />
-      <UcetniZapisy Value="0">
-        <TypZaverkovehoPohybu Value="0" />
-        <PrvotniDoklad_ID Value="0" />
-        <RozuctovanoZ_ID Value="0" />
-        <Polozka_ID Value="0" />
-        <Castka Value="0" />
-        <CastkaCM Value="0" />
-        <Cinnost Value="0" />
-        <Cinnost_ID Value="0" />
-        <Cislo Value="0" />
-        <CisloDokladu Value="0" />
-        <Datum Value="0" />
-        <DruhDokladu Value="0" />
-        <DruhDokladu_ID Value="0" />
-        <Firma Value="0" />
-        <ICO Value="0" />
-        <Firma_ID Value="0" />
-        <DokladObjectName Value="0" />
-        <PohybDObjectName Value="0" />
-        <PohybMDObjectName Value="0" />
-        <PolozkaObjectName Value="0" />
-        <Kurz Value="0" />
-        <Mena Value="0" />
-        <Mena_ID Value="0" />
-        <Mnozstvi Value="0" />
-        <Popis Value="0" />
-        <FirmaNazev Value="0" />
-        <Obdobi Value="0" />
-        <Obdobi_ID Value="0" />
-        <ParovaciSymbol Value="0" />
-        <PohybDal Value="0" />
-        <PohybDal_ID Value="0" />
-        <PohybMD Value="0" />
-        <PohybMD_ID Value="0" />
-        <Polozka Value="0" />
-        <AutoRow_ID Value="0" />
-        <Nazev Value="0" />
-        <Poznamka Value="0" />
-        <PrvotniDoklad Value="0" />
-        <RozuctovanoZ Value="0" />
-        <Stredisko Value="0" />
-        <Stredisko_ID Value="0" />
-        <UcetDal Value="0" />
-        <UcetDal_ID Value="0" />
-        <UcetMD Value="0" />
-        <UcetMD_ID Value="0" />
-        <Zakazka Value="0" />
-        <Zakazka_ID Value="0" />
-      </UcetniZapisy>
       <Vratka Value="1" />
-      <VychoziCelkovaCena Value="0" />
-      <VychoziJednotkovaCena Value="0" />
-      <Vyrizeno Value="1" />
-      <Vzor Value="0" />
-      <Vzor_ID Value="0" />
+      <Vyrizeno Value="0" />
       <Zakazka Value="0" />
       <DphZaklad Value="0" />
       <DphZakladCM Value="0" />
       <ZarukaZarucniDoba Value="0" />
       <Zaruka Value="0">
-        <ZarucniDoba Value="0" />
         <TypZaruky Value="0" />
+        <ZarucniDoba Value="0" />
       </Zaruka>
       <Zbyva Value="0" />
       <ZdrojovaPolozkaKopirovani Value="0" />
-      <ZmenaCeny Value="0" />
       <ZvlastniRezimDPH Value="0" />
     </Polozky>
     <VazbyObjektu Value="0">
@@ -3526,16 +3462,12 @@
     <Nazev Value="1" />
     <Poznamka Value="1" />
     <AdresaKontaktniOsobaPrijmeni Value="0" />
-    <Predkontace Value="0" />
-    <Predkontace_ID Value="0" />
-    <PredkontaceZaokrouhleni Value="0" />
-    <PredkontaceZaokrouhleni_ID Value="0" />
     <ZaokrouhleniPrevazujiciSazbaDPH Value="0" />
     <PrijemceFaktury Value="0" />
     <PrijemceFaktury_ID Value="0" />
     <MojeFirmaKontaktniOsobaPrijmeni Value="0" />
-    <FakturacniAdresaPSC Value="0" />
     <DodaciAdresaPSC Value="0" />
+    <FakturacniAdresaPSC Value="0" />
     <MojeFirmaPSC Value="0" />
     <AdresaPSC Value="0" />
     <RegistraceDPH Value="0" />
@@ -3638,14 +3570,14 @@
     <Schvalil_ID Value="0" />
     <Sleva Value="1" />
     <MojeFirmaBankovniSpojeniSpecifickySymbol Value="0" />
-    <FakturacniAdresaStat Value="0" />
     <DodaciAdresaStat Value="0" />
+    <FakturacniAdresaStat Value="0" />
     <MojeFirmaStat Value="0" />
     <Stat Value="0" />
     <AdresaStat Value="0" />
     <Stat_ID Value="0" />
-    <Stav Value="1" />
-    <Storno Value="1" />
+    <Stav Value="0" />
+    <Storno Value="0" />
     <Stredisko Value="0" />
     <Stredisko_ID Value="0" />
     <MojeFirmaBankovniSpojeniSWIFT Value="0" />
@@ -3653,29 +3585,23 @@
     <MojeFirmaKontaktyTelefon1 Value="0" />
     <MojeFirmaKontaktyTelefon2 Value="0" />
     <MojeFirmaKontaktyTelefon3 Value="0" />
-    <Text Value="1">
-      <ZaPolozkami Value="1" />
-      <PredPolozkami Value="1" />
-    </Text>
-    <TextPredPolozkami Value="0" />
-    <TextZaPolozkami Value="0" />
-    <TypDokladu Value="1" />
-    <UcetDal Value="0" />
-    <UcetMD Value="0" />
-    <UcetMD_ID Value="0" />
-    <UcetDal_ID Value="0" />
+    <TextPredCenami Value="0" />
+    <TextZaCenami Value="0" />
+    <Texty Value="1">
+      <PredCenami Value="1" />
+      <ZaCenami Value="1" />
+    </Texty>
+    <TypDokladu Value="0" />
     <UcetniKurz Value="0">
       <Mnozstvi Value="0" />
       <Kurz Value="0" />
     </UcetniKurz>
     <UcetniKurzKurz Value="0" />
-    <UcetniZapisy Value="0" />
     <DodaciAdresaUlice Value="0" />
     <FakturacniAdresaUlice Value="0" />
     <MojeFirmaUlice Value="0" />
     <AdresaUlice Value="0" />
-    <VariabilniSymbol Value="0" />
-    <PriznakVyrizeno Value="1" />
+    <PriznakVyrizeno Value="0" />
     <Vystavil Value="1" />
     <MojeFirmaKontaktyWWW Value="0" />
     <Zakazka Value="0" />
@@ -3702,8 +3628,6 @@
     <Zauctoval Value="0" />
     <Zauctovano Value="0" />
     <Zaverkovy Value="0" />
-    <ProcentniZisk Value="0" />
-    <ZiskZaDoklad Value="0" />
     <ZpusobDopravy Value="1">
       <E_shop Value="0">
         <MutaceTextu Value="0">
@@ -3717,7 +3641,7 @@
           <Stat_ID Value="0" />
         </Staty>
       </E_shop>
-      <Kod Value="1" />
+      <Kod Value="0" />
       <Nazev Value="1" />
       <Poznamka Value="0" />
     </ZpusobDopravy>
@@ -3733,11 +3657,11 @@
         </MutaceTextu>
       </E_shop>
       <EETEvidovatTrzbu Value="0" />
-      <Kod Value="1" />
+      <Kod Value="0" />
       <Nazev Value="1" />
       <Poznamka Value="0" />
     </ZpusobPlatby>
     <ZpusobPlatby_ID Value="0" />
     <ZpusobVypoctuDPH Value="0" />
-  </DodaciListVydany>
+  </ObjednavkaVydana>
 </DataConfiguration>
