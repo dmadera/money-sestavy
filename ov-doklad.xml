@@ -2390,6 +2390,7 @@
     <MojeFirmaMisto Value="0" />
     <AdresaMisto Value="0" />
     <KurzMnozstvi Value="0" />
+    <MnozstviVJedn_UserData Value="0" />
     <MojeFirma Value="1">
       <Kontakty Value="0">
         <Telefon2 Value="0" />
@@ -2713,7 +2714,6 @@
           <Ekasa Value="0">
             <TypPolozky Value="0" />
           </Ekasa>
-          <Procento_UserData Value="0" />
           <Attachment_ID Value="0" />
           <Baleni Value="0" />
           <BaleniJednotky_UserData Value="1" />
@@ -3234,6 +3234,7 @@
           <PovinnyNasobek Value="0" />
           <Poznamka Value="0" />
           <PreneseniDane_ID Value="0" />
+          <Procento_UserData Value="0" />
           <ProduktoveKlice Value="0">
             <ProduktovyKlic_ID Value="0" />
             <ProduktovyKlic Value="0" />
@@ -3301,7 +3302,6 @@
           <Popis1_Popis Value="0" />
           <Popis2_Popis Value="0" />
           <Popis3_Popis Value="0" />
-          <SazbaDPH_UserData Value="0" />
           <SazbyDPH Value="0">
             <PovahaSazbyVstup_ID Value="0" />
             <PovahaSazbyVystup_ID Value="0" />

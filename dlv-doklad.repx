@@ -1,29 +1,31 @@
 /// <XRTypeInfo>
 ///   <AssemblyFullName>DevExpress.XtraReports.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
-///   <AssemblyLocation>C:\Program Files (x86)\Solitea\Money S4\DevExpress.XtraReports.v19.1.dll</AssemblyLocation>
+///   <AssemblyLocation>C:\Money\MoneyS4\DevExpress.XtraReports.v19.1.dll</AssemblyLocation>
 ///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
 ///   <Localization>cs-CZ</Localization>
 ///   <Version>19.1</Version>
 ///   <Resources>
 ///     <Resource Name="XtraReportSerialization.xtraReport1">
-/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAIAAAAAAAAAFBBRFBBRFCFEnutSF5ywWZCtQHzHoUOXqfNRMww30jhGM1Tp7WAbiIBAAAAAAAA9QAAAGAAAACVAAAAKwAAAE8BAAC+AAAAdAIAACYkAHQAaABpAHMALgBTAGMAcgBpAHAAdABzAFMAbwB1AHIAYwBlAAAAAAAwRABvAHAAcgBhAHYAYQBQAGwAYQB0AGIAYQAuAEUAeABwAHIAZQBzAHMAaQBvAG4Azw8AADBLAG8AZABCAGUAegBQAHIAZQBmAGkAeAB1AC4ARABhAHQA
-/// YQBNAGUAbQBiAGUAcgBsEQAAJFAAcgBpAHoAbgBhAGsALgBEAGEAdABhAE0AZQBtAGIAZQByAE8SAAAyUwBsAGUAdgBhAE4AYQBEAG8AawBsAGEAZAB1AC4ARQB4AHAAcgBlAHMAcwBpAG8AbgAyEwAAKGwAYQBiAGUAbAA4ADEALgBEAGEAdABhAEIAaQBuAGQAaQBuAGcAcwCxFAAAKGwAYQBiAGUAbAA4ADIALgBEAGEAdABhAEIAaQBuAGQAaQBuAGcAcwCcFQAALHgAcgBMAGEAYgBlAGwANgAyAC4ARABhAHQAYQBCAGkAbgBkAGkAbgBnAHMAlxYAAAHMH3VzaW5nIENTVy5DU1dTeXN0ZW0uUmVwb3J0czsNCnVzaW5nIFN5c3RlbS5EYXRhOw0KdXNpbmcgU3lzdGVtLlRleHQuUmVndWxhckV4cHJlc3Npb25zOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVy
-/// aWM7DQoNCnByaXZhdGUgYm9vbCBiZXpDZW4oKSB7DQoJRGF0YVRhYmxlIGR0ID0gKHh0cmFSZXBvcnQxLkRhdGFTb3VyY2UgYXMgRGF0YVNldCkuVGFibGVzWyJTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55Il07DQoJRGF0YVJvd1tdIHIxID0gZHQuUm93c1swXS5HZXRDaGlsZFJvd3MoIlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQWRyZXNhcl9GaXJtYSIpOw0KCURhdGFSb3dbXSBhZHJLbGljZSA9IHIxWzBdLkdldENoaWxkUm93cygiQWRyZXNhcl9GaXJtYS1BZHJlc2FyX0Zpcm1hQWRyZXNuaUtsaWMiKTsNCgkNCglEYXRhUm93IGFkcktsaWM7DQoJZm9yZWFjaChEYXRhUm93IHIgaW4gYWRyS2xpY2UpIHsNCgkJYWRyS2xpYyA9IHIu
-/// R2V0Q2hpbGRSb3dzKCJBZHJlc2FyX0Zpcm1hQWRyZXNuaUtsaWMtQWRyZXNhcl9BZHJlc25pS2xpYyIpWzBdOw0KCQlpZihhZHJLbGljWyJLb2QiXS5Ub1N0cmluZygpID09ICItRExDRU5ZIikgcmV0dXJuIHRydWU7DQoJfQ0KCQ0KCXJldHVybiBmYWxzZTsNCn0NCg0KcHJpdmF0ZSBib29sIGNlbnlTRFBIKCkgew0KCURhdGFUYWJsZSBkdCA9ICh4dHJhUmVwb3J0MS5EYXRhU291cmNlIGFzIERhdGFTZXQpLlRhYmxlc1siU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueSJdOw0KCURhdGFSb3dbXSByMSA9IGR0LlJvd3NbMF0uR2V0Q2hpbGRSb3dzKCJTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUFkcmVzYXJfRmlybWEiKTsNCglEYXRhUm93
-/// W10gYWRyS2xpY2UgPSByMVswXS5HZXRDaGlsZFJvd3MoIkFkcmVzYXJfRmlybWEtQWRyZXNhcl9GaXJtYUFkcmVzbmlLbGljIik7DQoJDQoJRGF0YVJvdyBhZHJLbGljOw0KCWZvcmVhY2goRGF0YVJvdyByIGluIGFkcktsaWNlKSB7DQoJCWFkcktsaWMgPSByLkdldENoaWxkUm93cygiQWRyZXNhcl9GaXJtYUFkcmVzbmlLbGljLUFkcmVzYXJfQWRyZXNuaUtsaWMiKVswXTsNCgkJaWYoYWRyS2xpY1siS29kIl0uVG9TdHJpbmcoKSA9PSAic0RQSCIpIHJldHVybiB0cnVlOw0KCX0NCglyZXR1cm4gZmFsc2U7DQp9DQoNCg0KcHJpdmF0ZSB2b2lkIHh0cmFSZXBvcnQxX0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlBy
-/// aW50RXZlbnRBcmdzIGUpIHsNCglYUkxhYmVsW10gbGFiZWxzID0gew0KCQlsYWJlbEJhbGVuaSwgbGFiZWxDZW5hQ2Vsa2VtLCB4cmxuYXpldiwgbGFiZWxKZWRuQ2VuYQ0KCX07DQoNCglmb3JlYWNoKFhSTGFiZWwgbGFiZWwgaW4gbGFiZWxzKSANCgkJbGFiZWwuVGV4dEZpdE1vZGUgPSBUZXh0Rml0TW9kZS5TaHJpbmtPbmx5Ow0KDQoJYm9vbCB6b2JyYXpDZW55ID0gIWJlekNlbigpOw0KCXBhbmVsQ2VueS5WaXNpYmxlID0gbGFiZWxKZWRuQ2VuYS5WaXNpYmxlID0gbGFiZWxDZW5hQ2Vsa2VtLlZpc2libGUgPSB6b2JyYXpDZW55OyANCglsYWJlbEhlYWRlckplZG5DZW5hLlZpc2libGUgPSBsYWJlbEhlYWRlckNlbmFDZWxrZW0uVmlzaWJsZSA9IHpvYnJh
-/// ekNlbnk7DQoJDQoJaWYoY2VueVNEUEgoKSkgew0KCQlsYWJlbEhlYWRlckplZG5DZW5hLlRleHQgPSAicyBEUEgiOw0KCX0NCn0NCg0KcHJpdmF0ZSB2b2lkIFByaXpuYWtfR2V0VmFsdWUob2JqZWN0IHNlbmRlciwgRGV2RXhwcmVzcy5YdHJhUmVwb3J0cy5VSS5HZXRWYWx1ZUV2ZW50QXJncyBlKSB7DQoJc3RyaW5nIGNvbHVtblZhbHVlID0gKHN0cmluZykgZS5HZXRDb2x1bW5WYWx1ZSgiUHJpem5ha3lfVXNlckRhdGEiKTsNCgllLlZhbHVlID0gUmVnZXguTWF0Y2goY29sdW1uVmFsdWUsIEAiW2EtekEtWl0iKS5WYWx1ZTsNCn0NCg0KcHJpdmF0ZSB2b2lkIHZyYXRrYUxhYmVsX0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlBy
-/// aW50aW5nLlByaW50RXZlbnRBcmdzIGUpIHsNCglpZiAoIUNvbnZlcnQuVG9Cb29sZWFuKEdldEN1cnJlbnRDb2x1bW5WYWx1ZSgiWmFwb3JueVBvaHliIikpKSBlLkNhbmNlbCA9IHRydWU7DQp9DQoNCnByaXZhdGUgdm9pZCBiYWxlbmlNbm96c3R2aV9CZWZvcmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJWFJMYWJlbCBsYmwgPSBzZW5kZXIgYXMgWFJMYWJlbDsNCglpbnQgbW5venN0dmkgPSAoaW50KSBDb252ZXJ0LlRvRG91YmxlKGxibC5SZXBvcnQuR2V0Q3VycmVudENvbHVtblZhbHVlKCJNbm96c3R2aSIpLlRvU3RyaW5nKCkpOw0KCXN0cmluZyBqZWRub3RrYSA9IGxibC5SZXBv
-/// cnQuR2V0Q3VycmVudENvbHVtblZhbHVlKCJKZWRub3RrYSIpLlRvU3RyaW5nKCk7DQoJDQoJbGFiZWxCYWxlbmkuVGV4dCA9ICIiOw0KCQ0KCXRyeSB7DQoJCURhdGFSb3cgciA9IChsYmwuUmVwb3J0LkdldEN1cnJlbnRSb3coKSBhcyBEYXRhUm93VmlldykuUm93IGFzIERhdGFSb3c7DQoJCURhdGFSb3dbXSBycyA9IHIuR2V0Q2hpbGRSb3dzKCJTa2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLU9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0iKTsNCgkJRGF0YVJvd1tdIHJzMSA9IHJzWzBdLkdldENoaWxkUm93cygiT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS1BcnRpa2x5X0FydGlrbCIpOw0KCQlzdHJpbmcgYmFsZW5p
-/// TW5venN0dmkgPSByczFbMF1bIkJhbGVuaU1ub3pzdHZpX1VzZXJEYXRhIl0uVG9TdHJpbmcoKSArICIvIiArICIxIjsNCgkJc3RyaW5nIGJhbGVuaUplZG5vdGt5ID0gcnMxWzBdWyJCYWxlbmlKZWRub3RreV9Vc2VyRGF0YSJdLlRvU3RyaW5nKCkgKyAiLyIgKyBqZWRub3RrYTsNCgkNCgkJc3RyaW5nW10gYmFsZW5pU3RyTSA9IGJhbGVuaU1ub3pzdHZpLlNwbGl0KCcvJyk7DQoJCXN0cmluZ1tdIGJhbGVuaUogPSBiYWxlbmlKZWRub3RreS5TcGxpdCgnLycpOw0KCQkNCgkJaW50W10gYmFsZW5pTSA9IEFycmF5LkNvbnZlcnRBbGwoYmFsZW5pU3RyTSwgaW50LlBhcnNlKTsNCgkJTGlzdDxUdXBsZTxzdHJpbmcsIGludD4+IGJhbGVuaSA9IG5ldyBMaXN0PFR1
-/// cGxlPHN0cmluZywgaW50Pj4oKTsJDQoJDQoJCWludCB6Ynl2YSA9IG1ub3pzdHZpLCB0bXA7DQoJCWZvcihpbnQgaSA9IDA7IGkgPCBiYWxlbmlNLkxlbmd0aDsgaSsrKSB7DQoJCQl0bXAgPSAoaW50KSBNYXRoLkZsb29yKChmbG9hdCkgemJ5dmEvYmFsZW5pTVtpXSk7DQoJCQliYWxlbmkuQWRkKFR1cGxlLkNyZWF0ZShiYWxlbmlKW2ldLCB0bXApKTsNCgkJCXpieXZhIC09IHRtcCAqIGJhbGVuaU1baV07DQoJCX0NCgkJDQoJCWZvcmVhY2goVHVwbGU8c3RyaW5nLCBpbnQ+IHQgaW4gYmFsZW5pKSB7DQoJCQlpZih0Lkl0ZW0yICE9IDApIHsNCgkJCQlsYWJlbEJhbGVuaS5UZXh0ICs9IHN0cmluZy5Gb3JtYXQoIiB7MH0gezF9IiwgdC5JdGVtMiwgdC5JdGVt
-/// MSk7DQoJCQl9DQoJCX0NCgkJCQ0KCX0gY2F0Y2goRXhjZXB0aW9uKSB7fQ0KfQ0KDQpwcml2YXRlIHZvaWQgbGFiZWxKZWRuQ2VuYV9CZWZvcmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJWFJMYWJlbCBsYmwgPSBzZW5kZXIgYXMgWFJMYWJlbDsNCglpZihjZW55U0RQSCgpKSB7DQoJCWRvdWJsZSBjZWxrZW1TRFBIID0gQ29udmVydC5Ub0RvdWJsZShsYmwuUmVwb3J0LkdldEN1cnJlbnRDb2x1bW5WYWx1ZSgiRHBoQ2Vsa2VtIikpOw0KCQlkb3VibGUgbW5venN0dmkgPSBDb252ZXJ0LlRvRG91YmxlKGxibC5SZXBvcnQuR2V0Q3VycmVudENvbHVtblZhbHVlKCJNbm96c3R2aSIpLlRv
-/// U3RyaW5nKCkpOw0KCQlkb3VibGUgamVkbkNlbmFTRFBIID0gY2Vsa2VtU0RQSC9tbm96c3R2aTsNCgkJbGFiZWxKZWRuQ2VuYS5UZXh0ID0gamVkbkNlbmFTRFBILlRvU3RyaW5nKCIjLjAwIik7DQoJCWxhYmVsQ2VuYUNlbGtlbS5UZXh0ID0gY2Vsa2VtU0RQSC5Ub1N0cmluZygiIy4wMCIpOw0KCX0NCn0NCgGaA0lpZihbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1DaXNlbG5pa3lfWnB1c29iUGxhdGJ5XS5bS29kXSA9PSAnSCcgJiYKU3RhcnRzV2l0aChbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1DaXNlbG5pa3lfWnB1c29iRG9wcmF2eV0uW0tvZF0sICdSJyksCkZvcm1hdFN0cmluZygnezB9ICsgISF7MX0hIScsIFVwcGVyKFtT
-/// a2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUNpc2VsbmlreV9acHVzb2JEb3ByYXZ5XS5bTmF6ZXZdKSwgVXBwZXIoW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQ2lzZWxuaWt5X1pQdXNvYlBsYXRieV0uW05hemV2XSkpLApVcHBlcihbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1DaXNlbG5pa3lfWnB1c29iRG9wcmF2eV0uW05hemV2XSkpAeABU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS5Ta2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LVNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8uU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby1PYmNob2Rf
-/// T2JzYWhQb2xvemt5U0FydGlrbGVtLk9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0tQXJ0aWtseV9BcnRpa2wB4AFTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby5Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLU9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0uT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS1BcnRpa2x5X0FydGlrbAH8AklpZihbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1BZHJlc2FyX0Zpcm1hXS5bU2xldmFVdmFkZW5hX1VzZXJEYXRhXSAhPSAw
-/// LApbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1BZHJlc2FyX0Zpcm1hXS5bU2xldmFVdmFkZW5hX1VzZXJEYXRhXSwKSWlmKFtTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUFkcmVzYXJfRmlybWFdLltWbGFzdG5pU2xldmFdID09IHRydWUsIElpZihbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1BZHJlc2FyX0Zpcm1hXS5bSG9kbm90YVNsZXZ5XSA+IDAsIFtTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUFkcmVzYXJfRmlybWFdLltIb2Rub3RhU2xldnldLCBudWxsKSwgbnVsbCkpAegBU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS5Ta2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LVNrbGFkb3Z5
-/// RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8uU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby1PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLk9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0tQXJ0aWtseV9BcnRpa2wuUHJpem5hawH4AVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFy
-/// dGlrbHlfQXJ0aWtsLkJhbGVuaU1ub3pzdHZpX1VzZXJEYXRhAe4BU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS5Ta2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LVNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8uU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby1PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLk9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0tQXJ0aWtseV9BcnRpa2wuS29kQmV6UHJlZml4dQ==</Resource>
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAJAAAAAAAAAFBBRFBBRFCFEnutSF5ywWZCtQFoh0gK8x6FDl6nzUTMMN9I4RjNU6e1gG5ZAQAAAAAAACwBAAArAAAAlwAAAMwAAABiAAAAhgEAAPUAAACzAgAAJiQAdABoAGkAcwAuAFMAYwByAGkAcAB0AHMAUwBvAHUAcgBjAGUAAAAAADJCAGEAbABlAG4AaQBNAG4AbwB6AHMAdAB2AGkALgBEAGEAdABhAE0AZQBtAGIAZQByAAASAAAwRABvAHAAcgBhAHYAYQBQAGwAYQB0AGIA
+/// YQAuAEUAeABwAHIAZQBzAHMAaQBvAG4A5hIAADBLAG8AZABCAGUAegBQAHIAZQBmAGkAeAB1AC4ARABhAHQAYQBNAGUAbQBiAGUAcgCDFAAAJFAAcgBpAHoAbgBhAGsALgBEAGEAdABhAE0AZQBtAGIAZQByAGYVAAAyUwBsAGUAdgBhAE4AYQBEAG8AawBsAGEAZAB1AC4ARQB4AHAAcgBlAHMAcwBpAG8AbgBJFgAAKGwAYQBiAGUAbAA4ADEALgBEAGEAdABhAEIAaQBuAGQAaQBuAGcAcwDIFwAAKGwAYQBiAGUAbAA4ADIALgBEAGEAdABhAEIAaQBuAGQAaQBuAGcAcwCzGAAALHgAcgBMAGEAYgBlAGwANgAyAC4ARABhAHQAYQBCAGkAbgBkAGkAbgBnAHMAqBkAAAH9I3VzaW5nIENTVy5DU1dTeXN0ZW0uUmVwb3J0czsNCnVzaW5nIFN5c3RlbS5EYXRhOw0KdXNpbmcg
+/// U3lzdGVtLlRleHQuUmVndWxhckV4cHJlc3Npb25zOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCnByaXZhdGUgYm9vbCBiZXpDZW4oKSB7DQoJRGF0YVRhYmxlIGR0ID0gKHh0cmFSZXBvcnQxLkRhdGFTb3VyY2UgYXMgRGF0YVNldCkuVGFibGVzWyJTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55Il07DQoJRGF0YVJvd1tdIHIxID0gZHQuUm93c1swXS5HZXRDaGlsZFJvd3MoIlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQWRyZXNhcl9GaXJtYSIpOw0KCURhdGFSb3dbXSBhZHJLbGljZSA9IHIxWzBdLkdldENoaWxkUm93cygiQWRyZXNhcl9GaXJtYS1BZHJlc2FyX0Zpcm1hQWRyZXNuaUtsaWMiKTsNCgkNCglEYXRh
+/// Um93IGFkcktsaWM7DQoJZm9yZWFjaChEYXRhUm93IHIgaW4gYWRyS2xpY2UpIHsNCgkJYWRyS2xpYyA9IHIuR2V0Q2hpbGRSb3dzKCJBZHJlc2FyX0Zpcm1hQWRyZXNuaUtsaWMtQWRyZXNhcl9BZHJlc25pS2xpYyIpWzBdOw0KCQlpZihhZHJLbGljWyJLb2QiXS5Ub1N0cmluZygpID09ICItRExDRU5ZIikgcmV0dXJuIHRydWU7DQoJfQ0KCQ0KCXJldHVybiBmYWxzZTsNCn0NCg0KcHJpdmF0ZSBib29sIGNlbnlTRFBIKCkgew0KCURhdGFUYWJsZSBkdCA9ICh4dHJhUmVwb3J0MS5EYXRhU291cmNlIGFzIERhdGFTZXQpLlRhYmxlc1siU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueSJdOw0KCURhdGFSb3dbXSByMSA9IGR0LlJvd3NbMF0uR2V0Q2hpbGRS
+/// b3dzKCJTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUFkcmVzYXJfRmlybWEiKTsNCglEYXRhUm93W10gYWRyS2xpY2UgPSByMVswXS5HZXRDaGlsZFJvd3MoIkFkcmVzYXJfRmlybWEtQWRyZXNhcl9GaXJtYUFkcmVzbmlLbGljIik7DQoJDQoJRGF0YVJvdyBhZHJLbGljOw0KCWZvcmVhY2goRGF0YVJvdyByIGluIGFkcktsaWNlKSB7DQoJCWFkcktsaWMgPSByLkdldENoaWxkUm93cygiQWRyZXNhcl9GaXJtYUFkcmVzbmlLbGljLUFkcmVzYXJfQWRyZXNuaUtsaWMiKVswXTsNCgkJaWYoYWRyS2xpY1siS29kIl0uVG9TdHJpbmcoKSA9PSAic0RQSCIpIHJldHVybiB0cnVlOw0KCX0NCglyZXR1cm4gZmFsc2U7DQp9DQoNCnByaXZhdGUgdm9pZCB6b2Jy
+/// YXppdFBhbmVsQ2VueShib29sIHpvYnJheikgew0KCWxhYmVsQmV6RHBoLlZpc2libGUgPSBsYWJlbERwaC5WaXNpYmxlID0gbGFiZWxDZWxrZW0uVmlzaWJsZSA9IHpvYnJhejsNCglsYWJlbEJlekRwaFZhbHVlLlZpc2libGUgPSBsYWJlbERwaFZhbHVlLlZpc2libGUgPSBsYWJlbENlbGtlbVZhbHVlLlZpc2libGUgPSB6b2JyYXo7DQp9DQoNCnByaXZhdGUgdm9pZCB4dHJhUmVwb3J0MV9CZWZvcmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJWFJMYWJlbFtdIGxhYmVscyA9IHsNCgkJbGFiZWxCYWxlbmksIGxhYmVsQ2VuYUNlbGtlbSwgeHJsbmF6ZXYsIGxhYmVsSmVkbkNlbmENCgl9
+/// Ow0KDQoJZm9yZWFjaChYUkxhYmVsIGxhYmVsIGluIGxhYmVscykgDQoJCWxhYmVsLlRleHRGaXRNb2RlID0gVGV4dEZpdE1vZGUuU2hyaW5rT25seTsNCg0KCWJvb2wgem9icmF6Q2VueSA9ICFiZXpDZW4oKTsNCglsYWJlbEplZG5DZW5hLlZpc2libGUgPSBsYWJlbENlbmFDZWxrZW0uVmlzaWJsZSA9IHpvYnJhekNlbnk7IA0KCXpvYnJheml0UGFuZWxDZW55KHpvYnJhekNlbnkpOw0KCWxhYmVsSGVhZGVySmVkbkNlbmEuVmlzaWJsZSA9IGxhYmVsSGVhZGVyQ2VuYUNlbGtlbS5WaXNpYmxlID0gem9icmF6Q2VueTsNCgkNCglpZihjZW55U0RQSCgpKSB7DQoJCWxhYmVsSGVhZGVySmVkbkNlbmEuVGV4dCA9ICJzIERQSCI7DQoJfQ0KfQ0KDQpwcml2YXRlIHZv
+/// aWQgUHJpem5ha19HZXRWYWx1ZShvYmplY3Qgc2VuZGVyLCBEZXZFeHByZXNzLlh0cmFSZXBvcnRzLlVJLkdldFZhbHVlRXZlbnRBcmdzIGUpIHsNCglzdHJpbmcgY29sdW1uVmFsdWUgPSAoc3RyaW5nKSBlLkdldENvbHVtblZhbHVlKCJQcml6bmFreV9Vc2VyRGF0YSIpOw0KCWUuVmFsdWUgPSBSZWdleC5NYXRjaChjb2x1bW5WYWx1ZSwgQCJbYS16QS1aXSIpLlZhbHVlOw0KfQ0KDQpwcml2YXRlIHZvaWQgdnJhdGthTGFiZWxfQmVmb3JlUHJpbnQob2JqZWN0IHNlbmRlciwgU3lzdGVtLkRyYXdpbmcuUHJpbnRpbmcuUHJpbnRFdmVudEFyZ3MgZSkgew0KCWlmICghQ29udmVydC5Ub0Jvb2xlYW4oR2V0Q3VycmVudENvbHVtblZhbHVlKCJaYXBvcm55UG9oeWIi
+/// KSkpIGUuQ2FuY2VsID0gdHJ1ZTsNCn0NCg0KcHJpdmF0ZSB2b2lkIGJhbGVuaU1ub3pzdHZpX0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdzIGUpIHsNCglYUkxhYmVsIGxibCA9IHNlbmRlciBhcyBYUkxhYmVsOw0KCWludCBtbm96c3R2aSA9IChpbnQpIENvbnZlcnQuVG9Eb3VibGUobGJsLlJlcG9ydC5HZXRDdXJyZW50Q29sdW1uVmFsdWUoIk1ub3pzdHZpIikuVG9TdHJpbmcoKSk7DQoJc3RyaW5nIGplZG5vdGthID0gbGJsLlJlcG9ydC5HZXRDdXJyZW50Q29sdW1uVmFsdWUoIkplZG5vdGthIikuVG9TdHJpbmcoKTsNCgkNCglsYWJlbEJhbGVuaS5UZXh0ID0gIiI7DQoJDQoJdHJ5IHsN
+/// CgkJRGF0YVJvdyByID0gKGxibC5SZXBvcnQuR2V0Q3VycmVudFJvdygpIGFzIERhdGFSb3dWaWV3KS5Sb3cgYXMgRGF0YVJvdzsNCgkJRGF0YVJvd1tdIHJzID0gci5HZXRDaGlsZFJvd3MoIlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbSIpOw0KCQlEYXRhUm93W10gcnMxID0gcnNbMF0uR2V0Q2hpbGRSb3dzKCJPYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsIik7DQoJCXN0cmluZyBiYWxlbmlNbm96c3R2aSA9IHJzMVswXVsiQmFsZW5pTW5venN0dmlfVXNlckRhdGEiXS5Ub1N0cmluZygpICsgIi8iICsgIjEiOw0KCQlzdHJpbmcgYmFsZW5pSmVk
+/// bm90a3kgPSByczFbMF1bIkJhbGVuaUplZG5vdGt5X1VzZXJEYXRhIl0uVG9TdHJpbmcoKSArICIvIiArIGplZG5vdGthOw0KCQ0KCQlzdHJpbmdbXSBiYWxlbmlTdHJNID0gYmFsZW5pTW5venN0dmkuU3BsaXQoJy8nKTsNCgkJc3RyaW5nW10gYmFsZW5pSiA9IGJhbGVuaUplZG5vdGt5LlNwbGl0KCcvJyk7DQoJCQ0KCQlpbnRbXSBiYWxlbmlNID0gQXJyYXkuQ29udmVydEFsbChiYWxlbmlTdHJNLCBpbnQuUGFyc2UpOw0KCQlMaXN0PFR1cGxlPHN0cmluZywgaW50Pj4gYmFsZW5pID0gbmV3IExpc3Q8VHVwbGU8c3RyaW5nLCBpbnQ+PigpOwkNCgkNCgkJaW50IHpieXZhID0gbW5venN0dmksIHRtcDsNCgkJZm9yKGludCBpID0gMDsgaSA8IGJhbGVuaU0uTGVu
+/// Z3RoOyBpKyspIHsNCgkJCXRtcCA9IChpbnQpIE1hdGguRmxvb3IoKGZsb2F0KSB6Ynl2YS9iYWxlbmlNW2ldKTsNCgkJCWJhbGVuaS5BZGQoVHVwbGUuQ3JlYXRlKGJhbGVuaUpbaV0sIHRtcCkpOw0KCQkJemJ5dmEgLT0gdG1wICogYmFsZW5pTVtpXTsNCgkJfQ0KCQkNCgkJZm9yZWFjaChUdXBsZTxzdHJpbmcsIGludD4gdCBpbiBiYWxlbmkpIHsNCgkJCWlmKHQuSXRlbTIgIT0gMCkgew0KCQkJCWxhYmVsQmFsZW5pLlRleHQgKz0gc3RyaW5nLkZvcm1hdCgiIHswfSB7MX0iLCB0Lkl0ZW0yLCB0Lkl0ZW0xKTsNCgkJCX0NCgkJfQ0KCQkJDQoJfSBjYXRjaChFeGNlcHRpb24pIHt9DQp9DQoNCnByaXZhdGUgdm9pZCBsYWJlbEplZG5DZW5hX0JlZm9yZVByaW50
+/// KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdzIGUpIHsNCglYUkxhYmVsIGxibCA9IHNlbmRlciBhcyBYUkxhYmVsOw0KCWlmKGNlbnlTRFBIKCkpIHsNCgkJZG91YmxlIGNlbGtlbVNEUEggPSBDb252ZXJ0LlRvRG91YmxlKGxibC5SZXBvcnQuR2V0Q3VycmVudENvbHVtblZhbHVlKCJEcGhDZWxrZW0iKSk7DQoJCWRvdWJsZSBtbm96c3R2aSA9IENvbnZlcnQuVG9Eb3VibGUobGJsLlJlcG9ydC5HZXRDdXJyZW50Q29sdW1uVmFsdWUoIk1ub3pzdHZpIikuVG9TdHJpbmcoKSk7DQoJCWRvdWJsZSBqZWRuQ2VuYVNEUEggPSBjZWxrZW1TRFBIL21ub3pzdHZpOw0KCQlsYWJlbEplZG5DZW5hLlRleHQgPSBqZWRuQ2Vu
+/// YVNEUEguVG9TdHJpbmcoIiMuMDAiKTsNCgkJbGFiZWxDZW5hQ2Vsa2VtLlRleHQgPSBjZWxrZW1TRFBILlRvU3RyaW5nKCIjLjAwIik7DQoJfQ0KfQ0KDQpwcml2YXRlIHZvaWQgQmFsZW5pTW5venN0dmlfR2V0VmFsdWUob2JqZWN0IHNlbmRlciwgRGV2RXhwcmVzcy5YdHJhUmVwb3J0cy5VSS5HZXRWYWx1ZUV2ZW50QXJncyBlKSB7DQoJc3RyaW5nIGJhbGVuaSA9IENvbnZlcnQuVG9TdHJpbmcoZS5HZXRDb2x1bW5WYWx1ZSgiQmFsZW5pTW5venN0dmlfVXNlckRhdGEiKSk7DQoJc3RyaW5nW10gc3BsaXQgPSBiYWxlbmkuU3BsaXQoJy8nKTsNCglpZihzcGxpdC5MZW5ndGggPT0gMykgew0KCQliYWxlbmkgPSBzdHJpbmcuRm9ybWF0KCJ7MH0vezF9Iiwgc3Bs
+/// aXRbMV0sIHNwbGl0WzJdKTsJDQoJfQ0KCWUuVmFsdWUgPSBiYWxlbmk7CQkNCn0NCgHjAVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsX0RDAZoDSWlmKFtTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUNpc2VsbmlreV9acHVzb2JQbGF0YnldLltLb2RdID09ICdIJyAmJgpTdGFydHNXaXRoKFtTa2xh
+/// ZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUNpc2VsbmlreV9acHVzb2JEb3ByYXZ5XS5bS29kXSwgJ1InKSwKRm9ybWF0U3RyaW5nKCd7MH0gKyAhIXsxfSEhJywgVXBwZXIoW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQ2lzZWxuaWt5X1pwdXNvYkRvcHJhdnldLltOYXpldl0pLCBVcHBlcihbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1DaXNlbG5pa3lfWlB1c29iUGxhdGJ5XS5bTmF6ZXZdKSksClVwcGVyKFtTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUNpc2VsbmlreV9acHVzb2JEb3ByYXZ5XS5bTmF6ZXZdKSkB4AFTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxp
+/// c3RWeWRhbnktU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby5Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLU9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0uT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS1BcnRpa2x5X0FydGlrbAHgAVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0Fy
+/// dGlrbGVtLUFydGlrbHlfQXJ0aWtsAfwCSWlmKFtTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUFkcmVzYXJfRmlybWFdLltTbGV2YVV2YWRlbmFfVXNlckRhdGFdICE9IDAsCltTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUFkcmVzYXJfRmlybWFdLltTbGV2YVV2YWRlbmFfVXNlckRhdGFdLApJaWYoW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQWRyZXNhcl9GaXJtYV0uW1ZsYXN0bmlTbGV2YV0gPT0gdHJ1ZSwgSWlmKFtTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUFkcmVzYXJfRmlybWFdLltIb2Rub3RhU2xldnldID4gMCwgW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQWRyZXNhcl9GaXJtYV0u
+/// W0hvZG5vdGFTbGV2eV0sIG51bGwpLCBudWxsKSkB6AFTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby5Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLU9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0uT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS1BcnRpa2x5X0FydGlrbC5Qcml6bmFrAfIBU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS5Ta2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LVNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8u
+/// U2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby1PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLk9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0tQXJ0aWtseV9BcnRpa2xfREMuQmFsZW5pTW5venN0dmkB7gFTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby5Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLU9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0uT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS1BcnRpa2x5X0FydGlrbC5Lb2RCZXpQcmVmaXh1</Resource>
 ///   </Resources>
 /// </XRTypeInfo>
 namespace XtraReportSerialization {
@@ -119,14 +121,13 @@ namespace XtraReportSerialization {
         private DevExpress.XtraReports.UI.XRLine line4;
         private DevExpress.XtraReports.UI.XRLine line12;
         private DevExpress.XtraReports.UI.SubBand SubBand8;
-        private DevExpress.XtraReports.UI.XRPanel panelCeny;
-        private DevExpress.XtraReports.UI.XRLabel label98;
-        private DevExpress.XtraReports.UI.XRLabel label101;
+        private DevExpress.XtraReports.UI.XRLabel labelCelkemValue;
         private DevExpress.XtraReports.UI.XRLine line14;
-        private DevExpress.XtraReports.UI.XRLabel label100;
-        private DevExpress.XtraReports.UI.XRLabel label99;
-        private DevExpress.XtraReports.UI.XRLabel label103;
-        private DevExpress.XtraReports.UI.XRLabel label102;
+        private DevExpress.XtraReports.UI.XRLabel labelCelkem;
+        private DevExpress.XtraReports.UI.XRLabel labelDph;
+        private DevExpress.XtraReports.UI.XRLabel labelDphValue;
+        private DevExpress.XtraReports.UI.XRLabel labelBezDph;
+        private DevExpress.XtraReports.UI.XRLabel labelBezDphValue;
         private DevExpress.XtraReports.UI.XRControlStyle Vychozi;
         private DevExpress.XtraReports.UI.CalculatedField KodBezPrefixu;
         private DevExpress.XtraReports.UI.CalculatedField DopravaPlatba;
@@ -135,6 +136,7 @@ namespace XtraReportSerialization {
         private DevExpress.XtraReports.UI.CalculatedField DodaciAdresaPSCMesto;
         private DevExpress.XtraReports.UI.CalculatedField ObchodniAdresaPSCMesto;
         private DevExpress.XtraReports.UI.CalculatedField Priznak;
+        private DevExpress.XtraReports.UI.CalculatedField BaleniMnozstvi;
         private System.Resources.ResourceManager _resources;
         private string _resourceString;
         public xtraReport1() {
@@ -240,14 +242,13 @@ namespace XtraReportSerialization {
             this.line4 = new DevExpress.XtraReports.UI.XRLine();
             this.line12 = new DevExpress.XtraReports.UI.XRLine();
             this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
-            this.panelCeny = new DevExpress.XtraReports.UI.XRPanel();
-            this.label98 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label101 = new DevExpress.XtraReports.UI.XRLabel();
+            this.labelCelkemValue = new DevExpress.XtraReports.UI.XRLabel();
             this.line14 = new DevExpress.XtraReports.UI.XRLine();
-            this.label100 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label99 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label103 = new DevExpress.XtraReports.UI.XRLabel();
-            this.label102 = new DevExpress.XtraReports.UI.XRLabel();
+            this.labelCelkem = new DevExpress.XtraReports.UI.XRLabel();
+            this.labelDph = new DevExpress.XtraReports.UI.XRLabel();
+            this.labelDphValue = new DevExpress.XtraReports.UI.XRLabel();
+            this.labelBezDph = new DevExpress.XtraReports.UI.XRLabel();
+            this.labelBezDphValue = new DevExpress.XtraReports.UI.XRLabel();
             this.Vychozi = new DevExpress.XtraReports.UI.XRControlStyle();
             this.KodBezPrefixu = new DevExpress.XtraReports.UI.CalculatedField();
             this.DopravaPlatba = new DevExpress.XtraReports.UI.CalculatedField();
@@ -256,6 +257,7 @@ namespace XtraReportSerialization {
             this.DodaciAdresaPSCMesto = new DevExpress.XtraReports.UI.CalculatedField();
             this.ObchodniAdresaPSCMesto = new DevExpress.XtraReports.UI.CalculatedField();
             this.Priznak = new DevExpress.XtraReports.UI.CalculatedField();
+            this.BaleniMnozstvi = new DevExpress.XtraReports.UI.CalculatedField();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // hlavickaDokladu
@@ -1509,8 +1511,10 @@ namespace XtraReportSerialization {
             // 
             // label82
             // 
+            this.label82.AutoWidth = true;
             this.label82.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label82.BorderWidth = 0F;
+            this.label82.CanGrow = false;
             this.label82.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, resources.GetString("label82.DataBindings"), "{0:### ### ### ### ##0.0000}")});
             this.label82.Dpi = 254F;
@@ -1530,6 +1534,7 @@ namespace XtraReportSerialization {
             this.label82.Text = "xrLabel61";
             this.label82.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.label82.TextFormatString = "{0}";
+            this.label82.WordWrap = false;
             // 
             // labelBaleni
             // 
@@ -1640,7 +1645,7 @@ namespace XtraReportSerialization {
             this.xrLabel69.Font = new System.Drawing.Font("Roboto", 10F);
             this.xrLabel69.LocationFloat = new DevExpress.Utils.PointFloat(1443.536F, 0.00101993F);
             this.xrLabel69.Name = "xrLabel69";
-            this.xrLabel69.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.xrLabel69.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 254F);
             this.xrLabel69.SizeF = new System.Drawing.SizeF(84.46399F, 60F);
             this.xrLabel69.StylePriority.UseBorders = false;
             this.xrLabel69.StylePriority.UseFont = false;
@@ -1896,57 +1901,33 @@ namespace XtraReportSerialization {
             // SubBand8
             // 
             this.SubBand8.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-                        this.panelCeny});
+                        this.labelCelkemValue,
+                        this.line14,
+                        this.labelCelkem,
+                        this.labelDph,
+                        this.labelDphValue,
+                        this.labelBezDph,
+                        this.labelBezDphValue});
             this.SubBand8.Dpi = 254F;
-            this.SubBand8.HeightF = 161.9075F;
+            this.SubBand8.HeightF = 140F;
             this.SubBand8.Name = "SubBand8";
             // 
-            // panelCeny
+            // labelCelkemValue
             // 
-            this.panelCeny.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-                        this.label98,
-                        this.label101,
-                        this.line14,
-                        this.label100,
-                        this.label99,
-                        this.label103,
-                        this.label102});
-            this.panelCeny.Dpi = 254F;
-            this.panelCeny.LocationFloat = new DevExpress.Utils.PointFloat(1094.385F, 0F);
-            this.panelCeny.Name = "panelCeny";
-            this.panelCeny.SizeF = new System.Drawing.SizeF(751.2706F, 161.9075F);
-            // 
-            // label98
-            // 
-            this.label98.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+            this.labelCelkemValue.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SumaCelkem")});
-            this.label98.Dpi = 254F;
-            this.label98.Font = new System.Drawing.Font("Roboto Medium", 10F);
-            this.label98.LocationFloat = new DevExpress.Utils.PointFloat(270F, 110F);
-            this.label98.Name = "label98";
-            this.label98.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label98.SizeF = new System.Drawing.SizeF(481.0009F, 45F);
-            this.label98.StyleName = "Vychozi";
-            this.label98.StylePriority.UseFont = false;
-            this.label98.StylePriority.UsePadding = false;
-            this.label98.StylePriority.UseTextAlignment = false;
-            this.label98.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.label98.TextFormatString = "{0:#,#0.00} Kč";
-            // 
-            // label101
-            // 
-            this.label101.Dpi = 254F;
-            this.label101.Font = new System.Drawing.Font("Roboto Light", 10F);
-            this.label101.LocationFloat = new DevExpress.Utils.PointFloat(0F, 44.99999F);
-            this.label101.Name = "label101";
-            this.label101.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label101.SizeF = new System.Drawing.SizeF(270F, 45F);
-            this.label101.StyleName = "Vychozi";
-            this.label101.StylePriority.UseFont = false;
-            this.label101.StylePriority.UsePadding = false;
-            this.label101.StylePriority.UseTextAlignment = false;
-            this.label101.Text = "Celkem DPH";
-            this.label101.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.labelCelkemValue.Dpi = 254F;
+            this.labelCelkemValue.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelCelkemValue.LocationFloat = new DevExpress.Utils.PointFloat(1365F, 94.99995F);
+            this.labelCelkemValue.Name = "labelCelkemValue";
+            this.labelCelkemValue.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.labelCelkemValue.SizeF = new System.Drawing.SizeF(481.0009F, 45F);
+            this.labelCelkemValue.StyleName = "Vychozi";
+            this.labelCelkemValue.StylePriority.UseFont = false;
+            this.labelCelkemValue.StylePriority.UsePadding = false;
+            this.labelCelkemValue.StylePriority.UseTextAlignment = false;
+            this.labelCelkemValue.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.labelCelkemValue.TextFormatString = "{0:#,#0.00} Kč";
             // 
             // line14
             // 
@@ -1954,77 +1935,92 @@ namespace XtraReportSerialization {
             this.line14.Dpi = 254F;
             this.line14.ForeColor = System.Drawing.Color.Black;
             this.line14.LineWidth = 0.5F;
-            this.line14.LocationFloat = new DevExpress.Utils.PointFloat(0F, 89.99998F);
+            this.line14.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 90.00003F);
             this.line14.Name = "line14";
             this.line14.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.line14.SizeF = new System.Drawing.SizeF(751.0009F, 20F);
+            this.line14.SizeF = new System.Drawing.SizeF(751F, 5F);
             this.line14.StylePriority.UseBorderWidth = false;
             this.line14.StylePriority.UseForeColor = false;
             this.line14.StylePriority.UsePadding = false;
             // 
-            // label100
+            // labelCelkem
             // 
-            this.label100.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+            this.labelCelkem.Dpi = 254F;
+            this.labelCelkem.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelCelkem.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 94.99995F);
+            this.labelCelkem.Name = "labelCelkem";
+            this.labelCelkem.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.labelCelkem.SizeF = new System.Drawing.SizeF(270F, 45F);
+            this.labelCelkem.StyleName = "Vychozi";
+            this.labelCelkem.StylePriority.UseFont = false;
+            this.labelCelkem.StylePriority.UsePadding = false;
+            this.labelCelkem.StylePriority.UseTextAlignment = false;
+            this.labelCelkem.Text = "Celkem s DPH";
+            this.labelCelkem.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // labelDph
+            // 
+            this.labelDph.Dpi = 254F;
+            this.labelDph.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.labelDph.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 45.00002F);
+            this.labelDph.Name = "labelDph";
+            this.labelDph.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.labelDph.SizeF = new System.Drawing.SizeF(270F, 45F);
+            this.labelDph.StyleName = "Vychozi";
+            this.labelDph.StylePriority.UseFont = false;
+            this.labelDph.StylePriority.UsePadding = false;
+            this.labelDph.StylePriority.UseTextAlignment = false;
+            this.labelDph.Text = "Celkem DPH";
+            this.labelDph.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // labelDphValue
+            // 
+            this.labelDphValue.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SumaDan")});
-            this.label100.Dpi = 254F;
-            this.label100.Font = new System.Drawing.Font("Roboto Light", 10F);
-            this.label100.LocationFloat = new DevExpress.Utils.PointFloat(270F, 44.99999F);
-            this.label100.Name = "label100";
-            this.label100.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label100.SizeF = new System.Drawing.SizeF(481.0009F, 45F);
-            this.label100.StyleName = "Vychozi";
-            this.label100.StylePriority.UseFont = false;
-            this.label100.StylePriority.UsePadding = false;
-            this.label100.StylePriority.UseTextAlignment = false;
-            this.label100.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.label100.TextFormatString = "{0:#,#0.00} Kč";
+            this.labelDphValue.Dpi = 254F;
+            this.labelDphValue.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.labelDphValue.LocationFloat = new DevExpress.Utils.PointFloat(1365F, 45.00002F);
+            this.labelDphValue.Name = "labelDphValue";
+            this.labelDphValue.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.labelDphValue.SizeF = new System.Drawing.SizeF(481.0009F, 45F);
+            this.labelDphValue.StyleName = "Vychozi";
+            this.labelDphValue.StylePriority.UseFont = false;
+            this.labelDphValue.StylePriority.UsePadding = false;
+            this.labelDphValue.StylePriority.UseTextAlignment = false;
+            this.labelDphValue.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.labelDphValue.TextFormatString = "{0:#,#0.00} Kč";
             // 
-            // label99
+            // labelBezDph
             // 
-            this.label99.Dpi = 254F;
-            this.label99.Font = new System.Drawing.Font("Roboto Medium", 10F);
-            this.label99.LocationFloat = new DevExpress.Utils.PointFloat(0F, 110F);
-            this.label99.Name = "label99";
-            this.label99.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label99.SizeF = new System.Drawing.SizeF(270F, 45F);
-            this.label99.StyleName = "Vychozi";
-            this.label99.StylePriority.UseFont = false;
-            this.label99.StylePriority.UsePadding = false;
-            this.label99.StylePriority.UseTextAlignment = false;
-            this.label99.Text = "Celkem s DPH";
-            this.label99.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.labelBezDph.Dpi = 254F;
+            this.labelBezDph.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.labelBezDph.LocationFloat = new DevExpress.Utils.PointFloat(1095F, 0F);
+            this.labelBezDph.Name = "labelBezDph";
+            this.labelBezDph.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.labelBezDph.SizeF = new System.Drawing.SizeF(270F, 45F);
+            this.labelBezDph.StyleName = "Vychozi";
+            this.labelBezDph.StylePriority.UseFont = false;
+            this.labelBezDph.StylePriority.UsePadding = false;
+            this.labelBezDph.StylePriority.UseTextAlignment = false;
+            this.labelBezDph.Text = "Celkem bez DPH";
+            this.labelBezDph.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
-            // label103
+            // labelBezDphValue
             // 
-            this.label103.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+            this.labelBezDphValue.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SumaZaklad")});
-            this.label103.Dpi = 254F;
-            this.label103.Font = new System.Drawing.Font("Roboto Light", 10F);
-            this.label103.LocationFloat = new DevExpress.Utils.PointFloat(270.0001F, 0F);
-            this.label103.Name = "label103";
-            this.label103.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label103.SizeF = new System.Drawing.SizeF(481.0009F, 45F);
-            this.label103.StyleName = "Vychozi";
-            this.label103.StylePriority.UseFont = false;
-            this.label103.StylePriority.UsePadding = false;
-            this.label103.StylePriority.UseTextAlignment = false;
-            this.label103.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.label103.TextFormatString = "{0:#,#0.00} Kč";
-            // 
-            // label102
-            // 
-            this.label102.Dpi = 254F;
-            this.label102.Font = new System.Drawing.Font("Roboto Light", 10F);
-            this.label102.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.label102.Name = "label102";
-            this.label102.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label102.SizeF = new System.Drawing.SizeF(270F, 45F);
-            this.label102.StyleName = "Vychozi";
-            this.label102.StylePriority.UseFont = false;
-            this.label102.StylePriority.UsePadding = false;
-            this.label102.StylePriority.UseTextAlignment = false;
-            this.label102.Text = "Celkem bez DPH";
-            this.label102.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.labelBezDphValue.Dpi = 254F;
+            this.labelBezDphValue.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.labelBezDphValue.LocationFloat = new DevExpress.Utils.PointFloat(1365F, 0F);
+            this.labelBezDphValue.Name = "labelBezDphValue";
+            this.labelBezDphValue.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.labelBezDphValue.SizeF = new System.Drawing.SizeF(481.0009F, 45F);
+            this.labelBezDphValue.StyleName = "Vychozi";
+            this.labelBezDphValue.StylePriority.UseFont = false;
+            this.labelBezDphValue.StylePriority.UsePadding = false;
+            this.labelBezDphValue.StylePriority.UseTextAlignment = false;
+            this.labelBezDphValue.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.labelBezDphValue.TextFormatString = "{0:#,#0.00} Kč";
             // 
             // Vychozi
             // 
@@ -2079,6 +2075,12 @@ namespace XtraReportSerialization {
             this.Priznak.Name = "Priznak";
             this.Priznak.Scripts.OnGetValue = "Priznak_GetValue";
             // 
+            // BaleniMnozstvi
+            // 
+            this.BaleniMnozstvi.DataMember = resources.GetString("BaleniMnozstvi.DataMember");
+            this.BaleniMnozstvi.Name = "BaleniMnozstvi";
+            this.BaleniMnozstvi.Scripts.OnGetValue = "BaleniMnozstvi_GetValue";
+            // 
             // xtraReport1
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -2096,7 +2098,8 @@ namespace XtraReportSerialization {
                         this.FakturacniAdresaPSCMesto,
                         this.DodaciAdresaPSCMesto,
                         this.ObchodniAdresaPSCMesto,
-                        this.Priznak});
+                        this.Priznak,
+                        this.BaleniMnozstvi});
             this.Dpi = 254F;
             this.Font = new System.Drawing.Font("Roboto", 10F);
             this.Margins = new System.Drawing.Printing.Margins(127, 127, 107, 120);

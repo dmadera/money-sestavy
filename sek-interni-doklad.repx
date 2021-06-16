@@ -1,12 +1,13 @@
 /// <XRTypeInfo>
 ///   <AssemblyFullName>DevExpress.XtraReports.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
-///   <AssemblyLocation>C:\Program Files (x86)\Solitea\Money S4\DevExpress.XtraReports.v19.1.dll</AssemblyLocation>
+///   <AssemblyLocation>C:\Money\MoneyS4\DevExpress.XtraReports.v19.1.dll</AssemblyLocation>
 ///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
 ///   <Localization>cs-CZ</Localization>
 ///   <Version>19.1</Version>
 ///   <Resources>
 ///     <Resource Name="XtraReportSerialization.XtraReport">
-/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAAAAAAAAAAAFBBRFBBRFC0AAAA</Resource>
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAABAAAAAAAAAFBBRFBBRFBIXnLBAAAAAOcAAAAmJAB0AGgAaQBzAC4AUwBjAHIAaQBwAHQAcwBTAG8AdQByAGMAZQAAAAAAAf8CdXNpbmcgQ1NXLkNTV1N5c3RlbS5SZXBvcnRzOw0KdXNpbmcgU3lzdGVtLkRhdGE7DQoNCnByaXZhdGUgdm9pZCBYdHJhUmVwb3J0X0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdz
+/// IGUpIHsNCglEYXRhU2V0IGRzID0gWHRyYVJlcG9ydC5EYXRhU291cmNlIGFzIERhdGFTZXQ7IA0KCURhdGFUYWJsZSBkdCA9IGRzLlRhYmxlc1siSW50ZXJuaURva2xhZCJdOw0KCWlmKENvbnZlcnQuVG9TdHJpbmcoZHQuUm93c1swXVsiTmF6ZXYiXSkgIT0gIsWgZWsgdnlkYW7DvSIpIHsNCgkJdGhyb3cgbmV3IEV4Y2VwdGlvbigiUMWZZWQgdGlza2VtIG9wcmF2dGUgxaFlayBwb2RsZSBuw6F6dnUhIik7DQoJfQ0KDQp9DQo=</Resource>
 ///   </Resources>
 /// </XRTypeInfo>
 namespace XtraReportSerialization {
@@ -271,6 +272,8 @@ namespace XtraReportSerialization {
             this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
             this.PaperName = "Vlastní";
             this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;
+            this.Scripts.OnBeforePrint = "XtraReport_BeforePrint";
+            this.ScriptsSource = resources.GetString("$this.ScriptsSource");
             this.ShowPrintMarginsWarning = false;
             this.SnapGridSize = 31.75F;
             this.Version = "19.1";

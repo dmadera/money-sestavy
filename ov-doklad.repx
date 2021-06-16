@@ -1,6 +1,6 @@
 /// <XRTypeInfo>
 ///   <AssemblyFullName>DevExpress.XtraReports.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
-///   <AssemblyLocation>C:\Program Files (x86)\Solitea\Money S4\DevExpress.XtraReports.v19.1.dll</AssemblyLocation>
+///   <AssemblyLocation>C:\Money\MoneyS4\DevExpress.XtraReports.v19.1.dll</AssemblyLocation>
 ///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
 ///   <Localization>cs-CZ</Localization>
 ///   <Version>19.1</Version>
@@ -327,15 +327,15 @@ namespace XtraReportSerialization {
                                 "avniOsoba.Tel1Cislo")});
             this.label1.Dpi = 254F;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(1141.398F, 399.9998F);
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(1267.375F, 399.9998F);
             this.label1.Name = "label1";
             this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label1.SizeF = new System.Drawing.SizeF(538.4857F, 45F);
+            this.label1.SizeF = new System.Drawing.SizeF(578.6255F, 45F);
             this.label1.StylePriority.UseBorders = false;
             this.label1.StylePriority.UseFont = false;
             this.label1.StylePriority.UsePadding = false;
             this.label1.StylePriority.UseTextAlignment = false;
-            this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.label1.TextFormatString = "{0}";
             // 
             // label2
@@ -345,10 +345,10 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "ObjednavkaVydana.IC")});
             this.label2.Dpi = 254F;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(957.3758F, 399.9998F);
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(957.3759F, 399.9998F);
             this.label2.Name = "label2";
             this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label2.SizeF = new System.Drawing.SizeF(184.0226F, 45F);
+            this.label2.SizeF = new System.Drawing.SizeF(309.9998F, 45F);
             this.label2.StylePriority.UseBorders = false;
             this.label2.StylePriority.UseFont = false;
             this.label2.StylePriority.UsePadding = false;
@@ -364,10 +364,10 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "ObjednavkaVydana.IC")});
             this.label3.Dpi = 254F;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(957.4919F, 354.9997F);
+            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(957.4919F, 354.9998F);
             this.label3.Name = "label3";
             this.label3.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label3.SizeF = new System.Drawing.SizeF(184.0226F, 45F);
+            this.label3.SizeF = new System.Drawing.SizeF(309.8834F, 45F);
             this.label3.StylePriority.UseBorders = false;
             this.label3.StylePriority.UseFont = false;
             this.label3.StylePriority.UsePadding = false;
@@ -383,15 +383,15 @@ namespace XtraReportSerialization {
                                 "avniOsoba.Nazev")});
             this.label4.Dpi = 254F;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(1141.515F, 354.9997F);
+            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(1267.375F, 354.9998F);
             this.label4.Name = "label4";
             this.label4.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label4.SizeF = new System.Drawing.SizeF(538.4857F, 45F);
+            this.label4.SizeF = new System.Drawing.SizeF(578.6254F, 45F);
             this.label4.StylePriority.UseBorders = false;
             this.label4.StylePriority.UseFont = false;
             this.label4.StylePriority.UsePadding = false;
             this.label4.StylePriority.UseTextAlignment = false;
-            this.label4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.label4.TextFormatString = "{0}";
             // 
             // label27
@@ -870,7 +870,7 @@ namespace XtraReportSerialization {
                         this.label93,
                         this.label91});
             this.ReportHeader.Dpi = 254F;
-            this.ReportHeader.HeightF = 70.00061F;
+            this.ReportHeader.HeightF = 60.56259F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // line7
@@ -905,7 +905,7 @@ namespace XtraReportSerialization {
                         this.label89,
                         this.label90});
             this.SubBand5.Dpi = 254F;
-            this.SubBand5.HeightF = 80F;
+            this.SubBand5.HeightF = 50F;
             this.SubBand5.Name = "SubBand5";
             this.SubBand5.StylePriority.UseBorders = false;
             this.SubBand5.StylePriority.UseBorderWidth = false;
@@ -921,14 +921,14 @@ namespace XtraReportSerialization {
             this.label6.LocationFloat = new DevExpress.Utils.PointFloat(826F, 0F);
             this.label6.Name = "label6";
             this.label6.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label6.SizeF = new System.Drawing.SizeF(357F, 80F);
+            this.label6.SizeF = new System.Drawing.SizeF(357F, 50F);
             this.label6.StylePriority.UseBorders = false;
             this.label6.StylePriority.UseBorderWidth = false;
             this.label6.StylePriority.UseFont = false;
             this.label6.StylePriority.UsePadding = false;
             this.label6.StylePriority.UseTextAlignment = false;
             this.label6.Text = "*****";
-            this.label6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.label6.TextFormatString = "{0:#}";
             this.label6.WordWrap = false;
             // 
@@ -945,7 +945,7 @@ namespace XtraReportSerialization {
             this.xrlnazev.Name = "xrlnazev";
             this.xrlnazev.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
             this.xrlnazev.Scripts.OnBeforePrint = "xrlnazev_BeforePrint";
-            this.xrlnazev.SizeF = new System.Drawing.SizeF(709F, 80F);
+            this.xrlnazev.SizeF = new System.Drawing.SizeF(709F, 50F);
             this.xrlnazev.StylePriority.UseBorders = false;
             this.xrlnazev.StylePriority.UseBorderWidth = false;
             this.xrlnazev.StylePriority.UseFont = false;
@@ -967,7 +967,7 @@ namespace XtraReportSerialization {
             this.xrLabel62.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel62.Name = "xrLabel62";
             this.xrLabel62.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.xrLabel62.SizeF = new System.Drawing.SizeF(80F, 80F);
+            this.xrLabel62.SizeF = new System.Drawing.SizeF(80F, 50F);
             this.xrLabel62.StylePriority.UseBorders = false;
             this.xrLabel62.StylePriority.UseBorderWidth = false;
             this.xrLabel62.StylePriority.UseFont = false;
@@ -990,7 +990,7 @@ namespace XtraReportSerialization {
             this.xrLabel61.LocationFloat = new DevExpress.Utils.PointFloat(1188.39F, 0F);
             this.xrLabel61.Name = "xrLabel61";
             this.xrLabel61.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.xrLabel61.SizeF = new System.Drawing.SizeF(105F, 80F);
+            this.xrLabel61.SizeF = new System.Drawing.SizeF(105F, 50F);
             this.xrLabel61.StylePriority.UseBorders = false;
             this.xrLabel61.StylePriority.UseBorderWidth = false;
             this.xrLabel61.StylePriority.UseFont = false;
@@ -1012,7 +1012,7 @@ namespace XtraReportSerialization {
             this.xrLabel60.LocationFloat = new DevExpress.Utils.PointFloat(1296.39F, 0F);
             this.xrLabel60.Name = "xrLabel60";
             this.xrLabel60.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.xrLabel60.SizeF = new System.Drawing.SizeF(69.88403F, 80F);
+            this.xrLabel60.SizeF = new System.Drawing.SizeF(69.88403F, 50F);
             this.xrLabel60.StylePriority.UseBorders = false;
             this.xrLabel60.StylePriority.UseBorderWidth = false;
             this.xrLabel60.StylePriority.UseFont = false;
@@ -1034,7 +1034,7 @@ namespace XtraReportSerialization {
             this.label81.LocationFloat = new DevExpress.Utils.PointFloat(799F, 0F);
             this.label81.Name = "label81";
             this.label81.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label81.SizeF = new System.Drawing.SizeF(22F, 80F);
+            this.label81.SizeF = new System.Drawing.SizeF(22F, 50F);
             this.label81.StylePriority.UseBorders = false;
             this.label81.StylePriority.UseBorderWidth = false;
             this.label81.StylePriority.UseFont = false;
@@ -1053,7 +1053,7 @@ namespace XtraReportSerialization {
             this.labelJednotka2.LocationFloat = new DevExpress.Utils.PointFloat(1764.153F, 0F);
             this.labelJednotka2.Name = "labelJednotka2";
             this.labelJednotka2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.labelJednotka2.SizeF = new System.Drawing.SizeF(69.99988F, 80F);
+            this.labelJednotka2.SizeF = new System.Drawing.SizeF(69.99988F, 50F);
             this.labelJednotka2.StylePriority.UseBorders = false;
             this.labelJednotka2.StylePriority.UseBorderWidth = false;
             this.labelJednotka2.StylePriority.UseFont = false;
@@ -1071,7 +1071,7 @@ namespace XtraReportSerialization {
             this.labelMnozstvi2.LocationFloat = new DevExpress.Utils.PointFloat(1656.472F, 0F);
             this.labelMnozstvi2.Name = "labelMnozstvi2";
             this.labelMnozstvi2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.labelMnozstvi2.SizeF = new System.Drawing.SizeF(105F, 80F);
+            this.labelMnozstvi2.SizeF = new System.Drawing.SizeF(105F, 50F);
             this.labelMnozstvi2.StylePriority.UseBorders = false;
             this.labelMnozstvi2.StylePriority.UseBorderWidth = false;
             this.labelMnozstvi2.StylePriority.UseFont = false;
@@ -1090,7 +1090,7 @@ namespace XtraReportSerialization {
             this.labelJednotka1.LocationFloat = new DevExpress.Utils.PointFloat(1586.472F, 0F);
             this.labelJednotka1.Name = "labelJednotka1";
             this.labelJednotka1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.labelJednotka1.SizeF = new System.Drawing.SizeF(69.99976F, 80F);
+            this.labelJednotka1.SizeF = new System.Drawing.SizeF(69.99976F, 50F);
             this.labelJednotka1.StylePriority.UseBorders = false;
             this.labelJednotka1.StylePriority.UseBorderWidth = false;
             this.labelJednotka1.StylePriority.UseFont = false;
@@ -1108,7 +1108,7 @@ namespace XtraReportSerialization {
             this.labelMnozstvi1.LocationFloat = new DevExpress.Utils.PointFloat(1521.472F, 0F);
             this.labelMnozstvi1.Name = "labelMnozstvi1";
             this.labelMnozstvi1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.labelMnozstvi1.SizeF = new System.Drawing.SizeF(63.00012F, 80F);
+            this.labelMnozstvi1.SizeF = new System.Drawing.SizeF(63.00012F, 50F);
             this.labelMnozstvi1.StylePriority.UseBorders = false;
             this.labelMnozstvi1.StylePriority.UseBorderWidth = false;
             this.labelMnozstvi1.StylePriority.UseFont = false;
@@ -1127,7 +1127,7 @@ namespace XtraReportSerialization {
             this.labelJednotka0.LocationFloat = new DevExpress.Utils.PointFloat(1451.472F, 0F);
             this.labelJednotka0.Name = "labelJednotka0";
             this.labelJednotka0.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.labelJednotka0.SizeF = new System.Drawing.SizeF(70F, 80F);
+            this.labelJednotka0.SizeF = new System.Drawing.SizeF(70F, 50F);
             this.labelJednotka0.StylePriority.UseBorders = false;
             this.labelJednotka0.StylePriority.UseBorderWidth = false;
             this.labelJednotka0.StylePriority.UseFont = false;
@@ -1145,7 +1145,7 @@ namespace XtraReportSerialization {
             this.labelMnozstvi0.LocationFloat = new DevExpress.Utils.PointFloat(1386.472F, 0F);
             this.labelMnozstvi0.Name = "labelMnozstvi0";
             this.labelMnozstvi0.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.labelMnozstvi0.SizeF = new System.Drawing.SizeF(62.99969F, 80F);
+            this.labelMnozstvi0.SizeF = new System.Drawing.SizeF(62.99969F, 50F);
             this.labelMnozstvi0.StylePriority.UseBorders = false;
             this.labelMnozstvi0.StylePriority.UseBorderWidth = false;
             this.labelMnozstvi0.StylePriority.UseFont = false;
@@ -1168,7 +1168,7 @@ namespace XtraReportSerialization {
             this.label89.Name = "label89";
             this.label89.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
             this.label89.Scripts.OnBeforePrint = "baleniMnozstvi_BeforePrint";
-            this.label89.SizeF = new System.Drawing.SizeF(10F, 80F);
+            this.label89.SizeF = new System.Drawing.SizeF(10F, 50F);
             this.label89.StylePriority.UseBackColor = false;
             this.label89.StylePriority.UseBorders = false;
             this.label89.StylePriority.UseBorderWidth = false;
@@ -1193,7 +1193,7 @@ namespace XtraReportSerialization {
             this.label90.Name = "label90";
             this.label90.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
             this.label90.Scripts.OnBeforePrint = "baleniMnozstvi_BeforePrint";
-            this.label90.SizeF = new System.Drawing.SizeF(10F, 80F);
+            this.label90.SizeF = new System.Drawing.SizeF(10F, 50F);
             this.label90.StylePriority.UseBackColor = false;
             this.label90.StylePriority.UseBorders = false;
             this.label90.StylePriority.UseBorderWidth = false;
@@ -1213,13 +1213,13 @@ namespace XtraReportSerialization {
             this.label7.LocationFloat = new DevExpress.Utils.PointFloat(826F, 0F);
             this.label7.Name = "label7";
             this.label7.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.label7.SizeF = new System.Drawing.SizeF(357F, 70F);
+            this.label7.SizeF = new System.Drawing.SizeF(357F, 60F);
             this.label7.StylePriority.UseBorders = false;
             this.label7.StylePriority.UseFont = false;
             this.label7.StylePriority.UsePadding = false;
             this.label7.StylePriority.UseTextAlignment = false;
             this.label7.Text = "Dodavatelské číslo";
-            this.label7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.label7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel71
             // 
@@ -1229,7 +1229,7 @@ namespace XtraReportSerialization {
             this.xrLabel71.LocationFloat = new DevExpress.Utils.PointFloat(85.34408F, 0.0005099649F);
             this.xrLabel71.Name = "xrLabel71";
             this.xrLabel71.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 5, 0, 0, 254F);
-            this.xrLabel71.SizeF = new System.Drawing.SizeF(708.6559F, 70F);
+            this.xrLabel71.SizeF = new System.Drawing.SizeF(708.6559F, 60F);
             this.xrLabel71.StylePriority.UseBorders = false;
             this.xrLabel71.StylePriority.UseFont = false;
             this.xrLabel71.StylePriority.UsePadding = false;
@@ -1245,7 +1245,7 @@ namespace XtraReportSerialization {
             this.xrLabel70.LocationFloat = new DevExpress.Utils.PointFloat(1188.39F, 0F);
             this.xrLabel70.Name = "xrLabel70";
             this.xrLabel70.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.xrLabel70.SizeF = new System.Drawing.SizeF(105.0001F, 70F);
+            this.xrLabel70.SizeF = new System.Drawing.SizeF(105.0001F, 60F);
             this.xrLabel70.StylePriority.UseBorders = false;
             this.xrLabel70.StylePriority.UseFont = false;
             this.xrLabel70.StylePriority.UsePadding = false;
@@ -1261,7 +1261,7 @@ namespace XtraReportSerialization {
             this.xrLabel69.LocationFloat = new DevExpress.Utils.PointFloat(1296.39F, 0.0004844665F);
             this.xrLabel69.Name = "xrLabel69";
             this.xrLabel69.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.xrLabel69.SizeF = new System.Drawing.SizeF(70.00024F, 70F);
+            this.xrLabel69.SizeF = new System.Drawing.SizeF(70.00024F, 60F);
             this.xrLabel69.StylePriority.UseBorders = false;
             this.xrLabel69.StylePriority.UseFont = false;
             this.xrLabel69.StylePriority.UsePadding = false;
@@ -1277,7 +1277,7 @@ namespace XtraReportSerialization {
             this.xrLabel68.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel68.Name = "xrLabel68";
             this.xrLabel68.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
-            this.xrLabel68.SizeF = new System.Drawing.SizeF(80F, 70F);
+            this.xrLabel68.SizeF = new System.Drawing.SizeF(80F, 60F);
             this.xrLabel68.StylePriority.UseBorders = false;
             this.xrLabel68.StylePriority.UseFont = false;
             this.xrLabel68.StylePriority.UsePadding = false;
@@ -1293,7 +1293,7 @@ namespace XtraReportSerialization {
             this.label93.LocationFloat = new DevExpress.Utils.PointFloat(1386.472F, 0F);
             this.label93.Name = "label93";
             this.label93.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.label93.SizeF = new System.Drawing.SizeF(447.6807F, 70F);
+            this.label93.SizeF = new System.Drawing.SizeF(447.6807F, 60F);
             this.label93.StylePriority.UseBorders = false;
             this.label93.StylePriority.UseFont = false;
             this.label93.StylePriority.UsePadding = false;
@@ -1309,7 +1309,7 @@ namespace XtraReportSerialization {
             this.label91.LocationFloat = new DevExpress.Utils.PointFloat(799F, 0.000552462F);
             this.label91.Name = "label91";
             this.label91.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.label91.SizeF = new System.Drawing.SizeF(22F, 70F);
+            this.label91.SizeF = new System.Drawing.SizeF(22F, 60F);
             this.label91.StylePriority.UseBorders = false;
             this.label91.StylePriority.UseFont = false;
             this.label91.StylePriority.UsePadding = false;

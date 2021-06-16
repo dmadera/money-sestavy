@@ -2609,6 +2609,7 @@
     <MojeFirmaMisto Value="0" />
     <AdresaMisto Value="0" />
     <KurzMnozstvi Value="0" />
+    <MnozstviVJedn_UserData Value="1" />
     <MojeFirma Value="1">
       <Kontakty Value="0">
         <Telefon2 Value="0" />
@@ -2650,15 +2651,15 @@
     <DodaciAdresaNazev Value="0" />
     <MojeFirmaNazev Value="0" />
     <AdresaKontaktniOsobaNazev Value="0" />
-    <NepenezniPlatby Value="1">
-      <Castka Value="1" />
+    <NepenezniPlatby Value="0">
+      <Castka Value="0" />
       <KomunikaceSPT_ID Value="0" />
-      <Platidlo_ID Value="1" />
+      <Platidlo_ID Value="0" />
       <KomunikaceSPT Value="0" />
-      <Kurz Value="1" />
-      <Mnozstvi Value="1" />
+      <Kurz Value="0" />
+      <Mnozstvi Value="0" />
       <PlatbaPlatebnimTerminalem Value="0" />
-      <Platidlo Value="1">
+      <Platidlo Value="0">
         <SeznamHodnot Value="0">
           <Datum Value="0" />
           <Kurz Value="0" />
@@ -2668,9 +2669,9 @@
         <Pokladna_ID Value="0" />
         <PrimarniUcetPohledavky_ID Value="0" />
         <Vystavitel_ID Value="0" />
-        <Kod Value="1" />
+        <Kod Value="0" />
         <KodHotkey Value="0" />
-        <Nazev Value="1" />
+        <Nazev Value="0" />
         <OdstranitNeciselneZnakyVarSymbolu Value="0" />
         <Pokladna Value="0">
           <PrimarniUcet Value="0" />
@@ -3380,7 +3381,7 @@
         </Vystavitel>
         <Zobrazovat Value="0" />
       </Platidlo>
-      <Pocet Value="1" />
+      <Pocet Value="0" />
     </NepenezniPlatby>
     <ObecneProdejniMisto Value="0" />
     <ObecneProdejniMisto_ID Value="0" />
@@ -3794,7 +3795,6 @@
           <Ekasa Value="0">
             <TypPolozky Value="0" />
           </Ekasa>
-          <Procento_UserData Value="0" />
           <Attachment_ID Value="0" />
           <Baleni Value="0" />
           <BaleniJednotky_UserData Value="1" />
@@ -4315,6 +4315,7 @@
           <PovinnyNasobek Value="0" />
           <Poznamka Value="0" />
           <PreneseniDane_ID Value="0" />
+          <Procento_UserData Value="0" />
           <ProduktoveKlice Value="0">
             <ProduktovyKlic_ID Value="0" />
             <ProduktovyKlic Value="0" />
@@ -4382,7 +4383,6 @@
           <Popis1_Popis Value="0" />
           <Popis2_Popis Value="0" />
           <Popis3_Popis Value="0" />
-          <SazbaDPH_UserData Value="0" />
           <SazbyDPH Value="0">
             <PovahaSazbyVstup_ID Value="0" />
             <PovahaSazbyVystup_ID Value="0" />
@@ -4403,7 +4403,7 @@
             <Poradi Value="0" />
             <TypAlternativy Value="0" />
           </SeznamAlternativ>
-          <SkladovaPozice_UserData Value="1" />
+          <SkladovaPozice_UserData Value="0" />
           <Slozeni Value="0">
             <Celek Value="0" />
             <VlastniCenik_ID Value="0" />
@@ -4466,7 +4466,7 @@
             <Doba Value="0" />
           </Zaruka>
           <Zkratka12 Value="1" />
-          <Zkratka20 Value="0" />
+          <Zkratka20 Value="1" />
           <Znacka Value="0" />
           <ZvlastniPohyb Value="0" />
           <ZvlastniPohyb_ID Value="0" />
