@@ -1,0 +1,283 @@
+/// <XRTypeInfo>
+///   <AssemblyFullName>DevExpress.XtraReports.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</AssemblyFullName>
+///   <AssemblyLocation>C:\Money\MoneyS4\DevExpress.XtraReports.v19.1.dll</AssemblyLocation>
+///   <TypeName>DevExpress.XtraReports.UI.XtraReport</TypeName>
+///   <Localization>cs-CZ</Localization>
+///   <Version>19.1</Version>
+///   <Resources>
+///     <Resource Name="XtraReportSerialization.XtraReport">
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAABAAAAAAAAAFBBRFBBRFBIXnLBAAAAAOcAAAAmJAB0AGgAaQBzAC4AUwBjAHIAaQBwAHQAcwBTAG8AdQByAGMAZQAAAAAAAf8CdXNpbmcgQ1NXLkNTV1N5c3RlbS5SZXBvcnRzOw0KdXNpbmcgU3lzdGVtLkRhdGE7DQoNCnByaXZhdGUgdm9pZCBYdHJhUmVwb3J0X0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdz
+/// IGUpIHsNCglEYXRhU2V0IGRzID0gWHRyYVJlcG9ydC5EYXRhU291cmNlIGFzIERhdGFTZXQ7IA0KCURhdGFUYWJsZSBkdCA9IGRzLlRhYmxlc1siSW50ZXJuaURva2xhZCJdOw0KCWlmKENvbnZlcnQuVG9TdHJpbmcoZHQuUm93c1swXVsiTmF6ZXYiXSkgIT0gIsWgZWsgdnlkYW7DvSIpIHsNCgkJdGhyb3cgbmV3IEV4Y2VwdGlvbigiUMWZZWQgdGlza2VtIG9wcmF2dGUgxaFlayBwb2RsZSBuw6F6dnUhIik7DQoJfQ0KDQp9DQo=</Resource>
+///   </Resources>
+/// </XRTypeInfo>
+namespace XtraReportSerialization {
+    
+    public class XtraReport : DevExpress.XtraReports.UI.XtraReport {
+        private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
+        private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRLabel label1;
+        private DevExpress.XtraReports.UI.XRPanel panel1;
+        private DevExpress.XtraReports.UI.XRLabel label2;
+        private DevExpress.XtraReports.UI.XRLabel label3;
+        private DevExpress.XtraReports.UI.XRLabel label4;
+        private DevExpress.XtraReports.UI.XRLabel label5;
+        private DevExpress.XtraReports.UI.XRLabel label6;
+        private DevExpress.XtraReports.UI.XRLabel label7;
+        private DevExpress.XtraReports.UI.XRLabel label8;
+        private DevExpress.XtraReports.UI.XRLabel label9;
+        private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
+        private DevExpress.XtraReports.UI.CalculatedField DatumPlatnosti;
+        private System.Resources.ResourceManager _resources;
+        private string _resourceString;
+        public XtraReport() {
+            this._resourceString = DevExpress.XtraReports.Serialization.XRResourceManager.GetResourceFor("XtraReportSerialization.XtraReport");
+            this.InitializeComponent();
+        }
+        private System.Resources.ResourceManager resources {
+            get {
+                if (_resources == null) {
+                    this._resources = new DevExpress.XtraReports.Serialization.XRResourceManager(this._resourceString);
+                }
+                return this._resources;
+            }
+        }
+        private void InitializeComponent() {
+            this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
+            this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
+            this.label1 = new DevExpress.XtraReports.UI.XRLabel();
+            this.panel1 = new DevExpress.XtraReports.UI.XRPanel();
+            this.label2 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label4 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label5 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label6 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label7 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label8 = new DevExpress.XtraReports.UI.XRLabel();
+            this.label9 = new DevExpress.XtraReports.UI.XRLabel();
+            this.DatumPlatnosti = new DevExpress.XtraReports.UI.CalculatedField();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            // 
+            // TopMargin
+            // 
+            this.TopMargin.Dpi = 254F;
+            this.TopMargin.Font = new System.Drawing.Font("Roboto Light", 9F);
+            this.TopMargin.Name = "TopMargin";
+            this.TopMargin.StylePriority.UseFont = false;
+            // 
+            // Detail
+            // 
+            this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label1,
+                        this.panel1});
+            this.Detail.Dpi = 254F;
+            this.Detail.Font = new System.Drawing.Font("Roboto Light", 9F);
+            this.Detail.HeightF = 820F;
+            this.Detail.HierarchyPrintOptions.Indent = 50.8F;
+            this.Detail.Name = "Detail";
+            this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 150, 150, 150, 254F);
+            this.Detail.StylePriority.UseFont = false;
+            this.Detail.StylePriority.UsePadding = false;
+            this.Detail.StylePriority.UseTextAlignment = false;
+            this.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopJustify;
+            // 
+            // BottomMargin
+            // 
+            this.BottomMargin.Dpi = 254F;
+            this.BottomMargin.Name = "BottomMargin";
+            // 
+            // label1
+            // 
+            this.label1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "InterniDoklad.CisloDokladu")});
+            this.label1.Dpi = 254F;
+            this.label1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(560F, 670F);
+            this.label1.Multiline = true;
+            this.label1.Name = "label1";
+            this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 5, 254F);
+            this.label1.SizeF = new System.Drawing.SizeF(490F, 80F);
+            this.label1.StylePriority.UseFont = false;
+            this.label1.StylePriority.UsePadding = false;
+            this.label1.StylePriority.UseTextAlignment = false;
+            this.label1.Text = "Párovací symbol: ";
+            this.label1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+                        this.label2,
+                        this.label3,
+                        this.label4,
+                        this.label5,
+                        this.label6,
+                        this.label7,
+                        this.label8,
+                        this.label9});
+            this.panel1.Dpi = 254F;
+            this.panel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 140F);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
+            this.panel1.SizeF = new System.Drawing.SizeF(1620F, 530F);
+            this.panel1.StylePriority.UsePadding = false;
+            // 
+            // label2
+            // 
+            this.label2.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "InterniDoklad.SumaCelkem")});
+            this.label2.Dpi = 254F;
+            this.label2.Font = new System.Drawing.Font("Roboto", 18F);
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(580F, 40F);
+            this.label2.Name = "label2";
+            this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 5, 254F);
+            this.label2.SizeF = new System.Drawing.SizeF(430F, 120F);
+            this.label2.StylePriority.UseFont = false;
+            this.label2.StylePriority.UsePadding = false;
+            this.label2.StylePriority.UseTextAlignment = false;
+            this.label2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.label2.TextFormatString = "--{0:#,#}--";
+            this.label2.WordWrap = false;
+            // 
+            // label3
+            // 
+            this.label3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "InterniDoklad.DatumPlatnosti")});
+            this.label3.Dpi = 254F;
+            this.label3.Font = new System.Drawing.Font("Roboto", 9F);
+            this.label3.LocationFloat = new DevExpress.Utils.PointFloat(1421.438F, 456.5416F);
+            this.label3.Multiline = true;
+            this.label3.Name = "label3";
+            this.label3.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 254F);
+            this.label3.SizeF = new System.Drawing.SizeF(198.5627F, 41.99994F);
+            this.label3.StylePriority.UseFont = false;
+            this.label3.StylePriority.UsePadding = false;
+            this.label3.StylePriority.UseTextAlignment = false;
+            this.label3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopRight;
+            this.label3.TextFormatString = "{0:dd.MM.yyyy}";
+            // 
+            // label4
+            // 
+            this.label4.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "InterniDoklad.DatumVystaveni")});
+            this.label4.Dpi = 254F;
+            this.label4.Font = new System.Drawing.Font("Roboto", 9F);
+            this.label4.LocationFloat = new DevExpress.Utils.PointFloat(1421.438F, 418.5417F);
+            this.label4.Multiline = true;
+            this.label4.Name = "label4";
+            this.label4.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 254F);
+            this.label4.SizeF = new System.Drawing.SizeF(198.5626F, 38F);
+            this.label4.StylePriority.UseFont = false;
+            this.label4.StylePriority.UsePadding = false;
+            this.label4.StylePriority.UseTextAlignment = false;
+            this.label4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
+            this.label4.TextFormatString = "{0:dd.MM.yyyy}";
+            // 
+            // label5
+            // 
+            this.label5.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
+                        new DevExpress.XtraReports.UI.XRBinding("Text", null, "InterniDoklad.ParovaciSymbol")});
+            this.label5.Dpi = 254F;
+            this.label5.Font = new System.Drawing.Font("Roboto", 9F);
+            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(1421.438F, 370F);
+            this.label5.Multiline = true;
+            this.label5.Name = "label5";
+            this.label5.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 254F);
+            this.label5.SizeF = new System.Drawing.SizeF(198.5626F, 48.54156F);
+            this.label5.StylePriority.UseFont = false;
+            this.label5.StylePriority.UsePadding = false;
+            this.label5.StylePriority.UseTextAlignment = false;
+            this.label5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomRight;
+            // 
+            // label6
+            // 
+            this.label6.Dpi = 254F;
+            this.label6.Font = new System.Drawing.Font("Roboto", 9F);
+            this.label6.LocationFloat = new DevExpress.Utils.PointFloat(1151.437F, 456.5416F);
+            this.label6.Multiline = true;
+            this.label6.Name = "label6";
+            this.label6.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 10, 0, 5, 254F);
+            this.label6.SizeF = new System.Drawing.SizeF(270F, 42F);
+            this.label6.StylePriority.UseFont = false;
+            this.label6.StylePriority.UsePadding = false;
+            this.label6.StylePriority.UseTextAlignment = false;
+            this.label6.Text = "Platnost do:";
+            this.label6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
+            // 
+            // label7
+            // 
+            this.label7.Dpi = 254F;
+            this.label7.Font = new System.Drawing.Font("Roboto", 9F);
+            this.label7.LocationFloat = new DevExpress.Utils.PointFloat(1151.437F, 418.5417F);
+            this.label7.Multiline = true;
+            this.label7.Name = "label7";
+            this.label7.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 10, 0, 0, 254F);
+            this.label7.SizeF = new System.Drawing.SizeF(270F, 38F);
+            this.label7.StylePriority.UseFont = false;
+            this.label7.StylePriority.UsePadding = false;
+            this.label7.StylePriority.UseTextAlignment = false;
+            this.label7.Text = "Datum vystavení:";
+            this.label7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
+            // label8
+            // 
+            this.label8.Dpi = 254F;
+            this.label8.Font = new System.Drawing.Font("Roboto", 9F);
+            this.label8.LocationFloat = new DevExpress.Utils.PointFloat(1151.437F, 370F);
+            this.label8.Multiline = true;
+            this.label8.Name = "label8";
+            this.label8.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 10, 0, 0, 254F);
+            this.label8.SizeF = new System.Drawing.SizeF(270F, 48.54175F);
+            this.label8.StylePriority.UseFont = false;
+            this.label8.StylePriority.UsePadding = false;
+            this.label8.StylePriority.UseTextAlignment = false;
+            this.label8.Text = "Párovací symbol: ";
+            this.label8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomLeft;
+            // 
+            // label9
+            // 
+            this.label9.Dpi = 254F;
+            this.label9.Font = new System.Drawing.Font("Roboto Light", 8F);
+            this.label9.LocationFloat = new DevExpress.Utils.PointFloat(0F, 370F);
+            this.label9.Multiline = true;
+            this.label9.Name = "label9";
+            this.label9.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 10, 10, 254F);
+            this.label9.SizeF = new System.Drawing.SizeF(518.5835F, 128.5416F);
+            this.label9.StylePriority.UseFont = false;
+            this.label9.StylePriority.UsePadding = false;
+            this.label9.StylePriority.UseTextAlignment = false;
+            this.label9.Text = "Počet bodů za odběr zboží:\r\n5 000 - 10 000 Kč ........1% z odběru\r\n10 000 Kč  a v" +
+                "íce .......1,5% z odběru";
+            this.label9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomJustify;
+            // 
+            // DatumPlatnosti
+            // 
+            this.DatumPlatnosti.DataMember = "InterniDoklad";
+            this.DatumPlatnosti.Expression = "AddYears([DatumVystaveni], 1)";
+            this.DatumPlatnosti.Name = "DatumPlatnosti";
+            // 
+            // XtraReport
+            // 
+            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
+                        this.TopMargin,
+                        this.Detail,
+                        this.BottomMargin});
+            this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
+                        this.DatumPlatnosti});
+            this.Dpi = 254F;
+            this.Font = new System.Drawing.Font("Roboto Light", 9F);
+            this.Margins = new System.Drawing.Printing.Margins(240, 240, 100, 100);
+            this.Name = "XtraReport";
+            this.PageHeight = 1000;
+            this.PageWidth = 2100;
+            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.PaperName = "Vlastní";
+            this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;
+            this.Scripts.OnBeforePrint = "XtraReport_BeforePrint";
+            this.ScriptsSource = resources.GetString("$this.ScriptsSource");
+            this.ShowPrintMarginsWarning = false;
+            this.SnapGridSize = 31.75F;
+            this.Version = "19.1";
+            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+        }
+    }
+}
