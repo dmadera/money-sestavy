@@ -6,8 +6,8 @@
 ///   <Version>19.1</Version>
 ///   <Resources>
 ///     <Resource Name="XtraReportSerialization.XtraReport">
-/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAABAAAAAAAAAFBBRFBBRFBIXnLBAAAAAOcAAAAmJAB0AGgAaQBzAC4AUwBjAHIAaQBwAHQAcwBTAG8AdQByAGMAZQAAAAAAAf8CdXNpbmcgQ1NXLkNTV1N5c3RlbS5SZXBvcnRzOw0KdXNpbmcgU3lzdGVtLkRhdGE7DQoNCnByaXZhdGUgdm9pZCBYdHJhUmVwb3J0X0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdz
-/// IGUpIHsNCglEYXRhU2V0IGRzID0gWHRyYVJlcG9ydC5EYXRhU291cmNlIGFzIERhdGFTZXQ7IA0KCURhdGFUYWJsZSBkdCA9IGRzLlRhYmxlc1siSW50ZXJuaURva2xhZCJdOw0KCWlmKENvbnZlcnQuVG9TdHJpbmcoZHQuUm93c1swXVsiTmF6ZXYiXSkgIT0gIsWgZWsgdnlkYW7DvSIpIHsNCgkJdGhyb3cgbmV3IEV4Y2VwdGlvbigiUMWZZWQgdGlza2VtIG9wcmF2dGUgxaFlayBwb2RsZSBuw6F6dnUhIik7DQoJfQ0KDQp9DQo=</Resource>
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAABAAAAAAAAAFBBRFBBRFBIXnLBAAAAAOcAAAAmJAB0AGgAaQBzAC4AUwBjAHIAaQBwAHQAcwBTAG8AdQByAGMAZQAAAAAAAYEDdXNpbmcgQ1NXLkNTV1N5c3RlbS5SZXBvcnRzOw0KdXNpbmcgU3lzdGVtLkRhdGE7DQoNCnByaXZhdGUgdm9pZCBYdHJhUmVwb3J0X0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdz
+/// IGUpIHsNCglEYXRhU2V0IGRzID0gWHRyYVJlcG9ydC5EYXRhU291cmNlIGFzIERhdGFTZXQ7IA0KCURhdGFUYWJsZSBkdCA9IGRzLlRhYmxlc1siSW50ZXJuaURva2xhZCJdOw0KCWlmKENvbnZlcnQuVG9TdHJpbmcoZHQuUm93c1swXVsiTmF6ZXYiXSkuU3RhcnRzV2l0aCgixaBlayB2eWRhbsO9IikpIHsNCgkJdGhyb3cgbmV3IEV4Y2VwdGlvbigiTHplIHRpc2tub3V0IHBvdXplIHBsYXRuw70gxaFlayEiKTsNCgl9DQoNCn0NCg==</Resource>
 ///   </Resources>
 /// </XRTypeInfo>
 namespace XtraReportSerialization {
@@ -62,6 +62,7 @@ namespace XtraReportSerialization {
             // 
             this.TopMargin.Dpi = 254F;
             this.TopMargin.Font = new System.Drawing.Font("Roboto Light", 9F);
+            this.TopMargin.HeightF = 664F;
             this.TopMargin.Name = "TopMargin";
             this.TopMargin.StylePriority.UseFont = false;
             // 
@@ -84,6 +85,7 @@ namespace XtraReportSerialization {
             // BottomMargin
             // 
             this.BottomMargin.Dpi = 254F;
+            this.BottomMargin.HeightF = 313F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // label1
@@ -92,7 +94,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "InterniDoklad.CisloDokladu")});
             this.label1.Dpi = 254F;
             this.label1.Font = new System.Drawing.Font("Roboto", 12F);
-            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(560F, 670F);
+            this.label1.LocationFloat = new DevExpress.Utils.PointFloat(645F, 670F);
             this.label1.Multiline = true;
             this.label1.Name = "label1";
             this.label1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 5, 254F);
@@ -127,7 +129,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "InterniDoklad.SumaCelkem")});
             this.label2.Dpi = 254F;
             this.label2.Font = new System.Drawing.Font("Roboto", 18F);
-            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(580F, 40F);
+            this.label2.LocationFloat = new DevExpress.Utils.PointFloat(645F, 40F);
             this.label2.Name = "label2";
             this.label2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 5, 254F);
             this.label2.SizeF = new System.Drawing.SizeF(430F, 120F);
@@ -135,7 +137,7 @@ namespace XtraReportSerialization {
             this.label2.StylePriority.UsePadding = false;
             this.label2.StylePriority.UseTextAlignment = false;
             this.label2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.label2.TextFormatString = "--{0:#,#}--";
+            this.label2.TextFormatString = "-- {0:#,#} --";
             this.label2.WordWrap = false;
             // 
             // label3
@@ -236,12 +238,12 @@ namespace XtraReportSerialization {
             // label9
             // 
             this.label9.Dpi = 254F;
-            this.label9.Font = new System.Drawing.Font("Roboto Light", 8F);
-            this.label9.LocationFloat = new DevExpress.Utils.PointFloat(0F, 370F);
+            this.label9.Font = new System.Drawing.Font("Roboto", 9F);
+            this.label9.LocationFloat = new DevExpress.Utils.PointFloat(39.99998F, 370F);
             this.label9.Multiline = true;
             this.label9.Name = "label9";
             this.label9.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 10, 10, 254F);
-            this.label9.SizeF = new System.Drawing.SizeF(518.5835F, 128.5416F);
+            this.label9.SizeF = new System.Drawing.SizeF(590.021F, 128.5416F);
             this.label9.StylePriority.UseFont = false;
             this.label9.StylePriority.UsePadding = false;
             this.label9.StylePriority.UseTextAlignment = false;
@@ -265,16 +267,20 @@ namespace XtraReportSerialization {
                         this.DatumPlatnosti});
             this.Dpi = 254F;
             this.Font = new System.Drawing.Font("Roboto Light", 9F);
-            this.Margins = new System.Drawing.Printing.Margins(240, 240, 100, 100);
+            this.Landscape = true;
+            this.Margins = new System.Drawing.Printing.Margins(238, 240, 664, 313);
             this.Name = "XtraReport";
-            this.PageHeight = 1000;
-            this.PageWidth = 2100;
-            this.PaperKind = System.Drawing.Printing.PaperKind.Custom;
+            this.PageHeight = 2100;
+            this.PageWidth = 2970;
+            this.PaperKind = System.Drawing.Printing.PaperKind.A4;
             this.PaperName = "Vlastní";
+            this.ReportPrintOptions.PrintOnEmptyDataSource = false;
             this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;
+            this.RequestParameters = false;
             this.Scripts.OnBeforePrint = "XtraReport_BeforePrint";
             this.ScriptsSource = resources.GetString("$this.ScriptsSource");
             this.ShowPrintMarginsWarning = false;
+            this.ShowPrintStatusDialog = false;
             this.SnapGridSize = 31.75F;
             this.Version = "19.1";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();

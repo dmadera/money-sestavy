@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <DataConfiguration>
   <DodaciListVydany Value="1">
+    <DodaciAdresaFirma_ID Value="0" />
+    <StatUrceniOdeslani_ID Value="0" />
+    <PovahaTransakce_ID Value="0" />
+    <IDPovahaTransakce_ID Value="0" />
+    <DodaciPodminky_ID Value="0" />
+    <ZvlastniPohyb_ID Value="0" />
+    <AdresaKoncovehoPrijemceKontaktniOsobaNazev Value="0" />
+    <IDOvlivnujeIntrastat Value="0" />
     <IDDatum Value="0" />
     <FakturacniAdresaFirma_ID Value="0" />
     <DruhDopravy_ID Value="0" />
@@ -11,14 +19,6 @@
     <AdresaKoncovehoPrijemceTelefonSpojeni_ID Value="0" />
     <AdresaKoncovehoPrijemceStat_ID Value="0" />
     <AdresaPrijemceFakturyStat_ID Value="0" />
-    <DodaciAdresaFirma_ID Value="0" />
-    <StatUrceniOdeslani_ID Value="0" />
-    <PovahaTransakce_ID Value="0" />
-    <IDPovahaTransakce_ID Value="0" />
-    <DodaciPodminky_ID Value="0" />
-    <ZvlastniPohyb_ID Value="0" />
-    <AdresaKoncovehoPrijemceKontaktniOsobaNazev Value="0" />
-    <IDOvlivnujeIntrastat Value="0" />
     <Korekce0CelkemCM Value="0" />
     <Korekce2ZakladCM Value="0" />
     <Korekce0Dan Value="0" />
@@ -209,6 +209,15 @@
         </Adresy>
         <DatovaSchrankaID Value="0" />
         <Aktivity Value="0">
+          <PolozkaKatalogu_ID Value="0" />
+          <MernaJednotka_ID Value="0" />
+          <DokladyPrebirani Value="0">
+            <ObjectNamePolozky Value="0" />
+            <Doklad_ID Value="0" />
+            <Polozka_ID Value="0" />
+            <ObjectNameDokladu Value="0" />
+            <PriVyuctovaniVyriditZdrojovouPolozku Value="0" />
+          </DokladyPrebirani>
           <DokladyVyuctovani Value="0">
             <Vyuctovano Value="0" />
             <ObjectNamePolozky Value="0" />
@@ -228,15 +237,6 @@
             <PlanovanaDobaTrvani Value="0" />
           </PlanovanyCas>
           <Email_ID Value="0" />
-          <PolozkaKatalogu_ID Value="0" />
-          <MernaJednotka_ID Value="0" />
-          <DokladyPrebirani Value="0">
-            <ObjectNamePolozky Value="0" />
-            <Doklad_ID Value="0" />
-            <Polozka_ID Value="0" />
-            <ObjectNameDokladu Value="0" />
-            <PriVyuctovaniVyriditZdrojovouPolozku Value="0" />
-          </DokladyPrebirani>
           <Cinnost Value="0" />
           <Cinnost_ID Value="0" />
           <CiselnaRada Value="0" />
@@ -277,8 +277,8 @@
           <Poznamka Value="0" />
           <Prideleno_ID Value="0" />
           <Prideleno Value="0" />
-          <DobaTrvani Value="0" />
           <SkutecnaDobaTrvani Value="0" />
+          <DobaTrvani Value="0" />
           <SkutecneMnozstvi Value="0" />
           <DatumACasUkonceni Value="0" />
           <DatumACasZahajeni Value="0" />
@@ -616,6 +616,17 @@
         <Osoby Value="1">
           <UvadetNaDokladech Value="0" />
           <SeznamOsob Value="0">
+            <Tel4Typ Value="0" />
+            <Tel2Typ Value="0" />
+            <Tel4Klapka Value="0" />
+            <Tel1MistniCislo Value="0" />
+            <Tel1Klapka Value="0" />
+            <Tel1Predvolba Value="0" />
+            <Tel2Klapka Value="0" />
+            <Tel2MistniCislo Value="0" />
+            <FunkceOsoby_ID Value="0" />
+            <FunkceOsoby Value="0" />
+            <OsloveniProEmail Value="0" />
             <Tel3Predvolba Value="0" />
             <Tel1Typ Value="0" />
             <Tel4MistniCislo Value="0" />
@@ -631,25 +642,14 @@
             <FaxSpojeni_ID Value="0" />
             <EmailSpojeni_ID Value="0" />
             <Tel3MistniCislo Value="0" />
-            <Tel4Typ Value="0" />
-            <Tel2Typ Value="0" />
-            <Tel4Klapka Value="0" />
-            <Tel1MistniCislo Value="0" />
-            <Tel1Klapka Value="0" />
-            <Tel1Predvolba Value="0" />
-            <Tel2Klapka Value="0" />
-            <Tel2MistniCislo Value="0" />
-            <FunkceOsoby_ID Value="0" />
-            <FunkceOsoby Value="0" />
-            <OsloveniProEmail Value="0" />
             <Adresa Value="0">
+              <NazevStatu Value="0" />
+              <Ulice Value="0" />
               <Misto Value="0" />
               <Psc Value="0" />
               <KodPsc Value="0" />
               <Stat Value="0" />
               <Nazev Value="0" />
-              <NazevStatu Value="0" />
-              <Ulice Value="0" />
             </Adresa>
             <FaxCislo Value="0" />
             <CisloOsoby Value="0" />
@@ -658,10 +658,10 @@
             <Email Value="0" />
             <Funkce Value="0" />
             <FaxStatID Value="0" />
-            <Tel4StatID Value="0" />
-            <Tel3StatID Value="0" />
             <Tel2StatID Value="0" />
             <Tel1StatID Value="0" />
+            <Tel4StatID Value="0" />
+            <Tel3StatID Value="0" />
             <TitulPred_ID Value="0" />
             <TitulZa_ID Value="0" />
             <AdresaStat_ID Value="0" />
@@ -669,58 +669,58 @@
             <FaxKlapka Value="0" />
             <Kod Value="0" />
             <Kontakty Value="0">
-              <Email Value="0" />
-              <Telefon1 Value="0">
-                <PredvolbaStat Value="0" />
-                <Predvolba Value="0" />
-                <Typ Value="0" />
-                <StatID Value="0" />
-                <MistniCislo Value="0" />
-                <Klapka Value="0" />
-                <Cislo Value="0" />
-              </Telefon1>
-              <TelefonSpojeni1 Value="0" />
-              <TelefonSpojeni2 Value="0" />
-              <Telefon4 Value="0">
-                <Cislo Value="0" />
-                <MistniCislo Value="0" />
-                <Typ Value="0" />
-                <Predvolba Value="0" />
-                <PredvolbaStat Value="0" />
-                <StatID Value="0" />
-                <Klapka Value="0" />
-              </Telefon4>
-              <Spojeni Value="0" />
-              <Telefon3 Value="0">
-                <Typ Value="0" />
-                <StatID Value="0" />
-                <PredvolbaStat Value="0" />
-                <MistniCislo Value="0" />
-                <Predvolba Value="0" />
-                <Klapka Value="0" />
-                <Cislo Value="0" />
-              </Telefon3>
               <TelefonSpojeni3 Value="0" />
               <TelefonSpojeni4 Value="0" />
               <FaxSpojeni Value="0" />
               <EmailSpojeni Value="0" />
               <Fax Value="0">
-                <MistniCislo Value="0" />
-                <PredvolbaStat Value="0" />
-                <StatID Value="0" />
                 <Klapka Value="0" />
                 <Cislo Value="0" />
                 <Predvolba Value="0" />
+                <MistniCislo Value="0" />
+                <PredvolbaStat Value="0" />
+                <StatID Value="0" />
               </Fax>
               <Telefon2 Value="0">
+                <PredvolbaStat Value="0" />
                 <Klapka Value="0" />
                 <Typ Value="0" />
                 <Cislo Value="0" />
                 <StatID Value="0" />
                 <MistniCislo Value="0" />
                 <Predvolba Value="0" />
-                <PredvolbaStat Value="0" />
               </Telefon2>
+              <Email Value="0" />
+              <Telefon1 Value="0">
+                <Cislo Value="0" />
+                <PredvolbaStat Value="0" />
+                <Predvolba Value="0" />
+                <Typ Value="0" />
+                <StatID Value="0" />
+                <MistniCislo Value="0" />
+                <Klapka Value="0" />
+              </Telefon1>
+              <TelefonSpojeni1 Value="0" />
+              <TelefonSpojeni2 Value="0" />
+              <Telefon4 Value="0">
+                <PredvolbaStat Value="0" />
+                <StatID Value="0" />
+                <Klapka Value="0" />
+                <Cislo Value="0" />
+                <MistniCislo Value="0" />
+                <Typ Value="0" />
+                <Predvolba Value="0" />
+              </Telefon4>
+              <Spojeni Value="0" />
+              <Telefon3 Value="0">
+                <Cislo Value="0" />
+                <Typ Value="0" />
+                <StatID Value="0" />
+                <PredvolbaStat Value="0" />
+                <MistniCislo Value="0" />
+                <Predvolba Value="0" />
+                <Klapka Value="0" />
+              </Telefon3>
             </Kontakty>
             <KrestniJmeno Value="0" />
             <FaxMistniCislo Value="0" />
@@ -736,10 +736,10 @@
               <VzajmenyVztah Value="0" />
             </Pratele>
             <FaxPredvolba Value="0" />
+            <Tel4PredvolbaStat Value="0" />
             <Tel1PredvolbaStat Value="0" />
             <Tel3PredvolbaStat Value="0" />
             <Tel2PredvolbaStat Value="0" />
-            <Tel4PredvolbaStat Value="0" />
             <FaxPredvolbaStat Value="0" />
             <Prijmeni Value="0" />
             <AdresaPsc Value="0" />
@@ -749,10 +749,10 @@
             </AdresniKlice>
             <Spojeni Value="0" />
             <AdresaStat Value="0" />
+            <Tel3Cislo Value="0" />
             <Tel1Cislo Value="0" />
             <Tel4Cislo Value="0" />
             <Tel2Cislo Value="0" />
-            <Tel3Cislo Value="0" />
             <TitulPred Value="0" />
             <TitulZa Value="0" />
             <AdresaUlice Value="0" />
@@ -760,6 +760,17 @@
             <Nazev Value="0" />
           </SeznamOsob>
           <HlavniOsoba Value="1">
+            <Tel4Typ Value="0" />
+            <Tel2Typ Value="0" />
+            <Tel4Klapka Value="0" />
+            <Tel1MistniCislo Value="0" />
+            <Tel1Klapka Value="0" />
+            <Tel1Predvolba Value="0" />
+            <Tel2Klapka Value="0" />
+            <Tel2MistniCislo Value="0" />
+            <FunkceOsoby_ID Value="0" />
+            <FunkceOsoby Value="0" />
+            <OsloveniProEmail Value="0" />
             <Tel3Predvolba Value="0" />
             <Tel1Typ Value="0" />
             <Tel4MistniCislo Value="0" />
@@ -775,25 +786,14 @@
             <FaxSpojeni_ID Value="0" />
             <EmailSpojeni_ID Value="0" />
             <Tel3MistniCislo Value="0" />
-            <Tel4Typ Value="0" />
-            <Tel2Typ Value="0" />
-            <Tel4Klapka Value="0" />
-            <Tel1MistniCislo Value="0" />
-            <Tel1Klapka Value="0" />
-            <Tel1Predvolba Value="0" />
-            <Tel2Klapka Value="0" />
-            <Tel2MistniCislo Value="0" />
-            <FunkceOsoby_ID Value="0" />
-            <FunkceOsoby Value="0" />
-            <OsloveniProEmail Value="0" />
             <Adresa Value="0">
+              <NazevStatu Value="0" />
+              <Ulice Value="0" />
               <Misto Value="0" />
               <Psc Value="0" />
               <KodPsc Value="0" />
               <Stat Value="0" />
               <Nazev Value="0" />
-              <NazevStatu Value="0" />
-              <Ulice Value="0" />
             </Adresa>
             <FaxCislo Value="0" />
             <CisloOsoby Value="0" />
@@ -802,10 +802,10 @@
             <Email Value="0" />
             <Funkce Value="0" />
             <FaxStatID Value="0" />
-            <Tel4StatID Value="0" />
-            <Tel3StatID Value="0" />
             <Tel2StatID Value="0" />
             <Tel1StatID Value="0" />
+            <Tel4StatID Value="0" />
+            <Tel3StatID Value="0" />
             <TitulPred_ID Value="0" />
             <TitulZa_ID Value="0" />
             <AdresaStat_ID Value="0" />
@@ -813,15 +813,36 @@
             <FaxKlapka Value="0" />
             <Kod Value="0" />
             <Kontakty Value="1">
+              <TelefonSpojeni3 Value="0" />
+              <TelefonSpojeni4 Value="0" />
+              <FaxSpojeni Value="0" />
+              <EmailSpojeni Value="0" />
+              <Fax Value="0">
+                <Klapka Value="0" />
+                <Cislo Value="0" />
+                <Predvolba Value="0" />
+                <MistniCislo Value="0" />
+                <PredvolbaStat Value="0" />
+                <StatID Value="0" />
+              </Fax>
+              <Telefon2 Value="0">
+                <PredvolbaStat Value="0" />
+                <Klapka Value="0" />
+                <Typ Value="0" />
+                <Cislo Value="0" />
+                <StatID Value="0" />
+                <MistniCislo Value="0" />
+                <Predvolba Value="0" />
+              </Telefon2>
               <Email Value="0" />
               <Telefon1 Value="0">
+                <Cislo Value="0" />
                 <PredvolbaStat Value="0" />
                 <Predvolba Value="0" />
                 <Typ Value="0" />
                 <StatID Value="0" />
                 <MistniCislo Value="0" />
                 <Klapka Value="0" />
-                <Cislo Value="0" />
               </Telefon1>
               <TelefonSpojeni1 Value="1">
                 <SpojeniKlapka Value="0" />
@@ -842,45 +863,24 @@
               </TelefonSpojeni1>
               <TelefonSpojeni2 Value="0" />
               <Telefon4 Value="0">
+                <PredvolbaStat Value="0" />
+                <StatID Value="0" />
+                <Klapka Value="0" />
                 <Cislo Value="0" />
                 <MistniCislo Value="0" />
                 <Typ Value="0" />
                 <Predvolba Value="0" />
-                <PredvolbaStat Value="0" />
-                <StatID Value="0" />
-                <Klapka Value="0" />
               </Telefon4>
               <Spojeni Value="0" />
               <Telefon3 Value="0">
+                <Cislo Value="0" />
                 <Typ Value="0" />
                 <StatID Value="0" />
                 <PredvolbaStat Value="0" />
                 <MistniCislo Value="0" />
                 <Predvolba Value="0" />
                 <Klapka Value="0" />
-                <Cislo Value="0" />
               </Telefon3>
-              <TelefonSpojeni3 Value="0" />
-              <TelefonSpojeni4 Value="0" />
-              <FaxSpojeni Value="0" />
-              <EmailSpojeni Value="0" />
-              <Fax Value="0">
-                <MistniCislo Value="0" />
-                <PredvolbaStat Value="0" />
-                <StatID Value="0" />
-                <Klapka Value="0" />
-                <Cislo Value="0" />
-                <Predvolba Value="0" />
-              </Fax>
-              <Telefon2 Value="0">
-                <Klapka Value="0" />
-                <Typ Value="0" />
-                <Cislo Value="0" />
-                <StatID Value="0" />
-                <MistniCislo Value="0" />
-                <Predvolba Value="0" />
-                <PredvolbaStat Value="0" />
-              </Telefon2>
             </Kontakty>
             <KrestniJmeno Value="1" />
             <FaxMistniCislo Value="0" />
@@ -896,10 +896,10 @@
               <VzajmenyVztah Value="0" />
             </Pratele>
             <FaxPredvolba Value="0" />
+            <Tel4PredvolbaStat Value="0" />
             <Tel1PredvolbaStat Value="0" />
             <Tel3PredvolbaStat Value="0" />
             <Tel2PredvolbaStat Value="0" />
-            <Tel4PredvolbaStat Value="0" />
             <FaxPredvolbaStat Value="0" />
             <Prijmeni Value="1" />
             <AdresaPsc Value="0" />
@@ -909,10 +909,10 @@
             </AdresniKlice>
             <Spojeni Value="0" />
             <AdresaStat Value="0" />
+            <Tel3Cislo Value="0" />
             <Tel1Cislo Value="0" />
             <Tel4Cislo Value="0" />
             <Tel2Cislo Value="0" />
-            <Tel3Cislo Value="0" />
             <TitulPred Value="0" />
             <TitulZa Value="0" />
             <AdresaUlice Value="0" />
@@ -1200,16 +1200,6 @@
     <DIC Value="1" />
     <MojeFirmaDIC Value="0" />
     <AdresaKoncovehoPrijemce Value="1">
-      <Nazev Value="1" />
-      <PSC Value="1" />
-      <KontaktniOsobaNazev Value="1" />
-      <Misto Value="1" />
-      <Stat Value="1" />
-      <EmailSpojeni Value="0" />
-      <TelefonSpojeni Value="0" />
-      <Email Value="0" />
-      <Telefon Value="0" />
-      <AdresaStat Value="0" />
       <Firma Value="1">
         <TelefonSpojeni2_ID Value="0" />
         <TelefonSpojeni3_ID Value="0" />
@@ -1360,6 +1350,15 @@
         </Adresy>
         <DatovaSchrankaID Value="0" />
         <Aktivity Value="0">
+          <PolozkaKatalogu_ID Value="0" />
+          <MernaJednotka_ID Value="0" />
+          <DokladyPrebirani Value="0">
+            <ObjectNamePolozky Value="0" />
+            <Doklad_ID Value="0" />
+            <Polozka_ID Value="0" />
+            <ObjectNameDokladu Value="0" />
+            <PriVyuctovaniVyriditZdrojovouPolozku Value="0" />
+          </DokladyPrebirani>
           <DokladyVyuctovani Value="0">
             <Vyuctovano Value="0" />
             <ObjectNamePolozky Value="0" />
@@ -1379,15 +1378,6 @@
             <PlanovanaDobaTrvani Value="0" />
           </PlanovanyCas>
           <Email_ID Value="0" />
-          <PolozkaKatalogu_ID Value="0" />
-          <MernaJednotka_ID Value="0" />
-          <DokladyPrebirani Value="0">
-            <ObjectNamePolozky Value="0" />
-            <Doklad_ID Value="0" />
-            <Polozka_ID Value="0" />
-            <ObjectNameDokladu Value="0" />
-            <PriVyuctovaniVyriditZdrojovouPolozku Value="0" />
-          </DokladyPrebirani>
           <Cinnost Value="0" />
           <Cinnost_ID Value="0" />
           <CiselnaRada Value="0" />
@@ -1428,8 +1418,8 @@
           <Poznamka Value="0" />
           <Prideleno_ID Value="0" />
           <Prideleno Value="0" />
-          <DobaTrvani Value="0" />
           <SkutecnaDobaTrvani Value="0" />
+          <DobaTrvani Value="0" />
           <SkutecneMnozstvi Value="0" />
           <DatumACasUkonceni Value="0" />
           <DatumACasZahajeni Value="0" />
@@ -1767,6 +1757,17 @@
         <Osoby Value="0">
           <UvadetNaDokladech Value="0" />
           <SeznamOsob Value="0">
+            <Tel4Typ Value="0" />
+            <Tel2Typ Value="0" />
+            <Tel4Klapka Value="0" />
+            <Tel1MistniCislo Value="0" />
+            <Tel1Klapka Value="0" />
+            <Tel1Predvolba Value="0" />
+            <Tel2Klapka Value="0" />
+            <Tel2MistniCislo Value="0" />
+            <FunkceOsoby_ID Value="0" />
+            <FunkceOsoby Value="0" />
+            <OsloveniProEmail Value="0" />
             <Tel3Predvolba Value="0" />
             <Tel1Typ Value="0" />
             <Tel4MistniCislo Value="0" />
@@ -1782,25 +1783,14 @@
             <FaxSpojeni_ID Value="0" />
             <EmailSpojeni_ID Value="0" />
             <Tel3MistniCislo Value="0" />
-            <Tel4Typ Value="0" />
-            <Tel2Typ Value="0" />
-            <Tel4Klapka Value="0" />
-            <Tel1MistniCislo Value="0" />
-            <Tel1Klapka Value="0" />
-            <Tel1Predvolba Value="0" />
-            <Tel2Klapka Value="0" />
-            <Tel2MistniCislo Value="0" />
-            <FunkceOsoby_ID Value="0" />
-            <FunkceOsoby Value="0" />
-            <OsloveniProEmail Value="0" />
             <Adresa Value="0">
+              <NazevStatu Value="0" />
+              <Ulice Value="0" />
               <Misto Value="0" />
               <Psc Value="0" />
               <KodPsc Value="0" />
               <Stat Value="0" />
               <Nazev Value="0" />
-              <NazevStatu Value="0" />
-              <Ulice Value="0" />
             </Adresa>
             <FaxCislo Value="0" />
             <CisloOsoby Value="0" />
@@ -1809,10 +1799,10 @@
             <Email Value="0" />
             <Funkce Value="0" />
             <FaxStatID Value="0" />
-            <Tel4StatID Value="0" />
-            <Tel3StatID Value="0" />
             <Tel2StatID Value="0" />
             <Tel1StatID Value="0" />
+            <Tel4StatID Value="0" />
+            <Tel3StatID Value="0" />
             <TitulPred_ID Value="0" />
             <TitulZa_ID Value="0" />
             <AdresaStat_ID Value="0" />
@@ -1820,58 +1810,58 @@
             <FaxKlapka Value="0" />
             <Kod Value="0" />
             <Kontakty Value="0">
-              <Email Value="0" />
-              <Telefon1 Value="0">
-                <PredvolbaStat Value="0" />
-                <Predvolba Value="0" />
-                <Typ Value="0" />
-                <StatID Value="0" />
-                <MistniCislo Value="0" />
-                <Klapka Value="0" />
-                <Cislo Value="0" />
-              </Telefon1>
-              <TelefonSpojeni1 Value="0" />
-              <TelefonSpojeni2 Value="0" />
-              <Telefon4 Value="0">
-                <Cislo Value="0" />
-                <MistniCislo Value="0" />
-                <Typ Value="0" />
-                <Predvolba Value="0" />
-                <PredvolbaStat Value="0" />
-                <StatID Value="0" />
-                <Klapka Value="0" />
-              </Telefon4>
-              <Spojeni Value="0" />
-              <Telefon3 Value="0">
-                <Typ Value="0" />
-                <StatID Value="0" />
-                <PredvolbaStat Value="0" />
-                <MistniCislo Value="0" />
-                <Predvolba Value="0" />
-                <Klapka Value="0" />
-                <Cislo Value="0" />
-              </Telefon3>
               <TelefonSpojeni3 Value="0" />
               <TelefonSpojeni4 Value="0" />
               <FaxSpojeni Value="0" />
               <EmailSpojeni Value="0" />
               <Fax Value="0">
-                <MistniCislo Value="0" />
-                <PredvolbaStat Value="0" />
-                <StatID Value="0" />
                 <Klapka Value="0" />
                 <Cislo Value="0" />
                 <Predvolba Value="0" />
+                <MistniCislo Value="0" />
+                <PredvolbaStat Value="0" />
+                <StatID Value="0" />
               </Fax>
               <Telefon2 Value="0">
+                <PredvolbaStat Value="0" />
                 <Klapka Value="0" />
                 <Typ Value="0" />
                 <Cislo Value="0" />
                 <StatID Value="0" />
                 <MistniCislo Value="0" />
                 <Predvolba Value="0" />
-                <PredvolbaStat Value="0" />
               </Telefon2>
+              <Email Value="0" />
+              <Telefon1 Value="0">
+                <Cislo Value="0" />
+                <PredvolbaStat Value="0" />
+                <Predvolba Value="0" />
+                <Typ Value="0" />
+                <StatID Value="0" />
+                <MistniCislo Value="0" />
+                <Klapka Value="0" />
+              </Telefon1>
+              <TelefonSpojeni1 Value="0" />
+              <TelefonSpojeni2 Value="0" />
+              <Telefon4 Value="0">
+                <PredvolbaStat Value="0" />
+                <StatID Value="0" />
+                <Klapka Value="0" />
+                <Cislo Value="0" />
+                <MistniCislo Value="0" />
+                <Typ Value="0" />
+                <Predvolba Value="0" />
+              </Telefon4>
+              <Spojeni Value="0" />
+              <Telefon3 Value="0">
+                <Cislo Value="0" />
+                <Typ Value="0" />
+                <StatID Value="0" />
+                <PredvolbaStat Value="0" />
+                <MistniCislo Value="0" />
+                <Predvolba Value="0" />
+                <Klapka Value="0" />
+              </Telefon3>
             </Kontakty>
             <KrestniJmeno Value="0" />
             <FaxMistniCislo Value="0" />
@@ -1887,10 +1877,10 @@
               <VzajmenyVztah Value="0" />
             </Pratele>
             <FaxPredvolba Value="0" />
+            <Tel4PredvolbaStat Value="0" />
             <Tel1PredvolbaStat Value="0" />
             <Tel3PredvolbaStat Value="0" />
             <Tel2PredvolbaStat Value="0" />
-            <Tel4PredvolbaStat Value="0" />
             <FaxPredvolbaStat Value="0" />
             <Prijmeni Value="0" />
             <AdresaPsc Value="0" />
@@ -1900,10 +1890,10 @@
             </AdresniKlice>
             <Spojeni Value="0" />
             <AdresaStat Value="0" />
+            <Tel3Cislo Value="0" />
             <Tel1Cislo Value="0" />
             <Tel4Cislo Value="0" />
             <Tel2Cislo Value="0" />
-            <Tel3Cislo Value="0" />
             <TitulPred Value="0" />
             <TitulZa Value="0" />
             <AdresaUlice Value="0" />
@@ -1911,6 +1901,17 @@
             <Nazev Value="0" />
           </SeznamOsob>
           <HlavniOsoba Value="0">
+            <Tel4Typ Value="0" />
+            <Tel2Typ Value="0" />
+            <Tel4Klapka Value="0" />
+            <Tel1MistniCislo Value="0" />
+            <Tel1Klapka Value="0" />
+            <Tel1Predvolba Value="0" />
+            <Tel2Klapka Value="0" />
+            <Tel2MistniCislo Value="0" />
+            <FunkceOsoby_ID Value="0" />
+            <FunkceOsoby Value="0" />
+            <OsloveniProEmail Value="0" />
             <Tel3Predvolba Value="0" />
             <Tel1Typ Value="0" />
             <Tel4MistniCislo Value="0" />
@@ -1926,25 +1927,14 @@
             <FaxSpojeni_ID Value="0" />
             <EmailSpojeni_ID Value="0" />
             <Tel3MistniCislo Value="0" />
-            <Tel4Typ Value="0" />
-            <Tel2Typ Value="0" />
-            <Tel4Klapka Value="0" />
-            <Tel1MistniCislo Value="0" />
-            <Tel1Klapka Value="0" />
-            <Tel1Predvolba Value="0" />
-            <Tel2Klapka Value="0" />
-            <Tel2MistniCislo Value="0" />
-            <FunkceOsoby_ID Value="0" />
-            <FunkceOsoby Value="0" />
-            <OsloveniProEmail Value="0" />
             <Adresa Value="0">
+              <NazevStatu Value="0" />
+              <Ulice Value="0" />
               <Misto Value="0" />
               <Psc Value="0" />
               <KodPsc Value="0" />
               <Stat Value="0" />
               <Nazev Value="0" />
-              <NazevStatu Value="0" />
-              <Ulice Value="0" />
             </Adresa>
             <FaxCislo Value="0" />
             <CisloOsoby Value="0" />
@@ -1953,10 +1943,10 @@
             <Email Value="0" />
             <Funkce Value="0" />
             <FaxStatID Value="0" />
-            <Tel4StatID Value="0" />
-            <Tel3StatID Value="0" />
             <Tel2StatID Value="0" />
             <Tel1StatID Value="0" />
+            <Tel4StatID Value="0" />
+            <Tel3StatID Value="0" />
             <TitulPred_ID Value="0" />
             <TitulZa_ID Value="0" />
             <AdresaStat_ID Value="0" />
@@ -1964,58 +1954,58 @@
             <FaxKlapka Value="0" />
             <Kod Value="0" />
             <Kontakty Value="0">
-              <Email Value="0" />
-              <Telefon1 Value="0">
-                <PredvolbaStat Value="0" />
-                <Predvolba Value="0" />
-                <Typ Value="0" />
-                <StatID Value="0" />
-                <MistniCislo Value="0" />
-                <Klapka Value="0" />
-                <Cislo Value="0" />
-              </Telefon1>
-              <TelefonSpojeni1 Value="0" />
-              <TelefonSpojeni2 Value="0" />
-              <Telefon4 Value="0">
-                <Cislo Value="0" />
-                <MistniCislo Value="0" />
-                <Typ Value="0" />
-                <Predvolba Value="0" />
-                <PredvolbaStat Value="0" />
-                <StatID Value="0" />
-                <Klapka Value="0" />
-              </Telefon4>
-              <Spojeni Value="0" />
-              <Telefon3 Value="0">
-                <Typ Value="0" />
-                <StatID Value="0" />
-                <PredvolbaStat Value="0" />
-                <MistniCislo Value="0" />
-                <Predvolba Value="0" />
-                <Klapka Value="0" />
-                <Cislo Value="0" />
-              </Telefon3>
               <TelefonSpojeni3 Value="0" />
               <TelefonSpojeni4 Value="0" />
               <FaxSpojeni Value="0" />
               <EmailSpojeni Value="0" />
               <Fax Value="0">
-                <MistniCislo Value="0" />
-                <PredvolbaStat Value="0" />
-                <StatID Value="0" />
                 <Klapka Value="0" />
                 <Cislo Value="0" />
                 <Predvolba Value="0" />
+                <MistniCislo Value="0" />
+                <PredvolbaStat Value="0" />
+                <StatID Value="0" />
               </Fax>
               <Telefon2 Value="0">
+                <PredvolbaStat Value="0" />
                 <Klapka Value="0" />
                 <Typ Value="0" />
                 <Cislo Value="0" />
                 <StatID Value="0" />
                 <MistniCislo Value="0" />
                 <Predvolba Value="0" />
-                <PredvolbaStat Value="0" />
               </Telefon2>
+              <Email Value="0" />
+              <Telefon1 Value="0">
+                <Cislo Value="0" />
+                <PredvolbaStat Value="0" />
+                <Predvolba Value="0" />
+                <Typ Value="0" />
+                <StatID Value="0" />
+                <MistniCislo Value="0" />
+                <Klapka Value="0" />
+              </Telefon1>
+              <TelefonSpojeni1 Value="0" />
+              <TelefonSpojeni2 Value="0" />
+              <Telefon4 Value="0">
+                <PredvolbaStat Value="0" />
+                <StatID Value="0" />
+                <Klapka Value="0" />
+                <Cislo Value="0" />
+                <MistniCislo Value="0" />
+                <Typ Value="0" />
+                <Predvolba Value="0" />
+              </Telefon4>
+              <Spojeni Value="0" />
+              <Telefon3 Value="0">
+                <Cislo Value="0" />
+                <Typ Value="0" />
+                <StatID Value="0" />
+                <PredvolbaStat Value="0" />
+                <MistniCislo Value="0" />
+                <Predvolba Value="0" />
+                <Klapka Value="0" />
+              </Telefon3>
             </Kontakty>
             <KrestniJmeno Value="0" />
             <FaxMistniCislo Value="0" />
@@ -2031,10 +2021,10 @@
               <VzajmenyVztah Value="0" />
             </Pratele>
             <FaxPredvolba Value="0" />
+            <Tel4PredvolbaStat Value="0" />
             <Tel1PredvolbaStat Value="0" />
             <Tel3PredvolbaStat Value="0" />
             <Tel2PredvolbaStat Value="0" />
-            <Tel4PredvolbaStat Value="0" />
             <FaxPredvolbaStat Value="0" />
             <Prijmeni Value="0" />
             <AdresaPsc Value="0" />
@@ -2044,10 +2034,10 @@
             </AdresniKlice>
             <Spojeni Value="0" />
             <AdresaStat Value="0" />
+            <Tel3Cislo Value="0" />
             <Tel1Cislo Value="0" />
             <Tel4Cislo Value="0" />
             <Tel2Cislo Value="0" />
-            <Tel3Cislo Value="0" />
             <TitulPred Value="0" />
             <TitulZa Value="0" />
             <AdresaUlice Value="0" />
@@ -2253,6 +2243,16 @@
       </Firma>
       <Ulice Value="1" />
       <KontaktniOsoba Value="0" />
+      <Nazev Value="1" />
+      <PSC Value="1" />
+      <KontaktniOsobaNazev Value="1" />
+      <Misto Value="1" />
+      <Stat Value="1" />
+      <EmailSpojeni Value="0" />
+      <TelefonSpojeni Value="0" />
+      <Email Value="0" />
+      <Telefon Value="0" />
+      <AdresaStat Value="0" />
     </AdresaKoncovehoPrijemce>
     <DodaciPodminkyIncoterms Value="0" />
     <DodatecnePorizovaciNaklady Value="0" />
@@ -2296,15 +2296,15 @@
     <KorekceEditovatDomaciMenuBezPrepoctu Value="0" />
     <MojeFirmaKontaktyEmail Value="0" />
     <AdresaPrijemceFaktury Value="1">
+      <AdresaStat Value="0" />
+      <Misto Value="1" />
+      <KontaktniOsoba Value="0" />
       <KontaktniOsobaNazev Value="0" />
       <Stat Value="1" />
       <Nazev Value="1" />
       <Firma Value="0" />
       <Ulice Value="1" />
       <PSC Value="1" />
-      <AdresaStat Value="0" />
-      <Misto Value="1" />
-      <KontaktniOsoba Value="0" />
     </AdresaPrijemceFaktury>
     <Faze Value="1" />
     <Firma_ID Value="0" />
@@ -2331,12 +2331,6 @@
       <TypDokladInfo Value="0" />
     </DokladInfo>
     <IntrastatDoklad Value="0">
-      <DopravaZahranici Value="0" />
-      <KrajPuvodu Value="0" />
-      <RozpousteniNakladu Value="0" />
-      <ZvlastniPohyb Value="0" />
-      <DodaciPodminky Value="0" />
-      <StatUrceniOdeslani Value="0" />
       <Datum Value="0" />
       <StatPuvodu Value="0" />
       <PovahaTransakce Value="0" />
@@ -2344,6 +2338,12 @@
       <OvlivnujeIntrastat Value="0" />
       <DruhDopravy Value="0" />
       <DopravniNaklady Value="0" />
+      <DopravaZahranici Value="0" />
+      <KrajPuvodu Value="0" />
+      <RozpousteniNakladu Value="0" />
+      <ZvlastniPohyb Value="0" />
+      <DodaciPodminky Value="0" />
+      <StatUrceniOdeslani Value="0" />
     </IntrastatDoklad>
     <JednotkovaPorizovaciCena Value="0" />
     <MojeFirmaKontaktniOsobaJmeno Value="0" />
@@ -3080,6 +3080,7 @@
           <DruhArtiklu_ID Value="0" />
           <NadrazenyArtikl_ID Value="0" />
           <Vyrobce_Firma_ID Value="0" />
+          <InterniOznaceni_UserData Value="0" />
           <Jednotky Value="0">
             <DoplnkovaJednotka Value="0" />
             <ProdejniJednotka Value="0" />
@@ -3214,7 +3215,7 @@
             <Poradi Value="0" />
             <TextovaHodnota Value="0" />
           </Parametry>
-          <PLU Value="0" />
+          <PLU Value="1" />
           <VykazyPocetKontrolnichPasek Value="0" />
           <Serie Value="0" />
           <Popis Value="0" />
@@ -3240,6 +3241,7 @@
           <PovahaTransakcePrijeti_ID Value="0" />
           <PovinnyNasobek Value="0" />
           <Poznamka Value="0" />
+          <PoznamkaTisk_UserData Value="0" />
           <PreneseniDane_ID Value="0" />
           <Procento_UserData Value="0" />
           <ProduktoveKlice Value="0">
@@ -3286,9 +3288,10 @@
             <Vratka Value="0" />
             <ZobrazovatNaVystupu Value="0" />
           </Prislusenstvi>
-          <Priznaky_UserData Value="1" />
+          <Priznaky_UserData Value="0" />
           <PuvodemMajetek Value="0" />
           <Rozmery Value="0">
+            <Hmotnost Value="0" />
             <Objem Value="0" />
             <Sirka Value="0" />
             <Delka Value="0" />
@@ -3301,7 +3304,6 @@
             </SeznamRozmeru>
             <Vyska Value="0" />
             <Plocha Value="0" />
-            <Hmotnost Value="0" />
           </Rozmery>
           <Popis1_Poznamka Value="0" />
           <Popis2_Poznamka Value="0" />
@@ -3365,6 +3367,13 @@
           <StatUrceni Value="0" />
           <StatUrceni_ID Value="0" />
           <StatistickyZnak Value="0" />
+          <StitekBaleni_UserData Value="0" />
+          <StitekBaleniJed_UserData Value="0" />
+          <StitekCena_UserData Value="0" />
+          <StitekMnozstvi_UserData Value="0" />
+          <StitekNazev_UserData Value="0" />
+          <StitekSazba_UserData Value="0" />
+          <StitekTisk_UserData Value="0" />
           <CarovyKodTyp Value="0" />
           <DodaciLhuta_Typ Value="0" />
           <TypEvidence Value="1" />
@@ -3674,8 +3683,8 @@
     </UcetniKurz>
     <UcetniKurzKurz Value="0" />
     <UcetniZapisy Value="0" />
-    <DodaciAdresaUlice Value="0" />
     <FakturacniAdresaUlice Value="0" />
+    <DodaciAdresaUlice Value="0" />
     <MojeFirmaUlice Value="0" />
     <AdresaUlice Value="0" />
     <VariabilniSymbol Value="0" />

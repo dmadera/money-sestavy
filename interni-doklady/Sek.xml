@@ -151,6 +151,7 @@
       <TypPlneni Value="0" />
       <UvadetNaDokladechText_ID Value="0" />
       <UvadetNaDokladechText Value="0" />
+      <ZarazeniOSS Value="0" />
       <ZvlastniRezimDPH_ID Value="0" />
     </CleneniDPH>
     <CleneniDPH_ID Value="0" />
@@ -1003,12 +1004,12 @@
         <DatumVystaveni Value="0" />
       </CilovyDokladInfo>
       <ZdrojovyDokladInfo Value="0">
-        <DruhDokladu Value="0" />
         <ICO Value="0" />
         <DatumVystaveni Value="0" />
         <CisloDokladu Value="0" />
         <FirmaNazev Value="0" />
         <Popis Value="0" />
+        <DruhDokladu Value="0" />
       </ZdrojovyDokladInfo>
       <CilovyDokladObjectName Value="0" />
       <ZdrojovyDokladObjectName Value="0" />
