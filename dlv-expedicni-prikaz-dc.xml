@@ -2542,7 +2542,7 @@
       <KrajPuvodu_ID Value="0" />
       <Marze_UserData Value="0" />
       <Jednotka Value="1" />
-      <MnozstviPozn_UserData Value="0" />
+      <MnozstviPozn_UserData Value="1" />
       <IPMnozstvi Value="0" />
       <NakupniCena_UserData Value="0" />
       <Nazev Value="1" />

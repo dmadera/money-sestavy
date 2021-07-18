@@ -7,7 +7,7 @@ SELECT Parent_ID, Nazev, Jednotka, Mnozstvi, JednCena, DphSazba, CelkovaCena, Ob
 -- PolDLV.ObsahPolozky_ID = ObPolArt.ID, PolDLV-ObPolArt
 SELECT ID, Artikl_ID, Zasoba_ID, Cenik_ID FROM Obchod_ObsahPolozkySArtiklem AS ObPolArt WITH(NOLOCK) WHERE (Deleted = 0)
 -- ObPolArt.Artikl_ID = Art.ID, ObPolArt-Art
-SELECT ID, Kod, BaleniMnozstvi_UserData, BaleniJednotky_UserData, ProdejniJednotka_ID, Priznaky_UserData FROM Artikly_Artikl AS Art WITH(NOLOCK) WHERE (Deleted = 0)
+SELECT ID, Kod, BaleniMnozstvi_UserData, BaleniJednotky_UserData, ProdejniJednotka_ID, PLU FROM Artikly_Artikl AS Art WITH(NOLOCK) WHERE (Deleted = 0)
 -- Art.ProdejniJednotka_ID = ArtJed.Parent_ID, Art-ArtJed
 SELECT ID, Kod, Parent_ID FROM Artikly_ArtiklJednotka AS ArtJed WITH(NOLOCK) WHERE (Deleted = 0)
 
