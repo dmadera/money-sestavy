@@ -491,7 +491,7 @@
         </InsolvencniSpisyFirmy>
         <FaxKlapka Value="0" />
         <EkoKomKlient Value="0" />
-        <Kod Value="0" />
+        <Kod Value="1" />
         <KodDanovehoUradu Value="0" />
         <KodOdb_UserData Value="0" />
         <KodSumFa_UserData Value="0" />

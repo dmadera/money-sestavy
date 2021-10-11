@@ -6,33 +6,38 @@
 ///   <Version>19.1</Version>
 ///   <Resources>
 ///     <Resource Name="XtraReportSerialization.xtraReport1">
-/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAALAAAAAAAAAFBBRFBBRFCFEnutSF5ywWZCtQGhu+sHaIdICvMehQ5ep81EzDDfSOEYzVOntYBu5yXve4YBAAAAAAAAWQEAACwBAAArAAAAlwAAAMwAAABiAAAA9AEAAPUAAACzAQAAMQMAACYkAHQAaABpAHMALgBTAGMAcgBpAHAAdABzAFMAbwB1AHIAYwBlAAAAAAAyQgBhAGwAZQBuAGkATQBuAG8AegBzAHQAdgBpAC4ARABhAHQAYQBNAGUAbQBiAGUAcgDRGAAAMEQAbwBwAHIA
-/// YQB2AGEAUABsAGEAdABiAGEALgBFAHgAcAByAGUAcwBzAGkAbwBuALcZAAAwSwBvAGQAQgBlAHoAUAByAGUAZgBpAHgAdQAuAEQAYQB0AGEATQBlAG0AYgBlAHIAVBsAACRQAHIAaQB6AG4AYQBrAC4ARABhAHQAYQBNAGUAbQBiAGUAcgA3HAAAMlMAbABlAHYAYQBOAGEARABvAGsAbABhAGQAdQAuAEUAeABwAHIAZQBzAHMAaQBvAG4AHR0AAChsAGEAYgBlAGwANwA5AC4ARABhAHQAYQBCAGkAbgBkAGkAbgBnAHMAnB4AAChsAGEAYgBlAGwAOAAxAC4ARABhAHQAYQBCAGkAbgBkAGkAbgBnAHMAiR8AAChsAGEAYgBlAGwAOAAyAC4ARABhAHQAYQBCAGkAbgBkAGkAbgBnAHMAdyAAADxsAGEAYgBlAGwAUABvAHoAbgBhAG0AawBhAFQAaQBzAGsALgBEAGEAdABhAEIA
-/// aQBuAGQAaQBuAGcAcwBsIQAALHgAcgBMAGEAYgBlAGwANgAyAC4ARABhAHQAYQBCAGkAbgBkAGkAbgBnAHMAaCIAAAHOMXVzaW5nIENTVy5DU1dTeXN0ZW0uUmVwb3J0czsNCnVzaW5nIFN5c3RlbS5EYXRhOw0KdXNpbmcgU3lzdGVtLlRleHQuUmVndWxhckV4cHJlc3Npb25zOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQoNCnN0cmluZyBmb3JtYXRNbm96c3R2aSA9ICJ7MDojIyMgIyMjICMjMH0iOw0Kc3RyaW5nIGZvcm1hdENlbmEgPSAiezA6IyMjICMjIyAjIzAuMDB9IjsNCnN0cmluZyBmb3JtYXRNbm96c3R2aU5lZ2F0aXZlID0gInswOi0jIyMgIyMjICMjMH0iOw0Kc3RyaW5nIGZvcm1hdENlbmFOZWdhdGl2ZSA9ICJ7MDotIyMjICMj
-/// IyAjIzAuMDB9IjsNCg0KLy8gcHJvIHBvY2l0YW5pIGNlbGtvdmVobyBtbm96c3R2aSBkbGUgamVkbm90ZWsNCkRpY3Rpb25hcnk8c3RyaW5nLCBpbnQ+IGNlbGtvdmVNbm96c3R2aSA9IG5ldyBEaWN0aW9uYXJ5PHN0cmluZywgaW50PigpOwkNCkRpY3Rpb25hcnk8c3RyaW5nLCBpbnQ+IGNlbGtvdmVNbm96c3R2aU4gPSBuZXcgRGljdGlvbmFyeTxzdHJpbmcsIGludD4oKTsJDQoNCnByaXZhdGUgYm9vbCBqZVphcG9ybnlQb2h5YigpIHsNCglyZXR1cm4gQ29udmVydC5Ub0Jvb2xlYW4oR2V0Q3VycmVudENvbHVtblZhbHVlKCJaYXBvcm55UG9oeWIiKSk7DQp9DQoNCi8vIHBva3VkIGplIHphcG9ybnkgcG9oeWIsIGNlbGtvdmUgY2FzdGt5IG5hIGRva2xhZHUg
-/// amRvdSBkbyBtaW51c3UNCnByaXZhdGUgdm9pZCB4dHJhUmVwb3J0MV9CZWZvcmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJaWYoamVaYXBvcm55UG9oeWIoKSkgew0KCQlsYWJlbENlbGtlbUJlekRwaC5UZXh0Rm9ybWF0U3RyaW5nID0gIi0iICsgbGFiZWxDZWxrZW1CZXpEcGguVGV4dEZvcm1hdFN0cmluZzsNCgkJbGFiZWxDZWxrZW1EcGguVGV4dEZvcm1hdFN0cmluZyA9ICItIiArIGxhYmVsQ2Vsa2VtRHBoLlRleHRGb3JtYXRTdHJpbmc7DQoJCWxhYmVsQ2Vsa2VtU0RwaC5UZXh0Rm9ybWF0U3RyaW5nID0gIi0iICsgbGFiZWxDZWxrZW1TRHBoLlRleHRGb3JtYXRTdHJpbmc7DQoJ
-/// fQ0KCQ0KCS8vIGluaWNpYWxpenVqZSBkaWN0aW9uYXJ5IG5hIGNlbGtvdmUgbW5venN0dmkNCgljZWxrb3ZlTW5venN0dmkuQWRkKCJwYWwiLCAwKTsNCgljZWxrb3ZlTW5venN0dmkuQWRkKCJrYXIiLCAwKTsNCgljZWxrb3ZlTW5venN0dmkuQWRkKCJmb2wiLCAwKTsNCgljZWxrb3ZlTW5venN0dmkuQWRkKCJrcyIsIDApOw0KDQoJY2Vsa292ZU1ub3pzdHZpTi5BZGQoInBhbCIsIDApOw0KCWNlbGtvdmVNbm96c3R2aU4uQWRkKCJrYXIiLCAwKTsNCgljZWxrb3ZlTW5venN0dmlOLkFkZCgiZm9sIiwgMCk7DQoJY2Vsa292ZU1ub3pzdHZpTi5BZGQoImtzIiwgMCk7DQoNCn0NCg0KLy8gbmFzdGF2aSBob2Rub3R5IGJhbGVuaSB2IGplZG5vdGthY2ggdSBrYXpk
-/// ZSBwb2xvemt5DQpwcml2YXRlIHZvaWQgYmFsZW5pTW5venN0dmlfQmVmb3JlUHJpbnQob2JqZWN0IHNlbmRlciwgU3lzdGVtLkRyYXdpbmcuUHJpbnRpbmcuUHJpbnRFdmVudEFyZ3MgZSkgew0KCVhSTGFiZWwgbGJsID0gc2VuZGVyIGFzIFhSTGFiZWw7DQoJaW50IG1ub3pzdHZpID0gKGludCkgQ29udmVydC5Ub0RvdWJsZShsYmwuUmVwb3J0LkdldEN1cnJlbnRDb2x1bW5WYWx1ZSgiTW5venN0dmkiKS5Ub1N0cmluZygpKTsNCglzdHJpbmcgamVkbm90a2EgPSBsYmwuUmVwb3J0LkdldEN1cnJlbnRDb2x1bW5WYWx1ZSgiSmVkbm90a2EiKS5Ub1N0cmluZygpOw0KCVhSTGFiZWxbXSBsYWJlbE1ub3pzdHZpID0ge2xhYmVsTW5venN0dmkwLCBsYWJlbE1ub3pz
-/// dHZpMSwgbGFiZWxNbm96c3R2aTJ9Ow0KCVhSTGFiZWxbXSBsYWJlbEplZG5vdGt5ID0ge2xhYmVsSmVkbm90a2EwLCBsYWJlbEplZG5vdGthMSwgbGFiZWxKZWRub3RrYTJ9Ow0KCQ0KCWZvcmVhY2goWFJMYWJlbCBsIGluIGxhYmVsTW5venN0dmkpIGwuVGV4dCA9ICIiOw0KCWZvcmVhY2goWFJMYWJlbCBsIGluIGxhYmVsSmVkbm90a3kpIGwuVGV4dCA9ICIiOw0KDQoJYm9vbCBqZVZyYXRrYSA9IENvbnZlcnQuVG9Cb29sZWFuKGxibC5SZXBvcnQuR2V0Q3VycmVudENvbHVtblZhbHVlKCJWcmF0a2EiKSk7DQoJYm9vbCBqZU5lZ2F0aXZlID0gKGplWmFwb3JueVBvaHliKCkgJiYgIWplVnJhdGthKSB8fCAoIWplWmFwb3JueVBvaHliKCkgJiYgamVWcmF0a2Ep
-/// Ow0KCXN0cmluZyBmb3JtYXQgPSBqZU5lZ2F0aXZlID8gIi0jIiA6ICIjIjsNCg0KCQ0KCXRyeSB7DQoJCURhdGFSb3cgciA9IChsYmwuUmVwb3J0LkdldEN1cnJlbnRSb3coKSBhcyBEYXRhUm93VmlldykuUm93IGFzIERhdGFSb3c7DQoJCURhdGFSb3dbXSBycyA9IHIuR2V0Q2hpbGRSb3dzKCJTa2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLU9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0iKTsNCgkJRGF0YVJvd1tdIHJzMSA9IHJzWzBdLkdldENoaWxkUm93cygiT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS1BcnRpa2x5X0FydGlrbCIpOw0KCQlzdHJpbmcgYmFsZW5pTW5venN0dmkgPSByczFbMF1bIkJhbGVuaU1ub3pz
-/// dHZpX1VzZXJEYXRhIl0uVG9TdHJpbmcoKSArICIvIiArICIxIjsNCgkJc3RyaW5nIGJhbGVuaUplZG5vdGt5ID0gcnMxWzBdWyJCYWxlbmlKZWRub3RreV9Vc2VyRGF0YSJdLlRvU3RyaW5nKCkgKyAiLyIgKyBqZWRub3RrYTsNCgkJYmFsZW5pTW5venN0dmkgPSBiYWxlbmlNbm96c3R2aS5UcmltU3RhcnQoJy8nKTsNCgkJYmFsZW5pSmVkbm90a3kgPSBiYWxlbmlKZWRub3RreS5UcmltU3RhcnQoJy8nKTsNCgkNCgkJc3RyaW5nW10gYmFsZW5pU3RyTSA9IGJhbGVuaU1ub3pzdHZpLlNwbGl0KCcvJyk7DQoJCXN0cmluZ1tdIGJhbGVuaUogPSBiYWxlbmlKZWRub3RreS5TcGxpdCgnLycpOw0KCQkNCgkJaW50W10gYmFsZW5pTSA9IEFycmF5LkNvbnZlcnRBbGwo
-/// YmFsZW5pU3RyTSwgaW50LlBhcnNlKTsNCgkJTGlzdDxUdXBsZTxzdHJpbmcsIGludD4+IGJhbGVuaSA9IG5ldyBMaXN0PFR1cGxlPHN0cmluZywgaW50Pj4oKTsJDQoJDQoJCWludCB6Ynl2YSA9IG1ub3pzdHZpLCB0bXA7DQoJCWZvcihpbnQgaSA9IDA7IGkgPCBiYWxlbmlNLkxlbmd0aDsgaSsrKSB7DQoJCQl0bXAgPSAoaW50KSBNYXRoLkZsb29yKChmbG9hdCkgemJ5dmEvYmFsZW5pTVtpXSk7DQoJCQliYWxlbmkuQWRkKFR1cGxlLkNyZWF0ZShiYWxlbmlKW2ldLCB0bXApKTsNCgkJCXpieXZhIC09IHRtcCAqIGJhbGVuaU1baV07DQoJCX0NCgkJDQoJCWJhbGVuaS5SZXZlcnNlKCk7DQoJCWludCBqID0gMjsNCgkJZm9yZWFjaChUdXBsZTxzdHJpbmcsIGlu
-/// dD4gdCBpbiBiYWxlbmkpIHsNCgkJCWlmKHQuSXRlbTIgIT0gMCkgew0KCQkJCS8vIG5hc3RhdmkgZG8gbGFiZWx1IGhvZG5vdHkgbW5venN0dmkgdiBiYWxlbmkNCgkJCQlsYWJlbE1ub3pzdHZpW2pdLlRleHQgPSB0Lkl0ZW0yLlRvU3RyaW5nKGZvcm1hdCk7DQoJCQkJbGFiZWxKZWRub3RreVtqXS5UZXh0ID0gdC5JdGVtMTsNCg0KCQkJCS8vIHByaWN0ZSBtbm96c3R2aSBkbyBjZWxrb3ZlaG8gbW5venN0dmkgZGxlIGplZG5vdGVrDQoJCQkJaWYoamVOZWdhdGl2ZSkgew0KCQkJCQlpZihjZWxrb3ZlTW5venN0dmlOLkNvbnRhaW5zS2V5KHQuSXRlbTEpKSB7DQoJCQkJCQljZWxrb3ZlTW5venN0dmlOW3QuSXRlbTFdICs9IHQuSXRlbTI7DQoJCQkJCX0gZWxz
-/// ZSB7DQoJCQkJCQljZWxrb3ZlTW5venN0dmlOWyJrcyJdICs9IHQuSXRlbTI7DQoJCQkJCX0NCgkJCQl9IGVsc2Ugew0KCQkJCQlpZihjZWxrb3ZlTW5venN0dmkuQ29udGFpbnNLZXkodC5JdGVtMSkpIHsNCgkJCQkJCWNlbGtvdmVNbm96c3R2aVt0Lkl0ZW0xXSArPSB0Lkl0ZW0yOw0KCQkJCQl9IGVsc2Ugew0KCQkJCQkJY2Vsa292ZU1ub3pzdHZpWyJrcyJdICs9IHQuSXRlbTI7DQoJCQkJCX0NCgkJCQl9DQoNCgkJCX0NCgkJCWotLTsNCgkJfQ0KCQkJDQoJfSBjYXRjaChFeGNlcHRpb24gZXhjZXB0aW9uKSB7fQ0KfQ0KDQovLyB2eWJlcmUgeiBwcml6bmFrdSBwb3V6ZSBqZWRlbiBhbGZhbnVtIHpuYWsNCnByaXZhdGUgdm9pZCBQcml6bmFrX0dldFZhbHVl
-/// KG9iamVjdCBzZW5kZXIsIERldkV4cHJlc3MuWHRyYVJlcG9ydHMuVUkuR2V0VmFsdWVFdmVudEFyZ3MgZSkgew0KCXN0cmluZyBjb2x1bW5WYWx1ZSA9IChzdHJpbmcpIGUuR2V0Q29sdW1uVmFsdWUoIlBMVSIpOw0KCWUuVmFsdWUgPSBSZWdleC5NYXRjaChjb2x1bW5WYWx1ZSwgQCJbYS16QS1aXSIpLlZhbHVlOw0KfQ0KDQovLyBza3J5amUgYmFsZW5pIG5lanZldHNpIGplZG5vdGt5IHBva3VkIGpzb3UgMw0KcHJpdmF0ZSB2b2lkIEJhbGVuaU1ub3pzdHZpX0dldFZhbHVlKG9iamVjdCBzZW5kZXIsIERldkV4cHJlc3MuWHRyYVJlcG9ydHMuVUkuR2V0VmFsdWVFdmVudEFyZ3MgZSkgew0KCXN0cmluZyBiYWxlbmkgPSBDb252ZXJ0LlRvU3RyaW5nKGUuR2V0
-/// Q29sdW1uVmFsdWUoIkJhbGVuaU1ub3pzdHZpX1VzZXJEYXRhIikpOw0KCXN0cmluZ1tdIHNwbGl0ID0gYmFsZW5pLlNwbGl0KCcvJyk7DQoJaWYoc3BsaXQuTGVuZ3RoID09IDMpIHsNCgkJYmFsZW5pID0gc3RyaW5nLkZvcm1hdCgiezB9L3sxfSIsIHNwbGl0WzFdLCBzcGxpdFsyXSk7CQ0KCX0NCgllLlZhbHVlID0gYmFsZW5pOwkJDQp9DQoNCi8vIHNrcnlqZSBTdWJCYW5kIHMgcG96bmFta3VUaXNrIHBva3VkIGplIHByYXpkbmENCnByaXZhdGUgdm9pZCBzdWJCYW5kUG96bmFta2FUaXNrX0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdzIGUpIHsNCglTdWJCYW5kIGJhbmQgPSBzZW5kZXIg
-/// YXMgU3ViQmFuZDsNCglEYXRhUm93IHIgPSAoYmFuZC5SZXBvcnQuR2V0Q3VycmVudFJvdygpIGFzIERhdGFSb3dWaWV3KS5Sb3cgYXMgRGF0YVJvdzsNCglEYXRhUm93W10gcnMgPSByLkdldENoaWxkUm93cygiU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby1PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtIik7DQoJRGF0YVJvd1tdIHJzMSA9IHJzWzBdLkdldENoaWxkUm93cygiT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS1BcnRpa2x5X0FydGlrbF9EQyIpOw0KCXN0cmluZyB0ZXh0ID0gcnMxWzBdWyJQb3puYW1rYVRpc2tfVXNlckRhdGEiXS5Ub1N0cmluZygpOw0KCWlmKHRleHQgPT0gIiIpIHsNCgkJZS5DYW5jZWwg
-/// PSB0cnVlOw0KCX0NCn0NCg0KLy8gbmFzdGF2aSB6YXBvcm5lIG1ub3pzdHZpIG5hIHBvbG96Y2UgcG9rdWQgamUgemFwb3JueSBwb2h5YiBkb2tsYWR1IG5lYm8gdnJhdGthIHBvbG96a3kNCnByaXZhdGUgdm9pZCBzdWJCYW5kUG9sb3prYV9CZWZvcmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJWHRyYVJlcG9ydEJhc2Ugb3duZXJSZXBvcnQgPSAoc2VuZGVyIGFzIFhSQ29udHJvbCkuUmVwb3J0Ow0KCWJvb2wgamVWcmF0a2EgPSBDb252ZXJ0LlRvQm9vbGVhbihvd25lclJlcG9ydC5HZXRDdXJyZW50Q29sdW1uVmFsdWUoIlZyYXRrYSIpKTsNCg0KCWlmKChqZVphcG9ybnlQb2h5Yigp
-/// ICYmICFqZVZyYXRrYSkgfHwgKCFqZVphcG9ybnlQb2h5YigpICYmIGplVnJhdGthKSkgew0KCQlsYWJlbFBvbG96a2FNbm96c3R2aS5UZXh0Rm9ybWF0U3RyaW5nID0gZm9ybWF0TW5venN0dmlOZWdhdGl2ZTsNCgl9IGVsc2Ugew0KCQlsYWJlbFBvbG96a2FNbm96c3R2aS5UZXh0Rm9ybWF0U3RyaW5nID0gZm9ybWF0TW5venN0dmk7DQoJfQ0KfQ0KDQovLyBuYXN0YXZpIGEgc3BvY3RlIGNlbGtvdmUgbW5venN0dmkgZGxlIGRpY3Rpb25hcmllcw0KcHJpdmF0ZSB2b2lkIGxhYmVsQ2Vsa292ZU1ub3pzdHZpX0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdzIGUpIHsNCglYUkxhYmVsIGxibCA9
-/// IHNlbmRlciBhcyBYUkxhYmVsOw0KCXN0cmluZyBvdXRwdXQgPSAiIjsNCg0KCWZvcmVhY2godmFyIGt2IGluIGNlbGtvdmVNbm96c3R2aSkgew0KCQlpZihrdi5WYWx1ZSA+IDApIHsNCgkJCW91dHB1dCArPSBzdHJpbmcuRm9ybWF0KCJ7MH17MX0gIiwga3YuVmFsdWUsIGt2LktleSk7CQ0KCQl9DQoJfQ0KDQoJYm9vbCBpc0ZpcnN0ID0gdHJ1ZTsNCglmb3JlYWNoKHZhciBrdiBpbiBjZWxrb3ZlTW5venN0dmlOKSB7DQoJCWlmKGt2LlZhbHVlID4gMCkgew0KCQkJaWYoaXNGaXJzdCkgew0KCQkJCW91dHB1dCArPSAifCAiOw0KCQkJCWlzRmlyc3QgPSBmYWxzZTsNCgkJCX0NCgkJCW91dHB1dCArPSBzdHJpbmcuRm9ybWF0KCItezB9ezF9Iiwga3YuVmFsdWUs
-/// IGt2LktleSk7CQ0KCQl9DQoJfQ0KCWxibC5UZXh0ID0gb3V0cHV0Ow0KfQ0KAeMBU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS5Ta2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LVNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8uU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby1PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLk9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0tQXJ0aWtseV9BcnRpa2xfREMBmgNJaWYoW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQ2lzZWxuaWt5X1pwdXNvYlBsYXRieV0uW0tvZF0gPT0gJ0gnICYmClN0YXJ0c1dpdGgoW1NrbGFkb3Z5
-/// RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQ2lzZWxuaWt5X1pwdXNvYkRvcHJhdnldLltLb2RdLCAnUicpLApGb3JtYXRTdHJpbmcoJ3swfSArICEhezF9ISEnLCBVcHBlcihbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1DaXNlbG5pa3lfWnB1c29iRG9wcmF2eV0uW05hemV2XSksIFVwcGVyKFtTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LUNpc2VsbmlreV9aUHVzb2JQbGF0YnldLltOYXpldl0pKSwKVXBwZXIoW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQ2lzZWxuaWt5X1pwdXNvYkRvcHJhdnldLltOYXpldl0pKQHgAVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5
-/// ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsAeMBU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS5Ta2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LVNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8uU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby1PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLk9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWts
-/// ZW0tQXJ0aWtseV9BcnRpa2xfREMB/AJJaWYoW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQWRyZXNhcl9GaXJtYV0uW1NsZXZhVXZhZGVuYV9Vc2VyRGF0YV0gIT0gMCwKW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQWRyZXNhcl9GaXJtYV0uW1NsZXZhVXZhZGVuYV9Vc2VyRGF0YV0sCklpZihbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1BZHJlc2FyX0Zpcm1hXS5bVmxhc3RuaVNsZXZhXSA9PSB0cnVlLCBJaWYoW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQWRyZXNhcl9GaXJtYV0uW0hvZG5vdGFTbGV2eV0gPiAwLCBbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1BZHJlc2FyX0Zpcm1hXS5b
-/// SG9kbm90YVNsZXZ5XSwgbnVsbCksIG51bGwpKQHqAVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsLlprcmF0a2ExMgHrAVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhv
-/// LlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsX0RDLlByaXpuYWsB8gFTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby5Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLU9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0uT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS1BcnRpa2x5X0FydGlrbF9EQy5CYWxlbmlNbm96c3R2aQH5
-/// AVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsX0RDLlBvem5hbWthVGlza19Vc2VyRGF0YQHuAVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFk
-/// X1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsLktvZEJlelByZWZpeHU=</Resource>
+/// zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTQuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNvdXJjZVNldAIAAAAKAAAAAAAAAFBBRFBBRFCFEnutSF5ywWZCtQGhu+sHaIdICvMehQ5ep81E4RjNU6e1gG7nJe97UQEAAAAAAAAkAQAA9wAAACsAAABiAAAAlwAAAL8BAADAAAAAfgEAAPQCAAAmJAB0AGgAaQBzAC4AUwBjAHIAaQBwAHQAcwBTAG8AdQByAGMAZQAAAAAAMkIAYQBsAGUAbgBpAE0AbgBvAHoAcwB0AHYAaQAuAEQAYQB0AGEATQBlAG0AYgBlAHIAvyEAADBLAG8AZABCAGUAegBQAHIA
+/// ZQBmAGkAeAB1AC4ARABhAHQAYQBNAGUAbQBiAGUAcgClIgAAJFAAcgBpAHoAbgBhAGsALgBEAGEAdABhAE0AZQBtAGIAZQByAIgjAAAyUwBsAGUAdgBhAE4AYQBEAG8AawBsAGEAZAB1AC4ARQB4AHAAcgBlAHMAcwBpAG8AbgBuJAAAKGwAYQBiAGUAbAA3ADkALgBEAGEAdABhAEIAaQBuAGQAaQBuAGcAcwDtJQAAKGwAYQBiAGUAbAA4ADEALgBEAGEAdABhAEIAaQBuAGQAaQBuAGcAcwDaJgAAKGwAYQBiAGUAbAA4ADIALgBEAGEAdABhAEIAaQBuAGQAaQBuAGcAcwDIJwAAPGwAYQBiAGUAbABQAG8AegBuAGEAbQBrAGEAVABpAHMAawAuAEQAYQB0AGEAQgBpAG4AZABpAG4AZwBzAL0oAAAseAByAEwAYQBiAGUAbAA2ADIALgBEAGEAdABhAEIAaQBuAGQAaQBuAGcA
+/// cwC5KQAAAbxDdXNpbmcgQ1NXLkNTV1N5c3RlbS5SZXBvcnRzOw0KdXNpbmcgU3lzdGVtLkRhdGE7DQp1c2luZyBTeXN0ZW0uVGV4dC5SZWd1bGFyRXhwcmVzc2lvbnM7DQp1c2luZyBTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYzsNCnVzaW5nIFN5c3RlbS5EcmF3aW5nOw0KDQpzdHJpbmcgZm9ybWF0TW5venN0dmkgPSAiezA6IyMjICMjIyAjIzB9IjsNCnN0cmluZyBmb3JtYXRDZW5hID0gInswOiMjIyAjIyMgIyMwLjAwfSI7DQpzdHJpbmcgZm9ybWF0TW5venN0dmlOZWdhdGl2ZSA9ICJ7MDotIyMjICMjIyAjIzB9IjsNCnN0cmluZyBmb3JtYXRDZW5hTmVnYXRpdmUgPSAiezA6LSMjIyAjIyMgIyMwLjAwfSI7DQoNCi8vIHBybyBwb2NpdGFuaSBjZWxrb3Zl
+/// aG8gbW5venN0dmkgZGxlIGplZG5vdGVrDQpEaWN0aW9uYXJ5PHN0cmluZywgaW50PiBjZWxrb3ZlTW5venN0dmkgPSBuZXcgRGljdGlvbmFyeTxzdHJpbmcsIGludD4oKTsJDQpEaWN0aW9uYXJ5PHN0cmluZywgaW50PiBjZWxrb3ZlTW5venN0dmlOID0gbmV3IERpY3Rpb25hcnk8c3RyaW5nLCBpbnQ+KCk7CQ0KDQpGb250W10gcG9sb3prYUZvbnRzOw0KDQpwcml2YXRlIGJvb2wgamVaYXBvcm55UG9oeWIoKSB7DQoJcmV0dXJuIENvbnZlcnQuVG9Cb29sZWFuKEdldEN1cnJlbnRDb2x1bW5WYWx1ZSgiWmFwb3JueVBvaHliIikpOw0KfQ0KDQovLyBwb2t1ZCBqZSB6YXBvcm55IHBvaHliLCBjZWxrb3ZlIGNhc3RreSBuYSBkb2tsYWR1IGpkb3UgZG8gbWludXN1
+/// DQpwcml2YXRlIHZvaWQgeHRyYVJlcG9ydDFfQmVmb3JlUHJpbnQob2JqZWN0IHNlbmRlciwgU3lzdGVtLkRyYXdpbmcuUHJpbnRpbmcuUHJpbnRFdmVudEFyZ3MgZSkgew0KCWlmKGplWmFwb3JueVBvaHliKCkpIHsNCgkJbGFiZWxDZWxrZW1CZXpEcGguVGV4dEZvcm1hdFN0cmluZyA9ICItIiArIGxhYmVsQ2Vsa2VtQmV6RHBoLlRleHRGb3JtYXRTdHJpbmc7DQoJCWxhYmVsQ2Vsa2VtRHBoLlRleHRGb3JtYXRTdHJpbmcgPSAiLSIgKyBsYWJlbENlbGtlbURwaC5UZXh0Rm9ybWF0U3RyaW5nOw0KCQlsYWJlbENlbGtlbVNEcGguVGV4dEZvcm1hdFN0cmluZyA9ICItIiArIGxhYmVsQ2Vsa2VtU0RwaC5UZXh0Rm9ybWF0U3RyaW5nOw0KCX0NCgkNCgkvLyBpbmlj
+/// aWFsaXp1amUgZGljdGlvbmFyeSBuYSBjZWxrb3ZlIG1ub3pzdHZpDQoJY2Vsa292ZU1ub3pzdHZpLkFkZCgicGFsIiwgMCk7DQoJY2Vsa292ZU1ub3pzdHZpLkFkZCgia2FyIiwgMCk7DQoJY2Vsa292ZU1ub3pzdHZpLkFkZCgiZm9sIiwgMCk7DQoJY2Vsa292ZU1ub3pzdHZpLkFkZCgia3MiLCAwKTsNCg0KCWNlbGtvdmVNbm96c3R2aU4uQWRkKCJwYWwiLCAwKTsNCgljZWxrb3ZlTW5venN0dmlOLkFkZCgia2FyIiwgMCk7DQoJY2Vsa292ZU1ub3pzdHZpTi5BZGQoImZvbCIsIDApOw0KCWNlbGtvdmVNbm96c3R2aU4uQWRkKCJrcyIsIDApOw0KDQoJLy8gemFsb2h1aiBmb250IHZzZWNoIGNvbnRyb2xzIHYgcG9sb3prYXN1YmJhbmQNCglYUkNvbnRyb2wgcG9s
+/// b3prYUNvbnRyb2wgPSBzdWJCYW5kUG9sb3prYTsNCglwb2xvemthRm9udHMgPSBuZXcgRm9udFtwb2xvemthQ29udHJvbC5Db250cm9scy5Db3VudF07DQoJaW50IGkgPSAwOw0KCWZvcmVhY2goWFJDb250cm9sIGMgaW4gcG9sb3prYUNvbnRyb2wuQ29udHJvbHMpIHsNCgkJcG9sb3prYUZvbnRzW2ldID0gYy5Gb250Ow0KCQlpKys7DQoJfQ0KfQ0KDQovLyBuYXN0YXZpIGhvZG5vdHkgYmFsZW5pIHYgamVkbm90a2FjaCB1IGthemRlIHBvbG96a3kNCnByaXZhdGUgdm9pZCBiYWxlbmlNbm96c3R2aV9CZWZvcmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJWFJMYWJlbCBsYmwgPSBzZW5k
+/// ZXIgYXMgWFJMYWJlbDsNCglpbnQgbW5venN0dmkgPSAoaW50KSBDb252ZXJ0LlRvRG91YmxlKGxibC5SZXBvcnQuR2V0Q3VycmVudENvbHVtblZhbHVlKCJNbm96c3R2aSIpLlRvU3RyaW5nKCkpOw0KCXN0cmluZyBqZWRub3RrYSA9IGxibC5SZXBvcnQuR2V0Q3VycmVudENvbHVtblZhbHVlKCJKZWRub3RrYSIpLlRvU3RyaW5nKCk7DQoJWFJMYWJlbFtdIGxhYmVsTW5venN0dmkgPSB7bGFiZWxNbm96c3R2aTAsIGxhYmVsTW5venN0dmkxLCBsYWJlbE1ub3pzdHZpMn07DQoJWFJMYWJlbFtdIGxhYmVsSmVkbm90a3kgPSB7bGFiZWxKZWRub3RrYTAsIGxhYmVsSmVkbm90a2ExLCBsYWJlbEplZG5vdGthMn07DQoJDQoJZm9yZWFjaChYUkxhYmVsIGwgaW4gbGFi
+/// ZWxNbm96c3R2aSkgbC5UZXh0ID0gIiI7DQoJZm9yZWFjaChYUkxhYmVsIGwgaW4gbGFiZWxKZWRub3RreSkgbC5UZXh0ID0gIiI7DQoNCglib29sIGplVnJhdGthID0gQ29udmVydC5Ub0Jvb2xlYW4obGJsLlJlcG9ydC5HZXRDdXJyZW50Q29sdW1uVmFsdWUoIlZyYXRrYSIpKTsNCglib29sIGplTmVnYXRpdmUgPSAoamVaYXBvcm55UG9oeWIoKSAmJiAhamVWcmF0a2EpIHx8ICghamVaYXBvcm55UG9oeWIoKSAmJiBqZVZyYXRrYSk7DQoJc3RyaW5nIGZvcm1hdCA9IGplTmVnYXRpdmUgPyAiLSMiIDogIiMiOw0KDQoJDQoJdHJ5IHsNCgkJRGF0YVJvdyByID0gKGxibC5SZXBvcnQuR2V0Q3VycmVudFJvdygpIGFzIERhdGFSb3dWaWV3KS5Sb3cgYXMgRGF0YVJv
+/// dzsNCgkJRGF0YVJvd1tdIHJzID0gci5HZXRDaGlsZFJvd3MoIlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbSIpOw0KCQlEYXRhUm93W10gcnMxID0gcnNbMF0uR2V0Q2hpbGRSb3dzKCJPYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsIik7DQoJCXN0cmluZyBiYWxlbmlNbm96c3R2aSA9IHJzMVswXVsiQmFsZW5pTW5venN0dmlfVXNlckRhdGEiXS5Ub1N0cmluZygpICsgIi8iICsgIjEiOw0KCQlzdHJpbmcgYmFsZW5pSmVkbm90a3kgPSByczFbMF1bIkJhbGVuaUplZG5vdGt5X1VzZXJEYXRhIl0uVG9TdHJpbmcoKSArICIvIiArIGplZG5vdGthOw0K
+/// CQliYWxlbmlNbm96c3R2aSA9IGJhbGVuaU1ub3pzdHZpLlRyaW1TdGFydCgnLycpOw0KCQliYWxlbmlKZWRub3RreSA9IGJhbGVuaUplZG5vdGt5LlRyaW1TdGFydCgnLycpOw0KCQ0KCQlzdHJpbmdbXSBiYWxlbmlTdHJNID0gYmFsZW5pTW5venN0dmkuU3BsaXQoJy8nKTsNCgkJc3RyaW5nW10gYmFsZW5pSiA9IGJhbGVuaUplZG5vdGt5LlNwbGl0KCcvJyk7DQoJCQ0KCQlpbnRbXSBiYWxlbmlNID0gQXJyYXkuQ29udmVydEFsbChiYWxlbmlTdHJNLCBpbnQuUGFyc2UpOw0KCQlMaXN0PFR1cGxlPHN0cmluZywgaW50Pj4gYmFsZW5pID0gbmV3IExpc3Q8VHVwbGU8c3RyaW5nLCBpbnQ+PigpOwkNCgkNCgkJaW50IHpieXZhID0gbW5venN0dmksIHRtcDsNCgkJ
+/// Zm9yKGludCBpID0gMDsgaSA8IGJhbGVuaU0uTGVuZ3RoOyBpKyspIHsNCgkJCXRtcCA9IChpbnQpIE1hdGguRmxvb3IoKGZsb2F0KSB6Ynl2YS9iYWxlbmlNW2ldKTsNCgkJCWJhbGVuaS5BZGQoVHVwbGUuQ3JlYXRlKGJhbGVuaUpbaV0sIHRtcCkpOw0KCQkJemJ5dmEgLT0gdG1wICogYmFsZW5pTVtpXTsNCgkJfQ0KCQkNCgkJYmFsZW5pLlJldmVyc2UoKTsNCgkJaW50IGogPSAyOw0KCQlmb3JlYWNoKFR1cGxlPHN0cmluZywgaW50PiB0IGluIGJhbGVuaSkgew0KCQkJaWYodC5JdGVtMiAhPSAwKSB7DQoJCQkJLy8gbmFzdGF2aSBkbyBsYWJlbHUgaG9kbm90eSBtbm96c3R2aSB2IGJhbGVuaQ0KCQkJCWxhYmVsTW5venN0dmlbal0uVGV4dCA9IHQuSXRlbTIu
+/// VG9TdHJpbmcoZm9ybWF0KTsNCgkJCQlsYWJlbEplZG5vdGt5W2pdLlRleHQgPSB0Lkl0ZW0xOw0KDQoJCQkJLy8gcHJpY3RlIG1ub3pzdHZpIGRvIGNlbGtvdmVobyBtbm96c3R2aSBkbGUgamVkbm90ZWsNCgkJCQlpZihqZU5lZ2F0aXZlKSB7DQoJCQkJCWlmKGNlbGtvdmVNbm96c3R2aU4uQ29udGFpbnNLZXkodC5JdGVtMSkpIHsNCgkJCQkJCWNlbGtvdmVNbm96c3R2aU5bdC5JdGVtMV0gKz0gdC5JdGVtMjsNCgkJCQkJfSBlbHNlIHsNCgkJCQkJCWNlbGtvdmVNbm96c3R2aU5bImtzIl0gKz0gdC5JdGVtMjsNCgkJCQkJfQ0KCQkJCX0gZWxzZSB7DQoJCQkJCWlmKGNlbGtvdmVNbm96c3R2aS5Db250YWluc0tleSh0Lkl0ZW0xKSkgew0KCQkJCQkJY2Vsa292
+/// ZU1ub3pzdHZpW3QuSXRlbTFdICs9IHQuSXRlbTI7DQoJCQkJCX0gZWxzZSB7DQoJCQkJCQljZWxrb3ZlTW5venN0dmlbImtzIl0gKz0gdC5JdGVtMjsNCgkJCQkJfQ0KCQkJCX0NCg0KCQkJfQ0KCQkJai0tOw0KCQl9DQoJCQkNCgl9IGNhdGNoKEV4Y2VwdGlvbiBleGNlcHRpb24pIHt9DQp9DQoNCi8vIHZ5YmVyZSB6IHByaXpuYWt1IHBvdXplIGplZGVuIGFsZmFudW0gem5haw0KcHJpdmF0ZSB2b2lkIFByaXpuYWtfR2V0VmFsdWUob2JqZWN0IHNlbmRlciwgRGV2RXhwcmVzcy5YdHJhUmVwb3J0cy5VSS5HZXRWYWx1ZUV2ZW50QXJncyBlKSB7DQoJc3RyaW5nIGNvbHVtblZhbHVlID0gKHN0cmluZykgZS5HZXRDb2x1bW5WYWx1ZSgiUExVIik7DQoJZS5WYWx1
+/// ZSA9IFJlZ2V4Lk1hdGNoKGNvbHVtblZhbHVlLCBAIlthLXpBLVpdIikuVmFsdWU7DQp9DQoNCi8vIHNrcnlqZSBiYWxlbmkgbmVqdmV0c2kgamVkbm90a3kgcG9rdWQganNvdSAzDQpwcml2YXRlIHZvaWQgQmFsZW5pTW5venN0dmlfR2V0VmFsdWUob2JqZWN0IHNlbmRlciwgRGV2RXhwcmVzcy5YdHJhUmVwb3J0cy5VSS5HZXRWYWx1ZUV2ZW50QXJncyBlKSB7DQoJc3RyaW5nIGJhbGVuaSA9IENvbnZlcnQuVG9TdHJpbmcoZS5HZXRDb2x1bW5WYWx1ZSgiQmFsZW5pTW5venN0dmlfVXNlckRhdGEiKSk7DQoJc3RyaW5nW10gc3BsaXQgPSBiYWxlbmkuU3BsaXQoJy8nKTsNCglpZihzcGxpdC5MZW5ndGggPT0gMykgew0KCQliYWxlbmkgPSBzdHJpbmcuRm9ybWF0
+/// KCJ7MH0vezF9Iiwgc3BsaXRbMV0sIHNwbGl0WzJdKTsJDQoJfQ0KCWUuVmFsdWUgPSBiYWxlbmk7CQkNCn0NCg0KLy8gc2tyeWplIFN1YkJhbmQgcyBwb3puYW1rdVRpc2sgcG9rdWQgamUgcHJhemRuYQ0KcHJpdmF0ZSB2b2lkIHN1YkJhbmRQb3puYW1rYVRpc2tfQmVmb3JlUHJpbnQob2JqZWN0IHNlbmRlciwgU3lzdGVtLkRyYXdpbmcuUHJpbnRpbmcuUHJpbnRFdmVudEFyZ3MgZSkgew0KCVN1YkJhbmQgYmFuZCA9IHNlbmRlciBhcyBTdWJCYW5kOw0KCURhdGFSb3cgciA9IChiYW5kLlJlcG9ydC5HZXRDdXJyZW50Um93KCkgYXMgRGF0YVJvd1ZpZXcpLlJvdyBhcyBEYXRhUm93Ow0KCURhdGFSb3dbXSBycyA9IHIuR2V0Q2hpbGRSb3dzKCJTa2xhZG92eURv
+/// a2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLU9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0iKTsNCglEYXRhUm93W10gcnMxID0gcnNbMF0uR2V0Q2hpbGRSb3dzKCJPYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsX0RDIik7DQoJc3RyaW5nIHRleHQgPSByczFbMF1bIlBvem5hbWthVGlza19Vc2VyRGF0YSJdLlRvU3RyaW5nKCk7DQoJaWYodGV4dCA9PSAiIikgew0KCQllLkNhbmNlbCA9IHRydWU7DQoJfQ0KfQ0KDQovLyBuYXN0YXZpIHphcG9ybmUgbW5venN0dmkgbmEgcG9sb3pjZSBwb2t1ZCBqZSB6YXBvcm55IHBvaHliIGRva2xhZHUgbmVibyB2cmF0a2EgcG9sb3preQ0KcHJpdmF0ZSB2b2lkIHN1YkJhbmRQ
+/// b2xvemthX0JlZm9yZVByaW50KG9iamVjdCBzZW5kZXIsIFN5c3RlbS5EcmF3aW5nLlByaW50aW5nLlByaW50RXZlbnRBcmdzIGUpIHsNCgl2YXIgY29udHJvbCA9IChzZW5kZXIgYXMgWFJDb250cm9sKTsNCglYdHJhUmVwb3J0QmFzZSBvd25lclJlcG9ydCA9IGNvbnRyb2wuUmVwb3J0Ow0KCWJvb2wgamVWcmF0a2EgPSBDb252ZXJ0LlRvQm9vbGVhbihvd25lclJlcG9ydC5HZXRDdXJyZW50Q29sdW1uVmFsdWUoIlZyYXRrYSIpKTsNCgl2YXIgZm9udEl0YWxpYyA9IG5ldyBGb250KGNvbnRyb2wuRm9udCwgRm9udFN0eWxlLkl0YWxpYyk7DQoJdmFyIGZvbnQgPSBjb250cm9sLkZvbnQ7DQoJDQoNCglpZigoamVaYXBvcm55UG9oeWIoKSAmJiAhamVWcmF0a2Ep
+/// IHx8ICghamVaYXBvcm55UG9oeWIoKSAmJiBqZVZyYXRrYSkpIHsNCgkJbGFiZWxQb2xvemthTW5venN0dmkuVGV4dEZvcm1hdFN0cmluZyA9IGZvcm1hdE1ub3pzdHZpTmVnYXRpdmU7DQoJfSBlbHNlIHsNCgkJbGFiZWxQb2xvemthTW5venN0dmkuVGV4dEZvcm1hdFN0cmluZyA9IGZvcm1hdE1ub3pzdHZpOw0KCX0NCg0KCWludCBpID0gMDsNCglmb3JlYWNoKFhSQ29udHJvbCBjIGluIGNvbnRyb2wuQ29udHJvbHMpIHsNCgkJaWYoKGplWmFwb3JueVBvaHliKCkgJiYgIWplVnJhdGthKSB8fCAoIWplWmFwb3JueVBvaHliKCkgJiYgamVWcmF0a2EpKSB7DQoJCQljLkZvbnQgPSBuZXcgRm9udChwb2xvemthRm9udHNbaV0sIEZvbnRTdHlsZS5JdGFsaWMpOw0K
+/// CQl9IGVsc2Ugew0KCQkJYy5Gb250ID0gcG9sb3prYUZvbnRzW2ldOw0KCQl9DQoJCWkrKzsNCgl9DQoJCQkNCn0NCg0KLy8gbmFzdGF2aSBhIHNwb2N0ZSBjZWxrb3ZlIG1ub3pzdHZpIGRsZSBkaWN0aW9uYXJpZXMNCnByaXZhdGUgdm9pZCBsYWJlbENlbGtvdmVNbm96c3R2aV9CZWZvcmVQcmludChvYmplY3Qgc2VuZGVyLCBTeXN0ZW0uRHJhd2luZy5QcmludGluZy5QcmludEV2ZW50QXJncyBlKSB7DQoJWFJMYWJlbCBsYmwgPSBzZW5kZXIgYXMgWFJMYWJlbDsNCglzdHJpbmcgb3V0cHV0ID0gIiI7DQoNCglmb3JlYWNoKHZhciBrdiBpbiBjZWxrb3ZlTW5venN0dmkpIHsNCgkJaWYoa3YuVmFsdWUgPiAwKSB7DQoJCQlvdXRwdXQgKz0gc3RyaW5nLkZvcm1h
+/// dCgiezB9IHsxfSAgIiwga3YuVmFsdWUsIGt2LktleSk7CQ0KCQl9DQoJfQ0KDQoJYm9vbCBpc0ZpcnN0ID0gdHJ1ZTsNCglmb3JlYWNoKHZhciBrdiBpbiBjZWxrb3ZlTW5venN0dmlOKSB7DQoJCWlmKGt2LlZhbHVlID4gMCkgew0KCQkJaWYoaXNGaXJzdCkgew0KCQkJCW91dHB1dCArPSAifCAgIjsNCgkJCQlpc0ZpcnN0ID0gZmFsc2U7DQoJCQl9DQoJCQlvdXRwdXQgKz0gc3RyaW5nLkZvcm1hdCgiLXswfSB7MX0gICIsIGt2LlZhbHVlLCBrdi5LZXkpOwkNCgkJfQ0KCX0NCglsYmwuVGV4dCA9IG91dHB1dDsNCn0NCg0KLy8gbmFzdGF2aSB0ZXh0IGRvcHJhdnkgcHJvIHNrbGFkDQpwcml2YXRlIHZvaWQgRG9wcmF2YVBsYXRiYV9HZXRWYWx1ZShvYmplY3Qg
+/// c2VuZGVyLCBEZXZFeHByZXNzLlh0cmFSZXBvcnRzLlVJLkdldFZhbHVlRXZlbnRBcmdzIGUpIHsNCglEYXRhUm93IHIgPSAoeHRyYVJlcG9ydDEuR2V0Q3VycmVudFJvdygpIGFzIERhdGFSb3dWaWV3KS5Sb3cgYXMgRGF0YVJvdzsJDQoJRGF0YVJvd1tdIHJzID0gci5HZXRDaGlsZFJvd3MoIlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQ2lzZWxuaWt5X1pwdXNvYkRvcHJhdnkiKTsJDQoJc3RyaW5nIGRvcHJhdmFLb2QgPSAocnMgPT0gbnVsbCB8fCBycy5MZW5ndGggPT0gMCkgPyAiIiA6IHJzWzBdWyJLb2QiXS5Ub1N0cmluZygpOw0KCXN0cmluZyBkb3ByYXZhID0gKHJzID09IG51bGwgfHwgcnMuTGVuZ3RoID09IDApID8gIiIgOiByc1swXVsi
+/// TmF6ZXYiXS5Ub1N0cmluZygpOw0KCXJzID0gci5HZXRDaGlsZFJvd3MoIlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQ2lzZWxuaWt5X1pwdXNvYlBsYXRieSIpOw0KCXN0cmluZyBwbGF0YmEgPSAocnMgPT0gbnVsbCB8fCBycy5MZW5ndGggPT0gMCkgPyAiIiA6IHJzWzBdWyJOYXpldiJdLlRvU3RyaW5nKCk7DQoJc3RyaW5nIHBsYXRiYUtvZCA9IChycyA9PSBudWxsIHx8IHJzLkxlbmd0aCA9PSAwKSA/ICIiIDogcnNbMF1bIktvZCJdLlRvU3RyaW5nKCk7DQoNCglzdHJpbmcgdWhyYWRhID0gIiI7DQoJaWYoZG9wcmF2YUtvZCA9PSAiTyIpIHsNCgkJaWYocGxhdGJhS29kID09ICJLIiB8fCBwbGF0YmFLb2QgPT0gIkgiKSB7DQoJCQl1aHJhZGEg
+/// PSBzdHJpbmcuRm9ybWF0KCJ7MH0gezF9IiwgInVocmF6ZW5vIiwgcGxhdGJhKTsNCgkJfSBlbHNlIGlmKHBsYXRiYUtvZCA9PSAiUCIgKSB7DQoJCQl1aHJhZGEgPSAiIjsNCgkJfSBlbHNlIHsNCgkJCXVocmFkYSA9ICJrb250cm9sYSB1aHJhemVuw60iOw0KCQl9DQoJfSBlbHNlIGlmKGRvcHJhdmFLb2QuU3RhcnRzV2l0aCgiUiIpKSB7DQoJCWlmKHBsYXRiYUtvZCA9PSAiSyIgfHwgcGxhdGJhS29kID09ICJIIikgew0KCQkJdWhyYWRhID0gc3RyaW5nLkZvcm1hdCgiezB9IHsxfSIsICJ1aHJhemVubyIsIHBsYXRiYSk7DQoJCX0gZWxzZSBpZihwbGF0YmFLb2QgPT0gIlAiICkgew0KCQkJdWhyYWRhID0gIiI7DQoJCX0gZWxzZSB7DQoJCQl1aHJhZGEgPSAi
+/// dnlicmF0IGhvdG92b3N0IjsNCgkJfQ0KCX0gZWxzZSBpZihkb3ByYXZhS29kID09ICJQIikgew0KCQlpZihwbGF0YmFLb2QgPT0gIkQiKSB7DQoJCQl1aHJhZGEgPSAidWhyYXplbsOhIGRvYsOtcmtvdSI7DQoJCX0gZWxzZSBpZihwbGF0YmFLb2QgPT0gIlAiKSB7DQoJCQl1aHJhZGEgPSAiIjsNCgkJfSBlbHNlIHsNCgkJCXRocm93IG5ldyBFeGNlcHRpb24oIlBvdm9sZW7DvSB6cMWvc29iIHBsYXRieTogUCwgRCEiKTsNCgkJfQ0KCX0gZWxzZSB7DQoJCXRocm93IG5ldyBFeGNlcHRpb24oIlBvdm9sZW7DqSB6cMWvc29ieSBkb3ByYXZ5OiBPLCBSLCBQISIpOw0KCX0NCg0KCWUuVmFsdWUgPSBzdHJpbmcuRm9ybWF0KCJ7MH0gKiB7MX0iLCB1aHJhZGEsIGRv
+/// cHJhdmEpLlRvVXBwZXIoKTsNCn0B4wFTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby5Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLU9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0uT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS1BcnRpa2x5X0FydGlrbF9EQwHgAVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFk
+/// X1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsAeMBU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS5Ta2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LVNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8uU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby1PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLk9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0tQXJ0aWtseV9BcnRpa2xfREMB/AJJaWYoW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQWRy
+/// ZXNhcl9GaXJtYV0uW1NsZXZhVXZhZGVuYV9Vc2VyRGF0YV0gIT0gMCwKW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQWRyZXNhcl9GaXJtYV0uW1NsZXZhVXZhZGVuYV9Vc2VyRGF0YV0sCklpZihbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1BZHJlc2FyX0Zpcm1hXS5bVmxhc3RuaVNsZXZhXSA9PSB0cnVlLCBJaWYoW1NrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktQWRyZXNhcl9GaXJtYV0uW0hvZG5vdGFTbGV2eV0gPiAwLCBbU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1BZHJlc2FyX0Zpcm1hXS5bSG9kbm90YVNsZXZ5XSwgbnVsbCksIG51bGwpKQHqAVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnku
+/// U2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsLlprcmF0a2ExMgHrAVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3pr
+/// eVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsX0RDLlByaXpuYWsB8gFTa2xhZG92eURva2xhZF9Eb2RhY2lMaXN0VnlkYW55LlNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnktU2tsYWRvdnlEb2tsYWRfUG9sb3prYURvZGFjaWhvTGlzdHVWeWRhbmVoby5Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLU9iY2hvZF9PYnNhaFBvbG96a3lTQXJ0aWtsZW0uT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS1BcnRpa2x5X0FydGlrbF9EQy5CYWxlbmlNbm96c3R2aQH5AVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFu
+/// eS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNob2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsX0RDLlBvem5hbWthVGlza19Vc2VyRGF0YQHuAVNrbGFkb3Z5RG9rbGFkX0RvZGFjaUxpc3RWeWRhbnkuU2tsYWRvdnlEb2tsYWRfRG9kYWNpTGlzdFZ5ZGFueS1Ta2xhZG92eURva2xhZF9Qb2xvemthRG9kYWNpaG9MaXN0dVZ5ZGFuZWhvLlNrbGFkb3Z5RG9rbGFkX1BvbG96a2FEb2RhY2lob0xpc3R1VnlkYW5laG8tT2JjaG9kX09ic2FoUG9sb3preVNBcnRpa2xlbS5PYmNo
+/// b2RfT2JzYWhQb2xvemt5U0FydGlrbGVtLUFydGlrbHlfQXJ0aWtsLktvZEJlelByZWZpeHU=</Resource>
 ///   </Resources>
 /// </XRTypeInfo>
 namespace XtraReportSerialization {
@@ -468,7 +473,7 @@ namespace XtraReportSerialization {
             this.label58.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.DopravaPlatba")});
             this.label58.Dpi = 254F;
-            this.label58.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label58.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label58.LocationFloat = new DevExpress.Utils.PointFloat(1345.681F, 0F);
             this.label58.Name = "label58";
@@ -490,7 +495,7 @@ namespace XtraReportSerialization {
             this.label57.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.Nazev")});
             this.label57.Dpi = 254F;
-            this.label57.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label57.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label57.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.label57.Multiline = true;
@@ -543,7 +548,7 @@ namespace XtraReportSerialization {
             // label8
             // 
             this.label8.Dpi = 254F;
-            this.label8.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label8.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label8.LocationFloat = new DevExpress.Utils.PointFloat(0F, 450F);
             this.label8.Name = "label8";
@@ -560,7 +565,7 @@ namespace XtraReportSerialization {
             // pageInfo1
             // 
             this.pageInfo1.Dpi = 254F;
-            this.pageInfo1.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.pageInfo1.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.pageInfo1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(269.9994F, 405.0001F);
             this.pageInfo1.Name = "pageInfo1";
@@ -580,7 +585,7 @@ namespace XtraReportSerialization {
             this.xrLabel23.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.DatumVystaveni", "{0:dd.MM.yyyy}")});
             this.xrLabel23.Dpi = 254F;
-            this.xrLabel23.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.xrLabel23.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.xrLabel23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(269.9994F, 360F);
             this.xrLabel23.Name = "xrLabel23";
@@ -597,7 +602,7 @@ namespace XtraReportSerialization {
             // label10
             // 
             this.label10.Dpi = 254F;
-            this.label10.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label10.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label10.LocationFloat = new DevExpress.Utils.PointFloat(0F, 405F);
             this.label10.Name = "label10";
@@ -614,7 +619,7 @@ namespace XtraReportSerialization {
             // xrLabel19
             // 
             this.xrLabel19.Dpi = 254F;
-            this.xrLabel19.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.xrLabel19.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.xrLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(0F, 359.9999F);
             this.xrLabel19.Name = "xrLabel19";
@@ -633,7 +638,7 @@ namespace XtraReportSerialization {
             this.label11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.Vystavil")});
             this.label11.Dpi = 254F;
-            this.label11.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label11.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label11.LocationFloat = new DevExpress.Utils.PointFloat(269.9997F, 450F);
             this.label11.Multiline = true;
@@ -651,7 +656,7 @@ namespace XtraReportSerialization {
             // 
             this.label13.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label13.Dpi = 254F;
-            this.label13.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label13.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label13.LocationFloat = new DevExpress.Utils.PointFloat(0.3440001F, 210F);
             this.label13.Name = "label13";
@@ -670,7 +675,7 @@ namespace XtraReportSerialization {
             // 
             this.label12.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label12.Dpi = 254F;
-            this.label12.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label12.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label12.LocationFloat = new DevExpress.Utils.PointFloat(0.3440001F, 255F);
             this.label12.Name = "label12";
@@ -691,7 +696,7 @@ namespace XtraReportSerialization {
             this.IC.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "Kontextové informace.ICO")});
             this.IC.Dpi = 254F;
-            this.IC.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.IC.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.IC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.IC.LocationFloat = new DevExpress.Utils.PointFloat(64.88129F, 210F);
             this.IC.Name = "IC";
@@ -711,7 +716,7 @@ namespace XtraReportSerialization {
             this.DIC.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "Kontextové informace.DIC")});
             this.DIC.Dpi = 254F;
-            this.DIC.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.DIC.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.DIC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.DIC.LocationFloat = new DevExpress.Utils.PointFloat(64.88129F, 255F);
             this.DIC.Name = "DIC";
@@ -730,7 +735,7 @@ namespace XtraReportSerialization {
             this.Popis.AnchorHorizontal = DevExpress.XtraReports.UI.HorizontalAnchorStyles.Left;
             this.Popis.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.Popis.Dpi = 254F;
-            this.Popis.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.Popis.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.Popis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Popis.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.Popis.Name = "Popis";
@@ -753,7 +758,7 @@ namespace XtraReportSerialization {
             this.Nazev.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "Kontextové informace.ObchodniAdresa")});
             this.Nazev.Dpi = 254F;
-            this.Nazev.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.Nazev.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.Nazev.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Nazev.LocationFloat = new DevExpress.Utils.PointFloat(0F, 44.99998F);
             this.Nazev.Name = "Nazev";
@@ -773,7 +778,7 @@ namespace XtraReportSerialization {
             this.Ulice.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "Kontextové informace.UliceObchodniAdresy")});
             this.Ulice.Dpi = 254F;
-            this.Ulice.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.Ulice.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.Ulice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Ulice.LocationFloat = new DevExpress.Utils.PointFloat(0F, 90.00004F);
             this.Ulice.Name = "Ulice";
@@ -793,7 +798,7 @@ namespace XtraReportSerialization {
             this.PSC.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "Kontextové informace.ObchodniAdresaPSCMesto")});
             this.PSC.Dpi = 254F;
-            this.PSC.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.PSC.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.PSC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.PSC.LocationFloat = new DevExpress.Utils.PointFloat(0F, 135F);
             this.PSC.Name = "PSC";
@@ -814,7 +819,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-Adresar_Firma.Adr" +
                                 "esar_Firma-Adresar_Osoba.Adresar_Osoba-Adresar_Spojeni.SpojeniCislo")});
             this.label24.Dpi = 254F;
-            this.label24.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label24.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label24.LocationFloat = new DevExpress.Utils.PointFloat(1477.059F, 405F);
             this.label24.Name = "label24";
@@ -837,7 +842,7 @@ namespace XtraReportSerialization {
             this.label40.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.DodaciAdresaPSCMesto")});
             this.label40.Dpi = 254F;
-            this.label40.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label40.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label40.LocationFloat = new DevExpress.Utils.PointFloat(885.0001F, 345F);
             this.label40.Name = "label40";
@@ -877,7 +882,7 @@ namespace XtraReportSerialization {
             this.label38.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.DodaciAdresaNazev")});
             this.label38.Dpi = 254F;
-            this.label38.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label38.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label38.LocationFloat = new DevExpress.Utils.PointFloat(885.0001F, 255F);
             this.label38.Name = "label38";
@@ -897,7 +902,7 @@ namespace XtraReportSerialization {
             this.label37.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.DodaciAdresaUlice")});
             this.label37.Dpi = 254F;
-            this.label37.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label37.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label37.LocationFloat = new DevExpress.Utils.PointFloat(885.0001F, 300.0001F);
             this.label37.Name = "label37";
@@ -918,7 +923,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-Adresar_Firma.Adr" +
                                 "esar_Firma-Adresar_Osoba.Nazev")});
             this.label35.Dpi = 254F;
-            this.label35.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label35.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label35.LocationFloat = new DevExpress.Utils.PointFloat(1040F, 404.9999F);
             this.label35.Name = "label35";
@@ -940,7 +945,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-Adresar_Firma.Adr" +
                                 "esar_Firma-Adresar_Osoba.Adresar_Osoba-Adresar_Spojeni.SpojeniCislo")});
             this.label34.Dpi = 254F;
-            this.label34.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label34.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label34.LocationFloat = new DevExpress.Utils.PointFloat(1559.922F, 404.9999F);
             this.label34.Name = "label34";
@@ -961,7 +966,7 @@ namespace XtraReportSerialization {
             this.label33.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.Odkaz")});
             this.label33.Dpi = 254F;
-            this.label33.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label33.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label33.LocationFloat = new DevExpress.Utils.PointFloat(1040F, 450F);
             this.label33.Name = "label33";
@@ -983,7 +988,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-Adresar_Firma.Adr" +
                                 "esar_Firma-Adresar_Osoba.Nazev")});
             this.label32.Dpi = 254F;
-            this.label32.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label32.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label32.LocationFloat = new DevExpress.Utils.PointFloat(885F, 405F);
             this.label32.Name = "label32";
@@ -1003,7 +1008,7 @@ namespace XtraReportSerialization {
             this.label1.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SlevaNaDokladu")});
             this.label1.Dpi = 254F;
-            this.label1.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label1.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.LocationFloat = new DevExpress.Utils.PointFloat(1477.059F, 450F);
             this.label1.Name = "label1";
@@ -1024,7 +1029,7 @@ namespace XtraReportSerialization {
             this.label7.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.Odkaz")});
             this.label7.Dpi = 254F;
-            this.label7.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label7.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label7.LocationFloat = new DevExpress.Utils.PointFloat(885.0001F, 449.9999F);
             this.label7.Name = "label7";
@@ -1045,7 +1050,7 @@ namespace XtraReportSerialization {
             this.slevaLabel.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SlevaNaDokladu")});
             this.slevaLabel.Dpi = 254F;
-            this.slevaLabel.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.slevaLabel.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.slevaLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.slevaLabel.LocationFloat = new DevExpress.Utils.PointFloat(1559.923F, 449.9999F);
             this.slevaLabel.Name = "slevaLabel";
@@ -1068,7 +1073,7 @@ namespace XtraReportSerialization {
             this.label30.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.DIC")});
             this.label30.Dpi = 254F;
-            this.label30.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label30.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label30.LocationFloat = new DevExpress.Utils.PointFloat(1535F, 135F);
             this.label30.Name = "label30";
@@ -1089,13 +1094,13 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-Adresar_Firma.Kod" +
                                 "")});
             this.label5.Dpi = 254F;
-            this.label5.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label5.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(1619F, 0F);
+            this.label5.LocationFloat = new DevExpress.Utils.PointFloat(1559.923F, 0F);
             this.label5.Multiline = true;
             this.label5.Name = "label5";
             this.label5.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 254F);
-            this.label5.SizeF = new System.Drawing.SizeF(226.9797F, 45F);
+            this.label5.SizeF = new System.Drawing.SizeF(286.0568F, 45F);
             this.label5.StylePriority.UseBorders = false;
             this.label5.StylePriority.UseFont = false;
             this.label5.StylePriority.UseForeColor = false;
@@ -1108,7 +1113,7 @@ namespace XtraReportSerialization {
             // 
             this.label49.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label49.Dpi = 254F;
-            this.label49.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label49.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label49.LocationFloat = new DevExpress.Utils.PointFloat(885F, 0F);
             this.label49.Name = "label49";
@@ -1130,7 +1135,7 @@ namespace XtraReportSerialization {
             this.label48.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.FakturacniAdresaNazev")});
             this.label48.Dpi = 254F;
-            this.label48.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label48.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label48.LocationFloat = new DevExpress.Utils.PointFloat(885.0001F, 45F);
             this.label48.Name = "label48";
@@ -1150,7 +1155,7 @@ namespace XtraReportSerialization {
             this.label47.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.FakturacniAdresaUlice")});
             this.label47.Dpi = 254F;
-            this.label47.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label47.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label47.LocationFloat = new DevExpress.Utils.PointFloat(885F, 90.00002F);
             this.label47.Name = "label47";
@@ -1170,7 +1175,7 @@ namespace XtraReportSerialization {
             this.label31.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.IC")});
             this.label31.Dpi = 254F;
-            this.label31.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label31.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label31.LocationFloat = new DevExpress.Utils.PointFloat(1535F, 90.00001F);
             this.label31.Name = "label31";
@@ -1190,7 +1195,7 @@ namespace XtraReportSerialization {
             this.label50.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.FakturacniAdresaPSCMesto")});
             this.label50.Dpi = 254F;
-            this.label50.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label50.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label50.LocationFloat = new DevExpress.Utils.PointFloat(885.0002F, 135F);
             this.label50.Name = "label50";
@@ -1210,7 +1215,7 @@ namespace XtraReportSerialization {
             this.label43.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.IC")});
             this.label43.Dpi = 254F;
-            this.label43.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label43.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label43.LocationFloat = new DevExpress.Utils.PointFloat(1599F, 90.00004F);
             this.label43.Name = "label43";
@@ -1230,7 +1235,7 @@ namespace XtraReportSerialization {
             this.label42.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.DIC")});
             this.label42.Dpi = 254F;
-            this.label42.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label42.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label42.LocationFloat = new DevExpress.Utils.PointFloat(1599F, 135F);
             this.label42.Name = "label42";
@@ -1352,11 +1357,13 @@ namespace XtraReportSerialization {
                         this.label89,
                         this.label90});
             this.subBandPolozka.Dpi = 254F;
+            this.subBandPolozka.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.subBandPolozka.HeightF = 80F;
             this.subBandPolozka.Name = "subBandPolozka";
             this.subBandPolozka.Scripts.OnBeforePrint = "subBandPolozka_BeforePrint";
             this.subBandPolozka.StylePriority.UseBorders = false;
             this.subBandPolozka.StylePriority.UseBorderWidth = false;
+            this.subBandPolozka.StylePriority.UseFont = false;
             // 
             // subBandPoznamkaTisk
             // 
@@ -1376,7 +1383,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-SkladovyDoklad_Po" +
                                 "lozkaDodacihoListuVydaneho.Nazev")});
             this.xrlnazev.Dpi = 254F;
-            this.xrlnazev.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.xrlnazev.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.xrlnazev.LocationFloat = new DevExpress.Utils.PointFloat(85F, 0F);
             this.xrlnazev.Name = "xrlnazev";
             this.xrlnazev.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1397,7 +1404,7 @@ namespace XtraReportSerialization {
             this.xrLabel62.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, resources.GetString("xrLabel62.DataBindings"))});
             this.xrLabel62.Dpi = 254F;
-            this.xrLabel62.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.xrLabel62.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.xrLabel62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.xrLabel62.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel62.Name = "xrLabel62";
@@ -1422,7 +1429,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-SkladovyDoklad_Po" +
                                 "lozkaDodacihoListuVydaneho.Mnozstvi")});
             this.labelPolozkaMnozstvi.Dpi = 254F;
-            this.labelPolozkaMnozstvi.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelPolozkaMnozstvi.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.labelPolozkaMnozstvi.LocationFloat = new DevExpress.Utils.PointFloat(1502F, 0F);
             this.labelPolozkaMnozstvi.Name = "labelPolozkaMnozstvi";
             this.labelPolozkaMnozstvi.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1445,7 +1452,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-SkladovyDoklad_Po" +
                                 "lozkaDodacihoListuVydaneho.Jednotka")});
             this.xrLabel60.Dpi = 254F;
-            this.xrLabel60.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.xrLabel60.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.xrLabel60.LocationFloat = new DevExpress.Utils.PointFloat(1610F, 0F);
             this.xrLabel60.Name = "xrLabel60";
             this.xrLabel60.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1468,7 +1475,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-SkladovyDoklad_Po" +
                                 "lozkaDodacihoListuVydaneho.JednCena")});
             this.labelPolozkaCena.Dpi = 254F;
-            this.labelPolozkaCena.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.labelPolozkaCena.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.labelPolozkaCena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.labelPolozkaCena.LocationFloat = new DevExpress.Utils.PointFloat(1699.884F, 0F);
             this.labelPolozkaCena.Name = "labelPolozkaCena";
@@ -1481,7 +1488,7 @@ namespace XtraReportSerialization {
             this.labelPolozkaCena.StylePriority.UsePadding = false;
             this.labelPolozkaCena.StylePriority.UseTextAlignment = false;
             this.labelPolozkaCena.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.labelPolozkaCena.TextFormatString = "{0:#.00}";
+            this.labelPolozkaCena.TextFormatString = "{0:0.00}";
             this.labelPolozkaCena.WordWrap = false;
             // 
             // label79
@@ -1491,7 +1498,7 @@ namespace XtraReportSerialization {
             this.label79.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, resources.GetString("label79.DataBindings"), "{0:### ### ### ### ##0.0000}")});
             this.label79.Dpi = 254F;
-            this.label79.Font = new System.Drawing.Font("Roboto Mono Thin", 10F);
+            this.label79.Font = new System.Drawing.Font("Roboto Mono Thin", 9F);
             this.label79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label79.LocationFloat = new DevExpress.Utils.PointFloat(1417F, 0F);
             this.label79.Name = "label79";
@@ -1516,7 +1523,7 @@ namespace XtraReportSerialization {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SkladovyDoklad_DodaciListVydany-SkladovyDoklad_Po" +
                                 "lozkaDodacihoListuVydaneho.MnozstviPozn_UserData")});
             this.label80.Dpi = 254F;
-            this.label80.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label80.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label80.LocationFloat = new DevExpress.Utils.PointFloat(1679.884F, 0F);
             this.label80.Multiline = true;
             this.label80.Name = "label80";
@@ -1538,7 +1545,7 @@ namespace XtraReportSerialization {
             this.label81.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, resources.GetString("label81.DataBindings"))});
             this.label81.Dpi = 254F;
-            this.label81.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label81.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label81.LocationFloat = new DevExpress.Utils.PointFloat(799F, 0F);
             this.label81.Name = "label81";
             this.label81.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1561,7 +1568,7 @@ namespace XtraReportSerialization {
             this.label82.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, resources.GetString("label82.DataBindings"))});
             this.label82.Dpi = 254F;
-            this.label82.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label82.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label82.LocationFloat = new DevExpress.Utils.PointFloat(825.9999F, 0F);
             this.label82.Name = "label82";
@@ -1582,7 +1589,7 @@ namespace XtraReportSerialization {
             this.labelJednotka2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.labelJednotka2.BorderWidth = 0F;
             this.labelJednotka2.Dpi = 254F;
-            this.labelJednotka2.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelJednotka2.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.labelJednotka2.LocationFloat = new DevExpress.Utils.PointFloat(1332F, 0F);
             this.labelJednotka2.Name = "labelJednotka2";
             this.labelJednotka2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1600,7 +1607,7 @@ namespace XtraReportSerialization {
             this.labelMnozstvi2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.labelMnozstvi2.BorderWidth = 0F;
             this.labelMnozstvi2.Dpi = 254F;
-            this.labelMnozstvi2.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelMnozstvi2.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.labelMnozstvi2.LocationFloat = new DevExpress.Utils.PointFloat(1224.319F, 0F);
             this.labelMnozstvi2.Name = "labelMnozstvi2";
             this.labelMnozstvi2.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1619,7 +1626,7 @@ namespace XtraReportSerialization {
             this.labelJednotka1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.labelJednotka1.BorderWidth = 0F;
             this.labelJednotka1.Dpi = 254F;
-            this.labelJednotka1.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelJednotka1.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.labelJednotka1.LocationFloat = new DevExpress.Utils.PointFloat(1154.319F, 0F);
             this.labelJednotka1.Name = "labelJednotka1";
             this.labelJednotka1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1637,7 +1644,7 @@ namespace XtraReportSerialization {
             this.labelMnozstvi1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.labelMnozstvi1.BorderWidth = 0F;
             this.labelMnozstvi1.Dpi = 254F;
-            this.labelMnozstvi1.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelMnozstvi1.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.labelMnozstvi1.LocationFloat = new DevExpress.Utils.PointFloat(1089.319F, 0F);
             this.labelMnozstvi1.Name = "labelMnozstvi1";
             this.labelMnozstvi1.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1656,7 +1663,7 @@ namespace XtraReportSerialization {
             this.labelJednotka0.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.labelJednotka0.BorderWidth = 0F;
             this.labelJednotka0.Dpi = 254F;
-            this.labelJednotka0.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelJednotka0.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.labelJednotka0.LocationFloat = new DevExpress.Utils.PointFloat(1019.319F, 0F);
             this.labelJednotka0.Name = "labelJednotka0";
             this.labelJednotka0.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1674,7 +1681,7 @@ namespace XtraReportSerialization {
             this.labelMnozstvi0.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.labelMnozstvi0.BorderWidth = 0F;
             this.labelMnozstvi0.Dpi = 254F;
-            this.labelMnozstvi0.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelMnozstvi0.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.labelMnozstvi0.LocationFloat = new DevExpress.Utils.PointFloat(954.3192F, 0F);
             this.labelMnozstvi0.Name = "labelMnozstvi0";
             this.labelMnozstvi0.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1695,7 +1702,7 @@ namespace XtraReportSerialization {
             this.label89.BorderWidth = 0F;
             this.label89.CanGrow = false;
             this.label89.Dpi = 254F;
-            this.label89.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label89.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label89.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label89.LocationFloat = new DevExpress.Utils.PointFloat(944.3193F, 0F);
             this.label89.Name = "label89";
@@ -1720,7 +1727,7 @@ namespace XtraReportSerialization {
             this.label90.BorderWidth = 0F;
             this.label90.CanGrow = false;
             this.label90.Dpi = 254F;
-            this.label90.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label90.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label90.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label90.LocationFloat = new DevExpress.Utils.PointFloat(1402F, 0F);
             this.label90.Name = "label90";
@@ -1762,7 +1769,7 @@ namespace XtraReportSerialization {
             // 
             this.xrLabel71.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel71.Dpi = 254F;
-            this.xrLabel71.Font = new System.Drawing.Font("Roboto", 10F);
+            this.xrLabel71.Font = new System.Drawing.Font("Roboto", 9F);
             this.xrLabel71.LocationFloat = new DevExpress.Utils.PointFloat(85.34408F, 0.0005099649F);
             this.xrLabel71.Name = "xrLabel71";
             this.xrLabel71.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 5, 0, 0, 254F);
@@ -1778,7 +1785,7 @@ namespace XtraReportSerialization {
             // 
             this.xrLabel70.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel70.Dpi = 254F;
-            this.xrLabel70.Font = new System.Drawing.Font("Roboto", 10F);
+            this.xrLabel70.Font = new System.Drawing.Font("Roboto", 9F);
             this.xrLabel70.LocationFloat = new DevExpress.Utils.PointFloat(1512.749F, 0F);
             this.xrLabel70.Name = "xrLabel70";
             this.xrLabel70.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1794,7 +1801,7 @@ namespace XtraReportSerialization {
             // 
             this.xrLabel69.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel69.Dpi = 254F;
-            this.xrLabel69.Font = new System.Drawing.Font("Roboto", 10F);
+            this.xrLabel69.Font = new System.Drawing.Font("Roboto", 9F);
             this.xrLabel69.LocationFloat = new DevExpress.Utils.PointFloat(1610F, 0.0004364565F);
             this.xrLabel69.Name = "xrLabel69";
             this.xrLabel69.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 254F);
@@ -1810,7 +1817,7 @@ namespace XtraReportSerialization {
             // 
             this.xrLabel68.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel68.Dpi = 254F;
-            this.xrLabel68.Font = new System.Drawing.Font("Roboto", 10F);
+            this.xrLabel68.Font = new System.Drawing.Font("Roboto", 9F);
             this.xrLabel68.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLabel68.Name = "xrLabel68";
             this.xrLabel68.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1826,7 +1833,7 @@ namespace XtraReportSerialization {
             // 
             this.xrLabel67.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel67.Dpi = 254F;
-            this.xrLabel67.Font = new System.Drawing.Font("Roboto", 10F);
+            this.xrLabel67.Font = new System.Drawing.Font("Roboto", 9F);
             this.xrLabel67.LocationFloat = new DevExpress.Utils.PointFloat(1680F, 0F);
             this.xrLabel67.Name = "xrLabel67";
             this.xrLabel67.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 254F);
@@ -1842,7 +1849,7 @@ namespace XtraReportSerialization {
             // 
             this.label95.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label95.Dpi = 254F;
-            this.label95.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label95.Font = new System.Drawing.Font("Roboto", 9F);
             this.label95.LocationFloat = new DevExpress.Utils.PointFloat(1391.777F, 0.0006055831F);
             this.label95.Name = "label95";
             this.label95.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1858,7 +1865,7 @@ namespace XtraReportSerialization {
             // 
             this.label93.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label93.Dpi = 254F;
-            this.label93.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label93.Font = new System.Drawing.Font("Roboto", 9F);
             this.label93.LocationFloat = new DevExpress.Utils.PointFloat(965.6585F, 0.0004613967F);
             this.label93.Name = "label93";
             this.label93.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
@@ -1874,7 +1881,7 @@ namespace XtraReportSerialization {
             // 
             this.label92.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label92.Dpi = 254F;
-            this.label92.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label92.Font = new System.Drawing.Font("Roboto", 9F);
             this.label92.LocationFloat = new DevExpress.Utils.PointFloat(825.9998F, 0.000552462F);
             this.label92.Name = "label92";
             this.label92.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -1890,7 +1897,7 @@ namespace XtraReportSerialization {
             // 
             this.label91.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.label91.Dpi = 254F;
-            this.label91.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label91.Font = new System.Drawing.Font("Roboto", 9F);
             this.label91.LocationFloat = new DevExpress.Utils.PointFloat(799F, 0.000552462F);
             this.label91.Name = "label91";
             this.label91.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
@@ -2049,7 +2056,7 @@ namespace XtraReportSerialization {
             // labelCelkoveMnozstvi
             // 
             this.labelCelkoveMnozstvi.Dpi = 254F;
-            this.labelCelkoveMnozstvi.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelCelkoveMnozstvi.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.labelCelkoveMnozstvi.LocationFloat = new DevExpress.Utils.PointFloat(1375.041F, 0F);
             this.labelCelkoveMnozstvi.Name = "labelCelkoveMnozstvi";
             this.labelCelkoveMnozstvi.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -2065,7 +2072,7 @@ namespace XtraReportSerialization {
             // label6
             // 
             this.label6.Dpi = 254F;
-            this.label6.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label6.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label6.LocationFloat = new DevExpress.Utils.PointFloat(1095.041F, 0F);
             this.label6.Name = "label6";
             this.label6.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -2096,7 +2103,7 @@ namespace XtraReportSerialization {
             this.labelCelkemSDph.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SumaCelkem")});
             this.labelCelkemSDph.Dpi = 254F;
-            this.labelCelkemSDph.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.labelCelkemSDph.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.labelCelkemSDph.LocationFloat = new DevExpress.Utils.PointFloat(1375.041F, 166.0002F);
             this.labelCelkemSDph.Name = "labelCelkemSDph";
             this.labelCelkemSDph.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -2106,12 +2113,12 @@ namespace XtraReportSerialization {
             this.labelCelkemSDph.StylePriority.UsePadding = false;
             this.labelCelkemSDph.StylePriority.UseTextAlignment = false;
             this.labelCelkemSDph.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.labelCelkemSDph.TextFormatString = "{0:### ### ###.00} Kč";
+            this.labelCelkemSDph.TextFormatString = "{0:### ### ##0.00} Kč";
             // 
             // label99
             // 
             this.label99.Dpi = 254F;
-            this.label99.Font = new System.Drawing.Font("Roboto Medium", 10F);
+            this.label99.Font = new System.Drawing.Font("Roboto Medium", 9F);
             this.label99.LocationFloat = new DevExpress.Utils.PointFloat(1095.041F, 166.0002F);
             this.label99.Name = "label99";
             this.label99.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -2128,7 +2135,7 @@ namespace XtraReportSerialization {
             this.labelCelkemDph.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SumaDan")});
             this.labelCelkemDph.Dpi = 254F;
-            this.labelCelkemDph.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.labelCelkemDph.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.labelCelkemDph.LocationFloat = new DevExpress.Utils.PointFloat(1375.041F, 109.0001F);
             this.labelCelkemDph.Name = "labelCelkemDph";
             this.labelCelkemDph.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -2138,12 +2145,12 @@ namespace XtraReportSerialization {
             this.labelCelkemDph.StylePriority.UsePadding = false;
             this.labelCelkemDph.StylePriority.UseTextAlignment = false;
             this.labelCelkemDph.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.labelCelkemDph.TextFormatString = "{0:### ### ###.00} Kč";
+            this.labelCelkemDph.TextFormatString = "{0:### ### ##0.00} Kč";
             // 
             // label101
             // 
             this.label101.Dpi = 254F;
-            this.label101.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label101.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label101.LocationFloat = new DevExpress.Utils.PointFloat(1095.02F, 109.0001F);
             this.label101.Name = "label101";
             this.label101.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -2158,7 +2165,7 @@ namespace XtraReportSerialization {
             // label102
             // 
             this.label102.Dpi = 254F;
-            this.label102.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label102.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label102.LocationFloat = new DevExpress.Utils.PointFloat(1095.02F, 56.99995F);
             this.label102.Name = "label102";
             this.label102.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -2175,7 +2182,7 @@ namespace XtraReportSerialization {
             this.labelCelkemBezDph.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.SumaZaklad")});
             this.labelCelkemBezDph.Dpi = 254F;
-            this.labelCelkemBezDph.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.labelCelkemBezDph.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.labelCelkemBezDph.LocationFloat = new DevExpress.Utils.PointFloat(1375.041F, 56.99984F);
             this.labelCelkemBezDph.Name = "labelCelkemBezDph";
             this.labelCelkemBezDph.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254F);
@@ -2185,7 +2192,7 @@ namespace XtraReportSerialization {
             this.labelCelkemBezDph.StylePriority.UsePadding = false;
             this.labelCelkemBezDph.StylePriority.UseTextAlignment = false;
             this.labelCelkemBezDph.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.labelCelkemBezDph.TextFormatString = "{0:### ### ###.00} Kč";
+            this.labelCelkemBezDph.TextFormatString = "{0:### ### ##0.00} Kč";
             // 
             // line10
             // 
@@ -2230,7 +2237,7 @@ namespace XtraReportSerialization {
             // label97
             // 
             this.label97.Dpi = 254F;
-            this.label97.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label97.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label97.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.label97.Name = "label97";
             this.label97.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 254F);
@@ -2245,7 +2252,7 @@ namespace XtraReportSerialization {
             // label96
             // 
             this.label96.Dpi = 254F;
-            this.label96.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.label96.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.label96.LocationFloat = new DevExpress.Utils.PointFloat(404.9999F, 0F);
             this.label96.Name = "label96";
             this.label96.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 0, 0, 0, 254F);
@@ -2263,7 +2270,7 @@ namespace XtraReportSerialization {
             this.prebirajiciZmenaLabel.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
                         new DevExpress.XtraReports.UI.XRBinding("Text", null, "SkladovyDoklad_DodaciListVydany.AdresaKoncovehoPrijemceKontaktniOsobaNazev")});
             this.prebirajiciZmenaLabel.Dpi = 254F;
-            this.prebirajiciZmenaLabel.Font = new System.Drawing.Font("Roboto Light", 10F);
+            this.prebirajiciZmenaLabel.Font = new System.Drawing.Font("Roboto Light", 9F);
             this.prebirajiciZmenaLabel.LocationFloat = new DevExpress.Utils.PointFloat(534.9999F, 0F);
             this.prebirajiciZmenaLabel.Name = "prebirajiciZmenaLabel";
             this.prebirajiciZmenaLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 0, 0, 0, 254F);
@@ -2313,8 +2320,8 @@ namespace XtraReportSerialization {
             // DopravaPlatba
             // 
             this.DopravaPlatba.DataMember = "SkladovyDoklad_DodaciListVydany";
-            this.DopravaPlatba.Expression = resources.GetString("DopravaPlatba.Expression");
             this.DopravaPlatba.Name = "DopravaPlatba";
+            this.DopravaPlatba.Scripts.OnGetValue = "DopravaPlatba_GetValue";
             // 
             // SlevaNaDokladu
             // 
@@ -2379,8 +2386,9 @@ namespace XtraReportSerialization {
                         this.ObchodniAdresaPSCMesto,
                         this.Priznak,
                         this.BaleniMnozstvi});
+            this.DataMember = "SkladovyDoklad_DodaciListVydany";
             this.Dpi = 254F;
-            this.Font = new System.Drawing.Font("Roboto", 10F);
+            this.Font = new System.Drawing.Font("Roboto", 9F);
             this.Margins = new System.Drawing.Printing.Margins(127, 127, 107, 120);
             this.Name = "xtraReport1";
             this.PageHeight = 2970;
